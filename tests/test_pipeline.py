@@ -20,13 +20,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_dataset_is_literal_balanced_and_unique():
     rows = load_dataset(ROOT / 'data/examples.json')
-    assert len(rows) == 5226
+    assert len(rows) == 5909
     for label, source in [('person_name', 'names.txt'), ('search_query', 'queries.txt')]:
         actual = [r['input'] for r in rows if r['output'] == label]
-        assert len(actual) == (2550 if label == "person_name" else 2676)
+        assert len(actual) == (2915 if label == "person_name" else 2994)
         assert actual == (ROOT / 'data' / source).read_text().splitlines()
     parts = split_indices(rows, 42)
-    assert [len(part) for part in parts] == [4180, 523, 523]
+    assert [len(part) for part in parts] == [4727, 590, 592]
     assert len(set(np.concatenate(parts))) == len(rows)
     keys = [{canonicalize(rows[i]['input']) for i in part} for part in parts]
     assert not (keys[0] & keys[1] or keys[1] & keys[2] or keys[0] & keys[2])

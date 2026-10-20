@@ -36,8 +36,8 @@ const intent = prediction.label === 'person_name' ? 'person' : 'topic';
 ```
 
 This maps to HHQ's `intent: 'person' | 'topic'` contract. Use real traffic to
-choose whether uncertain scores should trigger both search paths. This package
-has not been installed into HHQ or published to npm yet.
+choose whether uncertain scores should trigger both search paths. Scores are uncalibrated and the training data is synthetic, so check
+real traffic for mononyms and lowercase input.
 
 ## Custom weights
 

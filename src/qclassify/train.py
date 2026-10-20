@@ -78,7 +78,7 @@ def main():
     parser.add_argument("--data", type=Path, default=Path("data/examples.json"))
     parser.add_argument("--out", type=Path, default=Path("artifacts"))
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--hidden", type=int, default=8)
+    parser.add_argument("--hidden", type=int, default=16)
     parser.add_argument("--epochs", type=int, default=400)
     parser.add_argument("--device", choices=("mps", "cpu"), default="mps")
     args = parser.parse_args()
@@ -103,7 +103,7 @@ def main():
         params, training = fit(augmented_x, augmented_y, x[validation], y[validation],
                                seed=args.seed, hidden=args.hidden, epochs=args.epochs, device=args.device,
                                augmentation_blocks=4)
-    training["augmentation"] = "per-epoch sampling: 80% original, 10% lower, 5% upper, 5% title; training only"
+    training["augmentation"] = "per-epoch sampling: 55% original, 35% lower, 5% upper, 5% title; training only"
     training["augmented_training_rows"] = len(augmented_x)
     args.out.mkdir(parents=True, exist_ok=True)
     path = args.out / "classifier.onnx"

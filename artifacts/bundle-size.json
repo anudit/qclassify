@@ -2,12 +2,12 @@
   "package": "@omnid/qclassify",
   "scope": "Reachable minified ESM including dynamically imported model; each file compressed separately; excludes HTTP headers",
   "runtimeDependencies": 0,
-  "weightBytes": 4750,
+  "weightBytes": 9496,
   "files": [
     {
       "file": "index.js",
       "raw": 8525,
-      "gzip": 3303,
+      "gzip": 3302,
       "brotli": 2956
     },
     {
@@ -23,27 +23,27 @@
       "brotli": 1014
     },
     {
-      "file": "model-2ORAJZP6.js",
-      "raw": 10039,
-      "gzip": 4890,
-      "brotli": 3571
+      "file": "model-LQWNWF4G.js",
+      "raw": 19532,
+      "gzip": 5127,
+      "brotli": 3710
     }
   ],
   "totals": {
-    "raw": 22798,
-    "gzip": 10350,
-    "brotli": 8428
+    "raw": 32291,
+    "gzip": 10586,
+    "brotli": 8567
   },
   "embeddingComparison": {
     "base64": {
-      "raw": 6437,
-      "gzip": 4167,
-      "brotli": 3576
+      "raw": 12765,
+      "gzip": 4358,
+      "brotli": 3661
     },
     "hex": {
-      "raw": 9658,
-      "gzip": 4569,
-      "brotli": 3332
+      "raw": 19150,
+      "gzip": 4802,
+      "brotli": 3437
     },
     "chosen": "hex (smaller Brotli delivery)"
   }

@@ -2548,3 +2548,368 @@ Jeff Dean
 Sundar Pichai
 Satya Nadella
 Dario Amodei
+Akash Srivastava
+Alok Pathak
+Amar Deshmukh
+Anand Venkatesh
+Anil Kapoor
+Ankit Jain
+Anjali Menon
+Apoorva Shetty
+Arvind Pillai
+Ashwin Balasubramanian
+Avinash Rao
+Bhavesh Patel
+Chandan Mukherjee
+Chetan Bhagat Nair
+Deepa Natarajan
+Dinesh Yadav
+Eshaan Kohli
+Gagan Sandhu
+Gautam Narayan
+Gayatri Bhide
+Girish Kamath
+Gopal Krishnamurthy
+Govind Naik
+Hardik Pandya Sharma
+Hrithik Bhatia
+Indira Raghavan
+Isha Ambani Desai
+Jagdish Prasad
+Jayant Kulkarni
+Kailash Meena
+Kamal Haasan Iyengar
+Kartik Aaryan Bhatt
+Kavita Pradhan
+Keerthi Suresh Nair
+Kiran Bedi Rao
+Krishna Murthy
+Kunal Shah Mehra
+Lakshya Sen Rawat
+Lalit Modi Seth
+Madhav Rane
+Mahesh Babu Naidu
+Manav Kaul Raina
+Manoj Bajpayee Tripathi
+Meenakshi Sundaram
+Mohan Lal Varma
+Mukesh Ambani Dalal
+Mythili Ramesh
+Naveen Polishetty Reddy
+Nirmala Seetharaman
+Nitin Gadkari Joshi
+Padma Lakshmi Iyer
+Palak Muchhal Shah
+Parth Samthaan Sood
+Pawan Kalyan Konidela
+Pooja Hegde Shetty
+Prabhas Raju
+Pratik Gandhi Shah
+Preeti Zinta Sharma
+Priyanka Chopra Jonas
+Pushpa Ramanathan
+Radhika Apte Joshi
+Rahul Dravid Kulkarni
+Rajat Sharma Bhalla
+Rajesh Khanna Arora
+Rakesh Jhunjhunwala
+Ramesh Babu
+Ranbir Kapoor
+Ratan Tata
+Ravi Shankar Prasad
+Riya Sen Mukherjee
+Rohit Sharma
+Roshni Nadar
+Sachin Tendulkar Kamat
+Sagar Dhawan
+Saira Banu
+Sandeep Maheshwari
+Sangeeta Biswas
+Sanya Malhotra
+Sara Ali Pataudi
+Satish Kaushik
+Shankar Mahadevan
+Sharad Kelkar
+Shiv Nadar
+Shruti Haasan Rao
+Smita Patil
+Sonam Wangchuk Lama
+Sourav Ganguly Dey
+Sridevi Kapoor
+Subhash Chandra
+Sudha Murty Kulkarni
+Sukhbir Singh
+Sunil Gavaskar Iyer
+Surya Prakash
+Sushant Rajput
+Swara Bhasker
+Tarun Mansukhani
+Trisha Krishnan
+Uday Kotak
+Udit Narayan Jha
+Uma Shankar
+Urvashi Rautela
+Vandana Shiva Bhatt
+Varun Dhawan
+Vidya Balan
+Vijay Deverakonda
+Vikas Khanna
+Vinay Pathak
+Vishal Bhardwaj
+Vivek Oberoi
+Yash Raj
+Yogesh Karanth
+Zoya Akhtar
+Asma Jahangir
+Babar Azam Shah
+Hamza Ali Abbasi
+Iqra Aziz
+Kamran Lashari
+Maryam Nawaz Butt
+Mehwish Hayat
+Naeem Baig
+Rabia Anwar
+Shahid Afridi Khan
+Tahir Mahmood
+Wasim Akram Malik
+Habibur Chowdhury
+Jahanara Akter
+Kamrul Islam
+Mizanur Sarker
+Rafiq Uddin
+Sabina Yasmin
+Amara Wijesinghe
+Chaminda Perera
+Nimal Jayasuriya
+Thilina Silva
+Anil Shrestha
+Dipak Thapa Magar
+Kamala Adhikari
+Suresh Poudel
+Aarav Sharma Joshi
+Kiaan Mehta
+Anvi Bhatt
+Tara Mukherjee
+Veer Singh Rathore
+Bharat Kumar
+Harsha Bhogle Rao
+Ila Arun
+Jai Prakash Narayan
+Kajal Aggarwal
+Lata Mangeshkar Hardikar
+Mamta Banerjee Sen
+Payal Rohatgi
+Qasim Rizvi
+Sudhir Chaudhari
+Tina Dabi
+Usha Uthup
+Waheeda Rehman
+Zeenat Aman
+Abhishek Bachchan Rao
+Alia Bhatt Razdan
+Chitrangada Singh
+Dia Mirza
+Esther Anuhya
+Fatima Sana Shaikh
+Genelia Deshmukh
+Huma Qureshi
+Ileana Dcruz
+Janhvi Kapoor
+Kiara Advani
+Lara Dutta
+Parineeti Chopra
+Rakul Preet
+Shraddha Kapoor
+Taapsee Pannu
+Vaani Kapoor
+Bobby Deol
+Chunky Pandey
+Emraan Hashmi
+Farhan Akhtar
+Govinda Ahuja
+Hrishikesh Mukherjee
+Irrfan Khan
+Jackie Shroff
+Madhavan Rangnathan
+Nawazuddin Siddiqui
+Om Puri
+Pankaj Tripathi
+Randeep Hooda
+Sidharth Malhotra
+Tiger Shroff
+Ibrahim Musa
+Kofi Annan Owusu
+Mohamed Salah Ali
+Nia Mwangi
+Yusuf Bakr
+Zainab Hussein
+Le Hoang Anh
+Lee Seo Yeon
+Wang Fang
+Liu Yang
+Zhang Wei
+Suzuki Ren
+Ivan Petrov
+Katarzyna Nowak
+Valentina Torres
+Hana Novakova
+Mehmet Demir
+Reza Karimi
+aditya verma
+amit kulkarni
+ankita dubey
+anirudh ravichandran
+arnav khanna
+ashish chaudhary
+ayesha khan
+bhavna solanki
+chetan nair
+darshan gowda
+deepika sethi
+dhruv bajaj
+disha parekh
+ganesh hegde
+garima thakur
+harini sundaram
+harpreet gill
+hemant joshi
+jaspreet kaur
+jyoti mahajan
+kabir anand
+kanika goel
+karan oberoi
+keshav dutta
+komal chauhan
+kunal shah
+mahima choudhury
+mansi dalal
+mayank agarwal
+mihir desai
+nandini ghosh
+nidhi bisht
+nilesh patil
+omkar salunkhe
+palak shah
+pradeep ranganathan
+pratik gandhi
+rachit gupta
+raghav juyal
+rashmi desai
+sahil khurana
+sakshi tanwar
+samarth jha
+sanjana sanghi
+saurabh dwivedi
+shalini pandey
+shivani rawat
+siddhi mane
+soham chakraborty
+srikanth bolla
+sumit bhardwaj
+tamanna bhatia
+tejas nerurkar
+tushar kapoor
+utkarsh ambudkar
+vaibhav suryavanshi
+vedant mundra
+vineet kumar singh
+yamini rao
+abdul rahman khan
+aamir siddiqui
+aleena ansari
+arsalan mirza
+bilal chaudhry
+danish hashmi
+faisal rehman
+hina rabbani
+junaid akhtar
+saad qureshi
+sadia imam
+umair jaswal
+zubair hussain
+anika rahman
+farhana begum
+nasrin sultana
+tanvir hossain
+dilini fernando
+kasun rajapaksa
+sanduni gunawardena
+binita gurung
+prakash basnet
+sunita karki
+aaradhya nair
+advait kulkarni
+arya menon
+avni shah
+ayaan khan
+dev patel
+diya sharma
+ira malhotra
+myra kapoor
+navya reddy
+reyansh gupta
+saanvi iyer
+vihaan agarwal
+rudra pratap
+zara chaudhary
+krish yadav
+mahika sinha
+kashvi saxena
+rehan qazi
+yuvraj bhosale
+neel parikh
+anushka jaiswal
+charu bhatnagar
+deven mistry
+esha gupta
+farah kazmi
+gunjan saxena
+nakul mehta
+ojas rajani
+rekha ganesan
+vasudha rao
+yatin karyekar
+bhumi pednekar
+mrunal thakur
+nushrat bharucha
+ajay devgn
+dino morea
+kunal kemmu
+vicky kaushal
+ahmed hassan
+aisha bello
+chidi okonkwo
+folake adeyemi
+lindiwe dlamini
+thandiwe khumalo
+nguyen thi lan
+tran van minh
+park ji woo
+sato haruka
+olga smirnova
+mateo gonzalez
+camila fernandez
+thiago oliveira
+elif yilmaz
+leila hosseini
+omar haddad
+john mitchell
+emma clarke
+daniel foster
+grace holloway
+henry stewart
+isabella reed
+jack morrison
+lily hughes
+noah patterson
+sophie ellis
+ethan brooks
+chloe watson
+liam gray
+mia cooper
+lucas bailey
+ava richardson
+owen kelly
+zoe howard
+nathan price
+ruby sanders

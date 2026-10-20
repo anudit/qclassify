@@ -1,15 +1,15 @@
 # Dataset
 
-`examples.json` contains **5,226 explicitly authored examples**, each with:
+`examples.json` contains **5,909 explicitly authored examples**, each with:
 
 ```json
 {"input": "Aarav Sharma", "output": "person_name"}
 ```
 
-- **2,550 `person_name`** examples: names across multiple naming traditions,
+- **2,915 `person_name`** examples: names across multiple naming traditions,
   initials, apostrophes, hyphens, accents, non-Latin scripts, mononyms, lowercase
   names, and public technology/research figures relevant to HHQ.
-- **2,676 `search_query`** examples: general topics, questions, developer products,
+- **2,994 `search_query`** examples: general topics, questions, developer products,
   research terms, technologies, project/people discovery, brand names, and
   searches containing a person's name.
 
@@ -37,17 +37,20 @@ convention. Text alone cannot infer the user's actual intent. Handles, URLs,
 company names resembling names, incomplete names and prefixes need validation
 against actual HHQ traffic; these are not a comprehensive identity recognizer.
 
+`probes.json` holds held-out lowercase/title-case names and queries kept out of
+training and out of the corpus (the loader rejects duplicates against them in curation).
+
 ## Splitting and augmentation
 
-`data/splits.json` records the deterministic stratified 80/10/10 split: **4,180
-training / 523 validation / 523 test** inputs. Normalized duplicate inputs are
+`data/splits.json` records the deterministic stratified 80/10/10 split: **4,727
+training / 590 validation / 592 test** inputs. Normalized duplicate inputs are
 rejected across the entire authored corpus. Sorting before shuffling means
 reordering the JSON does not change partition membership.
 
 `data/augmented_train.json` stores the training-only candidate pool: original,
-lowercase, uppercase, and title-case versions (**16,720 rows**). These generated
+lowercase, uppercase, and title-case versions (**18,908 rows**). These generated
 variants are separate from the explicitly authored seed examples. Each epoch
-samples 80% original / 10% lower / 5% upper / 5% title variants; validation and
+samples 55% original / 35% lower / 5% upper / 5% title variants; validation and
 test inputs retain their authored casing. Seeds and augmentation settings are
 recorded in the model report. The augmentation pool deliberately contains
 repeated inputs; it is not a second independently authored dataset.

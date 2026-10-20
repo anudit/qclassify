@@ -4,6 +4,10 @@ import torch
 from torch import nn
 
 
+# original, lower, upper, title: search boxes are mostly typed lowercase
+CASE_MIX = [0.55, 0.35, 0.05, 0.05]
+
+
 def sigmoid(value: np.ndarray) -> np.ndarray:
     return np.exp(-np.logaddexp(0, -value))
 
@@ -14,7 +18,7 @@ def forward(params: dict, x: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 
 
 def fit(x, y, validation_x, validation_y, *, seed=42, hidden=8,
-        epochs=400, batch_size=128, learning_rate=0.003, l2=0.0001,
+        epochs=400, batch_size=128, learning_rate=0.003, l2=0.001,
         patience=35, device="mps", augmentation_blocks=1):
     if device == "mps" and not torch.backends.mps.is_available():
         raise RuntimeError("MPS is unavailable. Use an MPS-capable Mac and PyTorch build, "
@@ -36,7 +40,7 @@ def fit(x, y, validation_x, validation_y, *, seed=42, hidden=8,
             if start == 0:
                 order = rng.permutation(epoch_rows)
                 if augmentation_blocks == 4:
-                    order += rng.choice(4, size=epoch_rows, p=[0.8, 0.1, 0.05, 0.05]) * epoch_rows
+                    order += rng.choice(4, size=epoch_rows, p=CASE_MIX) * epoch_rows
             indices = torch.tensor(order[start:start + batch_size], device=device)
             optimizer.zero_grad(set_to_none=True)
             loss = criterion(network(tx[indices]), ty[indices])

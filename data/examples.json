@@ -20902,5 +20902,2737 @@
   {
     "input": "Pieter Abbeel publications",
     "output": "search_query"
+  },
+  {
+    "input": "Akash Srivastava",
+    "output": "person_name"
+  },
+  {
+    "input": "Alok Pathak",
+    "output": "person_name"
+  },
+  {
+    "input": "Amar Deshmukh",
+    "output": "person_name"
+  },
+  {
+    "input": "Anand Venkatesh",
+    "output": "person_name"
+  },
+  {
+    "input": "Anil Kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "Ankit Jain",
+    "output": "person_name"
+  },
+  {
+    "input": "Anjali Menon",
+    "output": "person_name"
+  },
+  {
+    "input": "Apoorva Shetty",
+    "output": "person_name"
+  },
+  {
+    "input": "Arvind Pillai",
+    "output": "person_name"
+  },
+  {
+    "input": "Ashwin Balasubramanian",
+    "output": "person_name"
+  },
+  {
+    "input": "Avinash Rao",
+    "output": "person_name"
+  },
+  {
+    "input": "Bhavesh Patel",
+    "output": "person_name"
+  },
+  {
+    "input": "Chandan Mukherjee",
+    "output": "person_name"
+  },
+  {
+    "input": "Chetan Bhagat Nair",
+    "output": "person_name"
+  },
+  {
+    "input": "Deepa Natarajan",
+    "output": "person_name"
+  },
+  {
+    "input": "Dinesh Yadav",
+    "output": "person_name"
+  },
+  {
+    "input": "Eshaan Kohli",
+    "output": "person_name"
+  },
+  {
+    "input": "Gagan Sandhu",
+    "output": "person_name"
+  },
+  {
+    "input": "Gautam Narayan",
+    "output": "person_name"
+  },
+  {
+    "input": "Gayatri Bhide",
+    "output": "person_name"
+  },
+  {
+    "input": "Girish Kamath",
+    "output": "person_name"
+  },
+  {
+    "input": "Gopal Krishnamurthy",
+    "output": "person_name"
+  },
+  {
+    "input": "Govind Naik",
+    "output": "person_name"
+  },
+  {
+    "input": "Hardik Pandya Sharma",
+    "output": "person_name"
+  },
+  {
+    "input": "Hrithik Bhatia",
+    "output": "person_name"
+  },
+  {
+    "input": "Indira Raghavan",
+    "output": "person_name"
+  },
+  {
+    "input": "Isha Ambani Desai",
+    "output": "person_name"
+  },
+  {
+    "input": "Jagdish Prasad",
+    "output": "person_name"
+  },
+  {
+    "input": "Jayant Kulkarni",
+    "output": "person_name"
+  },
+  {
+    "input": "Kailash Meena",
+    "output": "person_name"
+  },
+  {
+    "input": "Kamal Haasan Iyengar",
+    "output": "person_name"
+  },
+  {
+    "input": "Kartik Aaryan Bhatt",
+    "output": "person_name"
+  },
+  {
+    "input": "Kavita Pradhan",
+    "output": "person_name"
+  },
+  {
+    "input": "Keerthi Suresh Nair",
+    "output": "person_name"
+  },
+  {
+    "input": "Kiran Bedi Rao",
+    "output": "person_name"
+  },
+  {
+    "input": "Krishna Murthy",
+    "output": "person_name"
+  },
+  {
+    "input": "Kunal Shah Mehra",
+    "output": "person_name"
+  },
+  {
+    "input": "Lakshya Sen Rawat",
+    "output": "person_name"
+  },
+  {
+    "input": "Lalit Modi Seth",
+    "output": "person_name"
+  },
+  {
+    "input": "Madhav Rane",
+    "output": "person_name"
+  },
+  {
+    "input": "Mahesh Babu Naidu",
+    "output": "person_name"
+  },
+  {
+    "input": "Manav Kaul Raina",
+    "output": "person_name"
+  },
+  {
+    "input": "Manoj Bajpayee Tripathi",
+    "output": "person_name"
+  },
+  {
+    "input": "Meenakshi Sundaram",
+    "output": "person_name"
+  },
+  {
+    "input": "Mohan Lal Varma",
+    "output": "person_name"
+  },
+  {
+    "input": "Mukesh Ambani Dalal",
+    "output": "person_name"
+  },
+  {
+    "input": "Mythili Ramesh",
+    "output": "person_name"
+  },
+  {
+    "input": "Naveen Polishetty Reddy",
+    "output": "person_name"
+  },
+  {
+    "input": "Nirmala Seetharaman",
+    "output": "person_name"
+  },
+  {
+    "input": "Nitin Gadkari Joshi",
+    "output": "person_name"
+  },
+  {
+    "input": "Padma Lakshmi Iyer",
+    "output": "person_name"
+  },
+  {
+    "input": "Palak Muchhal Shah",
+    "output": "person_name"
+  },
+  {
+    "input": "Parth Samthaan Sood",
+    "output": "person_name"
+  },
+  {
+    "input": "Pawan Kalyan Konidela",
+    "output": "person_name"
+  },
+  {
+    "input": "Pooja Hegde Shetty",
+    "output": "person_name"
+  },
+  {
+    "input": "Prabhas Raju",
+    "output": "person_name"
+  },
+  {
+    "input": "Pratik Gandhi Shah",
+    "output": "person_name"
+  },
+  {
+    "input": "Preeti Zinta Sharma",
+    "output": "person_name"
+  },
+  {
+    "input": "Priyanka Chopra Jonas",
+    "output": "person_name"
+  },
+  {
+    "input": "Pushpa Ramanathan",
+    "output": "person_name"
+  },
+  {
+    "input": "Radhika Apte Joshi",
+    "output": "person_name"
+  },
+  {
+    "input": "Rahul Dravid Kulkarni",
+    "output": "person_name"
+  },
+  {
+    "input": "Rajat Sharma Bhalla",
+    "output": "person_name"
+  },
+  {
+    "input": "Rajesh Khanna Arora",
+    "output": "person_name"
+  },
+  {
+    "input": "Rakesh Jhunjhunwala",
+    "output": "person_name"
+  },
+  {
+    "input": "Ramesh Babu",
+    "output": "person_name"
+  },
+  {
+    "input": "Ranbir Kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "Ratan Tata",
+    "output": "person_name"
+  },
+  {
+    "input": "Ravi Shankar Prasad",
+    "output": "person_name"
+  },
+  {
+    "input": "Riya Sen Mukherjee",
+    "output": "person_name"
+  },
+  {
+    "input": "Rohit Sharma",
+    "output": "person_name"
+  },
+  {
+    "input": "Roshni Nadar",
+    "output": "person_name"
+  },
+  {
+    "input": "Sachin Tendulkar Kamat",
+    "output": "person_name"
+  },
+  {
+    "input": "Sagar Dhawan",
+    "output": "person_name"
+  },
+  {
+    "input": "Saira Banu",
+    "output": "person_name"
+  },
+  {
+    "input": "Sandeep Maheshwari",
+    "output": "person_name"
+  },
+  {
+    "input": "Sangeeta Biswas",
+    "output": "person_name"
+  },
+  {
+    "input": "Sanya Malhotra",
+    "output": "person_name"
+  },
+  {
+    "input": "Sara Ali Pataudi",
+    "output": "person_name"
+  },
+  {
+    "input": "Satish Kaushik",
+    "output": "person_name"
+  },
+  {
+    "input": "Shankar Mahadevan",
+    "output": "person_name"
+  },
+  {
+    "input": "Sharad Kelkar",
+    "output": "person_name"
+  },
+  {
+    "input": "Shiv Nadar",
+    "output": "person_name"
+  },
+  {
+    "input": "Shruti Haasan Rao",
+    "output": "person_name"
+  },
+  {
+    "input": "Smita Patil",
+    "output": "person_name"
+  },
+  {
+    "input": "Sonam Wangchuk Lama",
+    "output": "person_name"
+  },
+  {
+    "input": "Sourav Ganguly Dey",
+    "output": "person_name"
+  },
+  {
+    "input": "Sridevi Kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "Subhash Chandra",
+    "output": "person_name"
+  },
+  {
+    "input": "Sudha Murty Kulkarni",
+    "output": "person_name"
+  },
+  {
+    "input": "Sukhbir Singh",
+    "output": "person_name"
+  },
+  {
+    "input": "Sunil Gavaskar Iyer",
+    "output": "person_name"
+  },
+  {
+    "input": "Surya Prakash",
+    "output": "person_name"
+  },
+  {
+    "input": "Sushant Rajput",
+    "output": "person_name"
+  },
+  {
+    "input": "Swara Bhasker",
+    "output": "person_name"
+  },
+  {
+    "input": "Tarun Mansukhani",
+    "output": "person_name"
+  },
+  {
+    "input": "Trisha Krishnan",
+    "output": "person_name"
+  },
+  {
+    "input": "Uday Kotak",
+    "output": "person_name"
+  },
+  {
+    "input": "Udit Narayan Jha",
+    "output": "person_name"
+  },
+  {
+    "input": "Uma Shankar",
+    "output": "person_name"
+  },
+  {
+    "input": "Urvashi Rautela",
+    "output": "person_name"
+  },
+  {
+    "input": "Vandana Shiva Bhatt",
+    "output": "person_name"
+  },
+  {
+    "input": "Varun Dhawan",
+    "output": "person_name"
+  },
+  {
+    "input": "Vidya Balan",
+    "output": "person_name"
+  },
+  {
+    "input": "Vijay Deverakonda",
+    "output": "person_name"
+  },
+  {
+    "input": "Vikas Khanna",
+    "output": "person_name"
+  },
+  {
+    "input": "Vinay Pathak",
+    "output": "person_name"
+  },
+  {
+    "input": "Vishal Bhardwaj",
+    "output": "person_name"
+  },
+  {
+    "input": "Vivek Oberoi",
+    "output": "person_name"
+  },
+  {
+    "input": "Yash Raj",
+    "output": "person_name"
+  },
+  {
+    "input": "Yogesh Karanth",
+    "output": "person_name"
+  },
+  {
+    "input": "Zoya Akhtar",
+    "output": "person_name"
+  },
+  {
+    "input": "Asma Jahangir",
+    "output": "person_name"
+  },
+  {
+    "input": "Babar Azam Shah",
+    "output": "person_name"
+  },
+  {
+    "input": "Hamza Ali Abbasi",
+    "output": "person_name"
+  },
+  {
+    "input": "Iqra Aziz",
+    "output": "person_name"
+  },
+  {
+    "input": "Kamran Lashari",
+    "output": "person_name"
+  },
+  {
+    "input": "Maryam Nawaz Butt",
+    "output": "person_name"
+  },
+  {
+    "input": "Mehwish Hayat",
+    "output": "person_name"
+  },
+  {
+    "input": "Naeem Baig",
+    "output": "person_name"
+  },
+  {
+    "input": "Rabia Anwar",
+    "output": "person_name"
+  },
+  {
+    "input": "Shahid Afridi Khan",
+    "output": "person_name"
+  },
+  {
+    "input": "Tahir Mahmood",
+    "output": "person_name"
+  },
+  {
+    "input": "Wasim Akram Malik",
+    "output": "person_name"
+  },
+  {
+    "input": "Habibur Chowdhury",
+    "output": "person_name"
+  },
+  {
+    "input": "Jahanara Akter",
+    "output": "person_name"
+  },
+  {
+    "input": "Kamrul Islam",
+    "output": "person_name"
+  },
+  {
+    "input": "Mizanur Sarker",
+    "output": "person_name"
+  },
+  {
+    "input": "Rafiq Uddin",
+    "output": "person_name"
+  },
+  {
+    "input": "Sabina Yasmin",
+    "output": "person_name"
+  },
+  {
+    "input": "Amara Wijesinghe",
+    "output": "person_name"
+  },
+  {
+    "input": "Chaminda Perera",
+    "output": "person_name"
+  },
+  {
+    "input": "Nimal Jayasuriya",
+    "output": "person_name"
+  },
+  {
+    "input": "Thilina Silva",
+    "output": "person_name"
+  },
+  {
+    "input": "Anil Shrestha",
+    "output": "person_name"
+  },
+  {
+    "input": "Dipak Thapa Magar",
+    "output": "person_name"
+  },
+  {
+    "input": "Kamala Adhikari",
+    "output": "person_name"
+  },
+  {
+    "input": "Suresh Poudel",
+    "output": "person_name"
+  },
+  {
+    "input": "Aarav Sharma Joshi",
+    "output": "person_name"
+  },
+  {
+    "input": "Kiaan Mehta",
+    "output": "person_name"
+  },
+  {
+    "input": "Anvi Bhatt",
+    "output": "person_name"
+  },
+  {
+    "input": "Tara Mukherjee",
+    "output": "person_name"
+  },
+  {
+    "input": "Veer Singh Rathore",
+    "output": "person_name"
+  },
+  {
+    "input": "Bharat Kumar",
+    "output": "person_name"
+  },
+  {
+    "input": "Harsha Bhogle Rao",
+    "output": "person_name"
+  },
+  {
+    "input": "Ila Arun",
+    "output": "person_name"
+  },
+  {
+    "input": "Jai Prakash Narayan",
+    "output": "person_name"
+  },
+  {
+    "input": "Kajal Aggarwal",
+    "output": "person_name"
+  },
+  {
+    "input": "Lata Mangeshkar Hardikar",
+    "output": "person_name"
+  },
+  {
+    "input": "Mamta Banerjee Sen",
+    "output": "person_name"
+  },
+  {
+    "input": "Payal Rohatgi",
+    "output": "person_name"
+  },
+  {
+    "input": "Qasim Rizvi",
+    "output": "person_name"
+  },
+  {
+    "input": "Sudhir Chaudhari",
+    "output": "person_name"
+  },
+  {
+    "input": "Tina Dabi",
+    "output": "person_name"
+  },
+  {
+    "input": "Usha Uthup",
+    "output": "person_name"
+  },
+  {
+    "input": "Waheeda Rehman",
+    "output": "person_name"
+  },
+  {
+    "input": "Zeenat Aman",
+    "output": "person_name"
+  },
+  {
+    "input": "Abhishek Bachchan Rao",
+    "output": "person_name"
+  },
+  {
+    "input": "Alia Bhatt Razdan",
+    "output": "person_name"
+  },
+  {
+    "input": "Chitrangada Singh",
+    "output": "person_name"
+  },
+  {
+    "input": "Dia Mirza",
+    "output": "person_name"
+  },
+  {
+    "input": "Esther Anuhya",
+    "output": "person_name"
+  },
+  {
+    "input": "Fatima Sana Shaikh",
+    "output": "person_name"
+  },
+  {
+    "input": "Genelia Deshmukh",
+    "output": "person_name"
+  },
+  {
+    "input": "Huma Qureshi",
+    "output": "person_name"
+  },
+  {
+    "input": "Ileana Dcruz",
+    "output": "person_name"
+  },
+  {
+    "input": "Janhvi Kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "Kiara Advani",
+    "output": "person_name"
+  },
+  {
+    "input": "Lara Dutta",
+    "output": "person_name"
+  },
+  {
+    "input": "Parineeti Chopra",
+    "output": "person_name"
+  },
+  {
+    "input": "Rakul Preet",
+    "output": "person_name"
+  },
+  {
+    "input": "Shraddha Kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "Taapsee Pannu",
+    "output": "person_name"
+  },
+  {
+    "input": "Vaani Kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "Bobby Deol",
+    "output": "person_name"
+  },
+  {
+    "input": "Chunky Pandey",
+    "output": "person_name"
+  },
+  {
+    "input": "Emraan Hashmi",
+    "output": "person_name"
+  },
+  {
+    "input": "Farhan Akhtar",
+    "output": "person_name"
+  },
+  {
+    "input": "Govinda Ahuja",
+    "output": "person_name"
+  },
+  {
+    "input": "Hrishikesh Mukherjee",
+    "output": "person_name"
+  },
+  {
+    "input": "Irrfan Khan",
+    "output": "person_name"
+  },
+  {
+    "input": "Jackie Shroff",
+    "output": "person_name"
+  },
+  {
+    "input": "Madhavan Rangnathan",
+    "output": "person_name"
+  },
+  {
+    "input": "Nawazuddin Siddiqui",
+    "output": "person_name"
+  },
+  {
+    "input": "Om Puri",
+    "output": "person_name"
+  },
+  {
+    "input": "Pankaj Tripathi",
+    "output": "person_name"
+  },
+  {
+    "input": "Randeep Hooda",
+    "output": "person_name"
+  },
+  {
+    "input": "Sidharth Malhotra",
+    "output": "person_name"
+  },
+  {
+    "input": "Tiger Shroff",
+    "output": "person_name"
+  },
+  {
+    "input": "Ibrahim Musa",
+    "output": "person_name"
+  },
+  {
+    "input": "Kofi Annan Owusu",
+    "output": "person_name"
+  },
+  {
+    "input": "Mohamed Salah Ali",
+    "output": "person_name"
+  },
+  {
+    "input": "Nia Mwangi",
+    "output": "person_name"
+  },
+  {
+    "input": "Yusuf Bakr",
+    "output": "person_name"
+  },
+  {
+    "input": "Zainab Hussein",
+    "output": "person_name"
+  },
+  {
+    "input": "Le Hoang Anh",
+    "output": "person_name"
+  },
+  {
+    "input": "Lee Seo Yeon",
+    "output": "person_name"
+  },
+  {
+    "input": "Wang Fang",
+    "output": "person_name"
+  },
+  {
+    "input": "Liu Yang",
+    "output": "person_name"
+  },
+  {
+    "input": "Zhang Wei",
+    "output": "person_name"
+  },
+  {
+    "input": "Suzuki Ren",
+    "output": "person_name"
+  },
+  {
+    "input": "Ivan Petrov",
+    "output": "person_name"
+  },
+  {
+    "input": "Katarzyna Nowak",
+    "output": "person_name"
+  },
+  {
+    "input": "Valentina Torres",
+    "output": "person_name"
+  },
+  {
+    "input": "Hana Novakova",
+    "output": "person_name"
+  },
+  {
+    "input": "Mehmet Demir",
+    "output": "person_name"
+  },
+  {
+    "input": "Reza Karimi",
+    "output": "person_name"
+  },
+  {
+    "input": "aditya verma",
+    "output": "person_name"
+  },
+  {
+    "input": "amit kulkarni",
+    "output": "person_name"
+  },
+  {
+    "input": "ankita dubey",
+    "output": "person_name"
+  },
+  {
+    "input": "anirudh ravichandran",
+    "output": "person_name"
+  },
+  {
+    "input": "arnav khanna",
+    "output": "person_name"
+  },
+  {
+    "input": "ashish chaudhary",
+    "output": "person_name"
+  },
+  {
+    "input": "ayesha khan",
+    "output": "person_name"
+  },
+  {
+    "input": "bhavna solanki",
+    "output": "person_name"
+  },
+  {
+    "input": "chetan nair",
+    "output": "person_name"
+  },
+  {
+    "input": "darshan gowda",
+    "output": "person_name"
+  },
+  {
+    "input": "deepika sethi",
+    "output": "person_name"
+  },
+  {
+    "input": "dhruv bajaj",
+    "output": "person_name"
+  },
+  {
+    "input": "disha parekh",
+    "output": "person_name"
+  },
+  {
+    "input": "ganesh hegde",
+    "output": "person_name"
+  },
+  {
+    "input": "garima thakur",
+    "output": "person_name"
+  },
+  {
+    "input": "harini sundaram",
+    "output": "person_name"
+  },
+  {
+    "input": "harpreet gill",
+    "output": "person_name"
+  },
+  {
+    "input": "hemant joshi",
+    "output": "person_name"
+  },
+  {
+    "input": "jaspreet kaur",
+    "output": "person_name"
+  },
+  {
+    "input": "jyoti mahajan",
+    "output": "person_name"
+  },
+  {
+    "input": "kabir anand",
+    "output": "person_name"
+  },
+  {
+    "input": "kanika goel",
+    "output": "person_name"
+  },
+  {
+    "input": "karan oberoi",
+    "output": "person_name"
+  },
+  {
+    "input": "keshav dutta",
+    "output": "person_name"
+  },
+  {
+    "input": "komal chauhan",
+    "output": "person_name"
+  },
+  {
+    "input": "kunal shah",
+    "output": "person_name"
+  },
+  {
+    "input": "mahima choudhury",
+    "output": "person_name"
+  },
+  {
+    "input": "mansi dalal",
+    "output": "person_name"
+  },
+  {
+    "input": "mayank agarwal",
+    "output": "person_name"
+  },
+  {
+    "input": "mihir desai",
+    "output": "person_name"
+  },
+  {
+    "input": "nandini ghosh",
+    "output": "person_name"
+  },
+  {
+    "input": "nidhi bisht",
+    "output": "person_name"
+  },
+  {
+    "input": "nilesh patil",
+    "output": "person_name"
+  },
+  {
+    "input": "omkar salunkhe",
+    "output": "person_name"
+  },
+  {
+    "input": "palak shah",
+    "output": "person_name"
+  },
+  {
+    "input": "pradeep ranganathan",
+    "output": "person_name"
+  },
+  {
+    "input": "pratik gandhi",
+    "output": "person_name"
+  },
+  {
+    "input": "rachit gupta",
+    "output": "person_name"
+  },
+  {
+    "input": "raghav juyal",
+    "output": "person_name"
+  },
+  {
+    "input": "rashmi desai",
+    "output": "person_name"
+  },
+  {
+    "input": "sahil khurana",
+    "output": "person_name"
+  },
+  {
+    "input": "sakshi tanwar",
+    "output": "person_name"
+  },
+  {
+    "input": "samarth jha",
+    "output": "person_name"
+  },
+  {
+    "input": "sanjana sanghi",
+    "output": "person_name"
+  },
+  {
+    "input": "saurabh dwivedi",
+    "output": "person_name"
+  },
+  {
+    "input": "shalini pandey",
+    "output": "person_name"
+  },
+  {
+    "input": "shivani rawat",
+    "output": "person_name"
+  },
+  {
+    "input": "siddhi mane",
+    "output": "person_name"
+  },
+  {
+    "input": "soham chakraborty",
+    "output": "person_name"
+  },
+  {
+    "input": "srikanth bolla",
+    "output": "person_name"
+  },
+  {
+    "input": "sumit bhardwaj",
+    "output": "person_name"
+  },
+  {
+    "input": "tamanna bhatia",
+    "output": "person_name"
+  },
+  {
+    "input": "tejas nerurkar",
+    "output": "person_name"
+  },
+  {
+    "input": "tushar kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "utkarsh ambudkar",
+    "output": "person_name"
+  },
+  {
+    "input": "vaibhav suryavanshi",
+    "output": "person_name"
+  },
+  {
+    "input": "vedant mundra",
+    "output": "person_name"
+  },
+  {
+    "input": "vineet kumar singh",
+    "output": "person_name"
+  },
+  {
+    "input": "yamini rao",
+    "output": "person_name"
+  },
+  {
+    "input": "abdul rahman khan",
+    "output": "person_name"
+  },
+  {
+    "input": "aamir siddiqui",
+    "output": "person_name"
+  },
+  {
+    "input": "aleena ansari",
+    "output": "person_name"
+  },
+  {
+    "input": "arsalan mirza",
+    "output": "person_name"
+  },
+  {
+    "input": "bilal chaudhry",
+    "output": "person_name"
+  },
+  {
+    "input": "danish hashmi",
+    "output": "person_name"
+  },
+  {
+    "input": "faisal rehman",
+    "output": "person_name"
+  },
+  {
+    "input": "hina rabbani",
+    "output": "person_name"
+  },
+  {
+    "input": "junaid akhtar",
+    "output": "person_name"
+  },
+  {
+    "input": "saad qureshi",
+    "output": "person_name"
+  },
+  {
+    "input": "sadia imam",
+    "output": "person_name"
+  },
+  {
+    "input": "umair jaswal",
+    "output": "person_name"
+  },
+  {
+    "input": "zubair hussain",
+    "output": "person_name"
+  },
+  {
+    "input": "anika rahman",
+    "output": "person_name"
+  },
+  {
+    "input": "farhana begum",
+    "output": "person_name"
+  },
+  {
+    "input": "nasrin sultana",
+    "output": "person_name"
+  },
+  {
+    "input": "tanvir hossain",
+    "output": "person_name"
+  },
+  {
+    "input": "dilini fernando",
+    "output": "person_name"
+  },
+  {
+    "input": "kasun rajapaksa",
+    "output": "person_name"
+  },
+  {
+    "input": "sanduni gunawardena",
+    "output": "person_name"
+  },
+  {
+    "input": "binita gurung",
+    "output": "person_name"
+  },
+  {
+    "input": "prakash basnet",
+    "output": "person_name"
+  },
+  {
+    "input": "sunita karki",
+    "output": "person_name"
+  },
+  {
+    "input": "aaradhya nair",
+    "output": "person_name"
+  },
+  {
+    "input": "advait kulkarni",
+    "output": "person_name"
+  },
+  {
+    "input": "arya menon",
+    "output": "person_name"
+  },
+  {
+    "input": "avni shah",
+    "output": "person_name"
+  },
+  {
+    "input": "ayaan khan",
+    "output": "person_name"
+  },
+  {
+    "input": "dev patel",
+    "output": "person_name"
+  },
+  {
+    "input": "diya sharma",
+    "output": "person_name"
+  },
+  {
+    "input": "ira malhotra",
+    "output": "person_name"
+  },
+  {
+    "input": "myra kapoor",
+    "output": "person_name"
+  },
+  {
+    "input": "navya reddy",
+    "output": "person_name"
+  },
+  {
+    "input": "reyansh gupta",
+    "output": "person_name"
+  },
+  {
+    "input": "saanvi iyer",
+    "output": "person_name"
+  },
+  {
+    "input": "vihaan agarwal",
+    "output": "person_name"
+  },
+  {
+    "input": "rudra pratap",
+    "output": "person_name"
+  },
+  {
+    "input": "zara chaudhary",
+    "output": "person_name"
+  },
+  {
+    "input": "krish yadav",
+    "output": "person_name"
+  },
+  {
+    "input": "mahika sinha",
+    "output": "person_name"
+  },
+  {
+    "input": "kashvi saxena",
+    "output": "person_name"
+  },
+  {
+    "input": "rehan qazi",
+    "output": "person_name"
+  },
+  {
+    "input": "yuvraj bhosale",
+    "output": "person_name"
+  },
+  {
+    "input": "neel parikh",
+    "output": "person_name"
+  },
+  {
+    "input": "anushka jaiswal",
+    "output": "person_name"
+  },
+  {
+    "input": "charu bhatnagar",
+    "output": "person_name"
+  },
+  {
+    "input": "deven mistry",
+    "output": "person_name"
+  },
+  {
+    "input": "esha gupta",
+    "output": "person_name"
+  },
+  {
+    "input": "farah kazmi",
+    "output": "person_name"
+  },
+  {
+    "input": "gunjan saxena",
+    "output": "person_name"
+  },
+  {
+    "input": "nakul mehta",
+    "output": "person_name"
+  },
+  {
+    "input": "ojas rajani",
+    "output": "person_name"
+  },
+  {
+    "input": "rekha ganesan",
+    "output": "person_name"
+  },
+  {
+    "input": "vasudha rao",
+    "output": "person_name"
+  },
+  {
+    "input": "yatin karyekar",
+    "output": "person_name"
+  },
+  {
+    "input": "bhumi pednekar",
+    "output": "person_name"
+  },
+  {
+    "input": "mrunal thakur",
+    "output": "person_name"
+  },
+  {
+    "input": "nushrat bharucha",
+    "output": "person_name"
+  },
+  {
+    "input": "ajay devgn",
+    "output": "person_name"
+  },
+  {
+    "input": "dino morea",
+    "output": "person_name"
+  },
+  {
+    "input": "kunal kemmu",
+    "output": "person_name"
+  },
+  {
+    "input": "vicky kaushal",
+    "output": "person_name"
+  },
+  {
+    "input": "ahmed hassan",
+    "output": "person_name"
+  },
+  {
+    "input": "aisha bello",
+    "output": "person_name"
+  },
+  {
+    "input": "chidi okonkwo",
+    "output": "person_name"
+  },
+  {
+    "input": "folake adeyemi",
+    "output": "person_name"
+  },
+  {
+    "input": "lindiwe dlamini",
+    "output": "person_name"
+  },
+  {
+    "input": "thandiwe khumalo",
+    "output": "person_name"
+  },
+  {
+    "input": "nguyen thi lan",
+    "output": "person_name"
+  },
+  {
+    "input": "tran van minh",
+    "output": "person_name"
+  },
+  {
+    "input": "park ji woo",
+    "output": "person_name"
+  },
+  {
+    "input": "sato haruka",
+    "output": "person_name"
+  },
+  {
+    "input": "olga smirnova",
+    "output": "person_name"
+  },
+  {
+    "input": "mateo gonzalez",
+    "output": "person_name"
+  },
+  {
+    "input": "camila fernandez",
+    "output": "person_name"
+  },
+  {
+    "input": "thiago oliveira",
+    "output": "person_name"
+  },
+  {
+    "input": "elif yilmaz",
+    "output": "person_name"
+  },
+  {
+    "input": "leila hosseini",
+    "output": "person_name"
+  },
+  {
+    "input": "omar haddad",
+    "output": "person_name"
+  },
+  {
+    "input": "john mitchell",
+    "output": "person_name"
+  },
+  {
+    "input": "emma clarke",
+    "output": "person_name"
+  },
+  {
+    "input": "daniel foster",
+    "output": "person_name"
+  },
+  {
+    "input": "grace holloway",
+    "output": "person_name"
+  },
+  {
+    "input": "henry stewart",
+    "output": "person_name"
+  },
+  {
+    "input": "isabella reed",
+    "output": "person_name"
+  },
+  {
+    "input": "jack morrison",
+    "output": "person_name"
+  },
+  {
+    "input": "lily hughes",
+    "output": "person_name"
+  },
+  {
+    "input": "noah patterson",
+    "output": "person_name"
+  },
+  {
+    "input": "sophie ellis",
+    "output": "person_name"
+  },
+  {
+    "input": "ethan brooks",
+    "output": "person_name"
+  },
+  {
+    "input": "chloe watson",
+    "output": "person_name"
+  },
+  {
+    "input": "liam gray",
+    "output": "person_name"
+  },
+  {
+    "input": "mia cooper",
+    "output": "person_name"
+  },
+  {
+    "input": "lucas bailey",
+    "output": "person_name"
+  },
+  {
+    "input": "ava richardson",
+    "output": "person_name"
+  },
+  {
+    "input": "owen kelly",
+    "output": "person_name"
+  },
+  {
+    "input": "zoe howard",
+    "output": "person_name"
+  },
+  {
+    "input": "nathan price",
+    "output": "person_name"
+  },
+  {
+    "input": "ruby sanders",
+    "output": "person_name"
+  },
+  {
+    "input": "best street food in delhi",
+    "output": "search_query"
+  },
+  {
+    "input": "how to prepare for gate exam",
+    "output": "search_query"
+  },
+  {
+    "input": "jee advanced preparation strategy",
+    "output": "search_query"
+  },
+  {
+    "input": "upsc syllabus pdf",
+    "output": "search_query"
+  },
+  {
+    "input": "cheap hostels in goa",
+    "output": "search_query"
+  },
+  {
+    "input": "train tickets mumbai to pune",
+    "output": "search_query"
+  },
+  {
+    "input": "bangalore traffic today",
+    "output": "search_query"
+  },
+  {
+    "input": "chennai weather forecast",
+    "output": "search_query"
+  },
+  {
+    "input": "kolkata durga puja pandals",
+    "output": "search_query"
+  },
+  {
+    "input": "hyderabad biryani places",
+    "output": "search_query"
+  },
+  {
+    "input": "ahmedabad startup ecosystem",
+    "output": "search_query"
+  },
+  {
+    "input": "jaipur tourist places",
+    "output": "search_query"
+  },
+  {
+    "input": "kerala backwater houseboats",
+    "output": "search_query"
+  },
+  {
+    "input": "mumbai local train map",
+    "output": "search_query"
+  },
+  {
+    "input": "pune hackathons this month",
+    "output": "search_query"
+  },
+  {
+    "input": "noida tech jobs",
+    "output": "search_query"
+  },
+  {
+    "input": "gurgaon coworking spaces",
+    "output": "search_query"
+  },
+  {
+    "input": "chandigarh open source meetup",
+    "output": "search_query"
+  },
+  {
+    "input": "indore ai community",
+    "output": "search_query"
+  },
+  {
+    "input": "nagpur developer conference",
+    "output": "search_query"
+  },
+  {
+    "input": "kochi startup village",
+    "output": "search_query"
+  },
+  {
+    "input": "coimbatore engineering colleges",
+    "output": "search_query"
+  },
+  {
+    "input": "bhubaneswar tech parks",
+    "output": "search_query"
+  },
+  {
+    "input": "lucknow ml workshops",
+    "output": "search_query"
+  },
+  {
+    "input": "sharma sweets menu",
+    "output": "search_query"
+  },
+  {
+    "input": "verma and sons hardware",
+    "output": "search_query"
+  },
+  {
+    "input": "patel real estate listings",
+    "output": "search_query"
+  },
+  {
+    "input": "reddy hospital appointment",
+    "output": "search_query"
+  },
+  {
+    "input": "nair catering services",
+    "output": "search_query"
+  },
+  {
+    "input": "iyer mess timings",
+    "output": "search_query"
+  },
+  {
+    "input": "kapoor industries careers",
+    "output": "search_query"
+  },
+  {
+    "input": "gupta classes physics",
+    "output": "search_query"
+  },
+  {
+    "input": "singh dhaba highway",
+    "output": "search_query"
+  },
+  {
+    "input": "joshi jewellers gold rate",
+    "output": "search_query"
+  },
+  {
+    "input": "mehta tower office space",
+    "output": "search_query"
+  },
+  {
+    "input": "rao tutorials maths",
+    "output": "search_query"
+  },
+  {
+    "input": "khan academy calculus",
+    "output": "search_query"
+  },
+  {
+    "input": "shah rukh khan movies list",
+    "output": "search_query"
+  },
+  {
+    "input": "agarwal packers and movers",
+    "output": "search_query"
+  },
+  {
+    "input": "mishra tea stall",
+    "output": "search_query"
+  },
+  {
+    "input": "yadav dairy products",
+    "output": "search_query"
+  },
+  {
+    "input": "bose sound system setup",
+    "output": "search_query"
+  },
+  {
+    "input": "das capital summary",
+    "output": "search_query"
+  },
+  {
+    "input": "sinha library timings",
+    "output": "search_query"
+  },
+  {
+    "input": "banerjee clinic kolkata",
+    "output": "search_query"
+  },
+  {
+    "input": "chatterjee sweets online",
+    "output": "search_query"
+  },
+  {
+    "input": "desai patel marriage hall",
+    "output": "search_query"
+  },
+  {
+    "input": "kulkarni coaching center",
+    "output": "search_query"
+  },
+  {
+    "input": "menon hospital cochin",
+    "output": "search_query"
+  },
+  {
+    "input": "pillai college admissions",
+    "output": "search_query"
+  },
+  {
+    "input": "how to write a cover letter",
+    "output": "search_query"
+  },
+  {
+    "input": "how to learn guitar fast",
+    "output": "search_query"
+  },
+  {
+    "input": "how to start a podcast",
+    "output": "search_query"
+  },
+  {
+    "input": "how to invest in mutual funds",
+    "output": "search_query"
+  },
+  {
+    "input": "how to build a personal website",
+    "output": "search_query"
+  },
+  {
+    "input": "how to center a div",
+    "output": "search_query"
+  },
+  {
+    "input": "how to cook paneer butter masala",
+    "output": "search_query"
+  },
+  {
+    "input": "how to improve english speaking",
+    "output": "search_query"
+  },
+  {
+    "input": "how to get a remote job",
+    "output": "search_query"
+  },
+  {
+    "input": "how to read research papers",
+    "output": "search_query"
+  },
+  {
+    "input": "what is a large language model",
+    "output": "search_query"
+  },
+  {
+    "input": "what is retrieval augmented generation",
+    "output": "search_query"
+  },
+  {
+    "input": "what is the capital of australia",
+    "output": "search_query"
+  },
+  {
+    "input": "what is vector database",
+    "output": "search_query"
+  },
+  {
+    "input": "why is the sky blue",
+    "output": "search_query"
+  },
+  {
+    "input": "when is the next solar eclipse",
+    "output": "search_query"
+  },
+  {
+    "input": "where to watch cricket live",
+    "output": "search_query"
+  },
+  {
+    "input": "who invented the telephone",
+    "output": "search_query"
+  },
+  {
+    "input": "which programming language to learn first",
+    "output": "search_query"
+  },
+  {
+    "input": "typescript generics explained",
+    "output": "search_query"
+  },
+  {
+    "input": "python decorators examples",
+    "output": "search_query"
+  },
+  {
+    "input": "golang concurrency patterns",
+    "output": "search_query"
+  },
+  {
+    "input": "rust ownership explained",
+    "output": "search_query"
+  },
+  {
+    "input": "swift concurrency tutorial",
+    "output": "search_query"
+  },
+  {
+    "input": "kotlin coroutines guide",
+    "output": "search_query"
+  },
+  {
+    "input": "docker compose cheat sheet",
+    "output": "search_query"
+  },
+  {
+    "input": "git rebase vs merge",
+    "output": "search_query"
+  },
+  {
+    "input": "sql joins visual",
+    "output": "search_query"
+  },
+  {
+    "input": "postgres indexing tips",
+    "output": "search_query"
+  },
+  {
+    "input": "redis caching strategies",
+    "output": "search_query"
+  },
+  {
+    "input": "graphql vs rest",
+    "output": "search_query"
+  },
+  {
+    "input": "nextjs app router tutorial",
+    "output": "search_query"
+  },
+  {
+    "input": "react server components",
+    "output": "search_query"
+  },
+  {
+    "input": "tailwind css grid examples",
+    "output": "search_query"
+  },
+  {
+    "input": "vite vs webpack",
+    "output": "search_query"
+  },
+  {
+    "input": "bun vs node performance",
+    "output": "search_query"
+  },
+  {
+    "input": "zig vs rust",
+    "output": "search_query"
+  },
+  {
+    "input": "c++ vs rust memory safety",
+    "output": "search_query"
+  },
+  {
+    "input": "python vs javascript for beginners",
+    "output": "search_query"
+  },
+  {
+    "input": "bitcoin halving date",
+    "output": "search_query"
+  },
+  {
+    "input": "solana validator requirements",
+    "output": "search_query"
+  },
+  {
+    "input": "polygon zkevm docs",
+    "output": "search_query"
+  },
+  {
+    "input": "layer 2 rollups comparison",
+    "output": "search_query"
+  },
+  {
+    "input": "nft marketplace development",
+    "output": "search_query"
+  },
+  {
+    "input": "defi lending protocols",
+    "output": "search_query"
+  },
+  {
+    "input": "web3 hackathons 2026",
+    "output": "search_query"
+  },
+  {
+    "input": "ai hackathons near me",
+    "output": "search_query"
+  },
+  {
+    "input": "climate hackathon prizes",
+    "output": "search_query"
+  },
+  {
+    "input": "smart india hackathon problem statements",
+    "output": "search_query"
+  },
+  {
+    "input": "google summer of code ideas",
+    "output": "search_query"
+  },
+  {
+    "input": "outreachy internships",
+    "output": "search_query"
+  },
+  {
+    "input": "mlh fellowship application",
+    "output": "search_query"
+  },
+  {
+    "input": "y combinator startup school",
+    "output": "search_query"
+  },
+  {
+    "input": "techstars accelerator batch",
+    "output": "search_query"
+  },
+  {
+    "input": "antler india cohort",
+    "output": "search_query"
+  },
+  {
+    "input": "sequoia surge applications",
+    "output": "search_query"
+  },
+  {
+    "input": "angel investors in bangalore",
+    "output": "search_query"
+  },
+  {
+    "input": "seed funding for student founders",
+    "output": "search_query"
+  },
+  {
+    "input": "grants for open source projects",
+    "output": "search_query"
+  },
+  {
+    "input": "scholarships for women in stem",
+    "output": "search_query"
+  },
+  {
+    "input": "fellowships for undergraduate researchers",
+    "output": "search_query"
+  },
+  {
+    "input": "summer research internships india",
+    "output": "search_query"
+  },
+  {
+    "input": "phd positions in machine learning",
+    "output": "search_query"
+  },
+  {
+    "input": "masters in computer science abroad",
+    "output": "search_query"
+  },
+  {
+    "input": "gre vs gmat",
+    "output": "search_query"
+  },
+  {
+    "input": "ielts preparation tips",
+    "output": "search_query"
+  },
+  {
+    "input": "student visa checklist usa",
+    "output": "search_query"
+  },
+  {
+    "input": "best laptop under 60000",
+    "output": "search_query"
+  },
+  {
+    "input": "best phone under 20000",
+    "output": "search_query"
+  },
+  {
+    "input": "iphone 17 review",
+    "output": "search_query"
+  },
+  {
+    "input": "macbook air vs pro",
+    "output": "search_query"
+  },
+  {
+    "input": "airpods pro battery life",
+    "output": "search_query"
+  },
+  {
+    "input": "mechanical keyboard switches",
+    "output": "search_query"
+  },
+  {
+    "input": "ergonomic office chair",
+    "output": "search_query"
+  },
+  {
+    "input": "standing desk setup",
+    "output": "search_query"
+  },
+  {
+    "input": "noise cancelling headphones comparison",
+    "output": "search_query"
+  },
+  {
+    "input": "sony camera lenses",
+    "output": "search_query"
+  },
+  {
+    "input": "nikon vs canon",
+    "output": "search_query"
+  },
+  {
+    "input": "drone regulations in india",
+    "output": "search_query"
+  },
+  {
+    "input": "electric scooter price",
+    "output": "search_query"
+  },
+  {
+    "input": "tesla model 3 range",
+    "output": "search_query"
+  },
+  {
+    "input": "ev charging stations nearby",
+    "output": "search_query"
+  },
+  {
+    "input": "solar panel subsidy",
+    "output": "search_query"
+  },
+  {
+    "input": "rainwater harvesting methods",
+    "output": "search_query"
+  },
+  {
+    "input": "organic farming techniques",
+    "output": "search_query"
+  },
+  {
+    "input": "millets recipes",
+    "output": "search_query"
+  },
+  {
+    "input": "protein rich vegetarian foods",
+    "output": "search_query"
+  },
+  {
+    "input": "intermittent fasting guide",
+    "output": "search_query"
+  },
+  {
+    "input": "yoga for back pain",
+    "output": "search_query"
+  },
+  {
+    "input": "home workout plan",
+    "output": "search_query"
+  },
+  {
+    "input": "marathon training schedule",
+    "output": "search_query"
+  },
+  {
+    "input": "chess openings for beginners",
+    "output": "search_query"
+  },
+  {
+    "input": "cricket world cup schedule",
+    "output": "search_query"
+  },
+  {
+    "input": "ipl points table",
+    "output": "search_query"
+  },
+  {
+    "input": "football transfer news",
+    "output": "search_query"
+  },
+  {
+    "input": "olympics 2028 events",
+    "output": "search_query"
+  },
+  {
+    "input": "formula one standings",
+    "output": "search_query"
+  },
+  {
+    "input": "badminton rules",
+    "output": "search_query"
+  },
+  {
+    "input": "movie recommendations",
+    "output": "search_query"
+  },
+  {
+    "input": "best web series on netflix",
+    "output": "search_query"
+  },
+  {
+    "input": "new songs this week",
+    "output": "search_query"
+  },
+  {
+    "input": "bollywood box office",
+    "output": "search_query"
+  },
+  {
+    "input": "anime like attack on titan",
+    "output": "search_query"
+  },
+  {
+    "input": "board games for two players",
+    "output": "search_query"
+  },
+  {
+    "input": "harry potter book order",
+    "output": "search_query"
+  },
+  {
+    "input": "poems about autumn",
+    "output": "search_query"
+  },
+  {
+    "input": "short stories for kids",
+    "output": "search_query"
+  },
+  {
+    "input": "history of the mughal empire",
+    "output": "search_query"
+  },
+  {
+    "input": "indian constitution articles",
+    "output": "search_query"
+  },
+  {
+    "input": "partition of india causes",
+    "output": "search_query"
+  },
+  {
+    "input": "ancient rome timeline",
+    "output": "search_query"
+  },
+  {
+    "input": "world war 2 summary",
+    "output": "search_query"
+  },
+  {
+    "input": "industrial revolution effects",
+    "output": "search_query"
+  },
+  {
+    "input": "photosynthesis explained",
+    "output": "search_query"
+  },
+  {
+    "input": "newton laws of motion",
+    "output": "search_query"
+  },
+  {
+    "input": "periodic table trends",
+    "output": "search_query"
+  },
+  {
+    "input": "quantum computing basics",
+    "output": "search_query"
+  },
+  {
+    "input": "black holes explained",
+    "output": "search_query"
+  },
+  {
+    "input": "mars mission updates",
+    "output": "search_query"
+  },
+  {
+    "input": "isro upcoming launches",
+    "output": "search_query"
+  },
+  {
+    "input": "nasa artemis schedule",
+    "output": "search_query"
+  },
+  {
+    "input": "crispr gene editing",
+    "output": "search_query"
+  },
+  {
+    "input": "mrna vaccine how it works",
+    "output": "search_query"
+  },
+  {
+    "input": "diabetes diet plan",
+    "output": "search_query"
+  },
+  {
+    "input": "sleep hygiene tips",
+    "output": "search_query"
+  },
+  {
+    "input": "meditation apps",
+    "output": "search_query"
+  },
+  {
+    "input": "mental health helpline",
+    "output": "search_query"
+  },
+  {
+    "input": "doctor near me",
+    "output": "search_query"
+  },
+  {
+    "input": "pharmacy open now",
+    "output": "search_query"
+  },
+  {
+    "input": "covid booster eligibility",
+    "output": "search_query"
+  },
+  {
+    "input": "passport renewal process",
+    "output": "search_query"
+  },
+  {
+    "input": "aadhaar card update",
+    "output": "search_query"
+  },
+  {
+    "input": "pan card apply online",
+    "output": "search_query"
+  },
+  {
+    "input": "income tax filing deadline",
+    "output": "search_query"
+  },
+  {
+    "input": "gst registration steps",
+    "output": "search_query"
+  },
+  {
+    "input": "startup incorporation in india",
+    "output": "search_query"
+  },
+  {
+    "input": "trademark search",
+    "output": "search_query"
+  },
+  {
+    "input": "patent filing cost",
+    "output": "search_query"
+  },
+  {
+    "input": "freelance contracts template",
+    "output": "search_query"
+  },
+  {
+    "input": "invoice generator free",
+    "output": "search_query"
+  },
+  {
+    "input": "resume templates",
+    "output": "search_query"
+  },
+  {
+    "input": "linkedin profile tips",
+    "output": "search_query"
+  },
+  {
+    "input": "interview questions for frontend",
+    "output": "search_query"
+  },
+  {
+    "input": "system design interview prep",
+    "output": "search_query"
+  },
+  {
+    "input": "leetcode patterns",
+    "output": "search_query"
+  },
+  {
+    "input": "competitive programming resources",
+    "output": "search_query"
+  },
+  {
+    "input": "open source good first issues",
+    "output": "search_query"
+  },
+  {
+    "input": "contributing to linux kernel",
+    "output": "search_query"
+  },
+  {
+    "input": "arduino projects for beginners",
+    "output": "search_query"
+  },
+  {
+    "input": "raspberry pi home server",
+    "output": "search_query"
+  },
+  {
+    "input": "esp32 sensor tutorial",
+    "output": "search_query"
+  },
+  {
+    "input": "3d printing designs",
+    "output": "search_query"
+  },
+  {
+    "input": "robotics clubs near me",
+    "output": "search_query"
+  },
+  {
+    "input": "drone racing league",
+    "output": "search_query"
+  },
+  {
+    "input": "computer vision datasets",
+    "output": "search_query"
+  },
+  {
+    "input": "speech recognition open source",
+    "output": "search_query"
+  },
+  {
+    "input": "text to speech models",
+    "output": "search_query"
+  },
+  {
+    "input": "image generation prompts",
+    "output": "search_query"
+  },
+  {
+    "input": "fine tuning small language models",
+    "output": "search_query"
+  },
+  {
+    "input": "local llm on macbook",
+    "output": "search_query"
+  },
+  {
+    "input": "ai agents frameworks",
+    "output": "search_query"
+  },
+  {
+    "input": "prompt engineering guide",
+    "output": "search_query"
+  },
+  {
+    "input": "mcp servers list",
+    "output": "search_query"
+  },
+  {
+    "input": "claude code tips",
+    "output": "search_query"
+  },
+  {
+    "input": "cursor vs copilot",
+    "output": "search_query"
+  },
+  {
+    "input": "vibe coding tools",
+    "output": "search_query"
+  },
+  {
+    "input": "ai coding assistants comparison",
+    "output": "search_query"
+  },
+  {
+    "input": "no code app builders",
+    "output": "search_query"
+  },
+  {
+    "input": "figma to code",
+    "output": "search_query"
+  },
+  {
+    "input": "design tokens guide",
+    "output": "search_query"
+  },
+  {
+    "input": "accessibility checklist",
+    "output": "search_query"
+  },
+  {
+    "input": "dark mode ux",
+    "output": "search_query"
+  },
+  {
+    "input": "mobile app onboarding",
+    "output": "search_query"
+  },
+  {
+    "input": "expo router navigation",
+    "output": "search_query"
+  },
+  {
+    "input": "react native performance",
+    "output": "search_query"
+  },
+  {
+    "input": "flutter vs react native",
+    "output": "search_query"
+  },
+  {
+    "input": "swiftui animations",
+    "output": "search_query"
+  },
+  {
+    "input": "android jetpack compose",
+    "output": "search_query"
+  },
+  {
+    "input": "progressive web apps",
+    "output": "search_query"
+  },
+  {
+    "input": "webgl tutorial",
+    "output": "search_query"
+  },
+  {
+    "input": "three js examples",
+    "output": "search_query"
+  },
+  {
+    "input": "gsap scroll animations",
+    "output": "search_query"
+  },
+  {
+    "input": "svg animation",
+    "output": "search_query"
+  },
+  {
+    "input": "css container queries",
+    "output": "search_query"
+  },
+  {
+    "input": "web components guide",
+    "output": "search_query"
+  },
+  {
+    "input": "wasm use cases",
+    "output": "search_query"
+  },
+  {
+    "input": "edge computing platforms",
+    "output": "search_query"
+  },
+  {
+    "input": "serverless databases",
+    "output": "search_query"
+  },
+  {
+    "input": "cloudflare workers examples",
+    "output": "search_query"
+  },
+  {
+    "input": "vercel deployment tips",
+    "output": "search_query"
+  },
+  {
+    "input": "aws free tier limits",
+    "output": "search_query"
+  },
+  {
+    "input": "terraform modules",
+    "output": "search_query"
+  },
+  {
+    "input": "kubernetes operators",
+    "output": "search_query"
+  },
+  {
+    "input": "observability tools",
+    "output": "search_query"
+  },
+  {
+    "input": "log aggregation",
+    "output": "search_query"
+  },
+  {
+    "input": "incident postmortem template",
+    "output": "search_query"
+  },
+  {
+    "input": "open source licenses compared",
+    "output": "search_query"
+  },
+  {
+    "input": "code review checklist",
+    "output": "search_query"
+  },
+  {
+    "input": "remote work tools",
+    "output": "search_query"
+  },
+  {
+    "input": "team retrospectives format",
+    "output": "search_query"
+  },
+  {
+    "input": "product roadmap template",
+    "output": "search_query"
+  },
+  {
+    "input": "user research methods",
+    "output": "search_query"
+  },
+  {
+    "input": "a b testing sample size",
+    "output": "search_query"
+  },
+  {
+    "input": "growth hacking examples",
+    "output": "search_query"
+  },
+  {
+    "input": "seo basics",
+    "output": "search_query"
+  },
+  {
+    "input": "email marketing tools",
+    "output": "search_query"
+  },
+  {
+    "input": "brand naming ideas",
+    "output": "search_query"
+  },
+  {
+    "input": "logo design inspiration",
+    "output": "search_query"
+  },
+  {
+    "input": "color palette generator",
+    "output": "search_query"
+  },
+  {
+    "input": "free stock photos",
+    "output": "search_query"
+  },
+  {
+    "input": "video editing software",
+    "output": "search_query"
+  },
+  {
+    "input": "podcast microphones",
+    "output": "search_query"
+  },
+  {
+    "input": "live streaming setup",
+    "output": "search_query"
+  },
+  {
+    "input": "newsletter platforms",
+    "output": "search_query"
+  },
+  {
+    "input": "substack alternatives",
+    "output": "search_query"
+  },
+  {
+    "input": "community building tips",
+    "output": "search_query"
+  },
+  {
+    "input": "discord bots",
+    "output": "search_query"
+  },
+  {
+    "input": "telegram bot api",
+    "output": "search_query"
+  },
+  {
+    "input": "whatsapp business api",
+    "output": "search_query"
+  },
+  {
+    "input": "upi payments integration",
+    "output": "search_query"
+  },
+  {
+    "input": "razorpay documentation",
+    "output": "search_query"
+  },
+  {
+    "input": "stripe alternatives india",
+    "output": "search_query"
+  },
+  {
+    "input": "open banking apis",
+    "output": "search_query"
+  },
+  {
+    "input": "neobanks comparison",
+    "output": "search_query"
+  },
+  {
+    "input": "credit card rewards",
+    "output": "search_query"
+  },
+  {
+    "input": "home loan interest rates",
+    "output": "search_query"
+  },
+  {
+    "input": "fixed deposit rates",
+    "output": "search_query"
+  },
+  {
+    "input": "sip calculator",
+    "output": "search_query"
+  },
+  {
+    "input": "gold price today",
+    "output": "search_query"
+  },
+  {
+    "input": "stock market holidays",
+    "output": "search_query"
+  },
+  {
+    "input": "mutual fund vs etf",
+    "output": "search_query"
+  },
+  {
+    "input": "crypto tax india",
+    "output": "search_query"
+  },
+  {
+    "input": "real estate trends",
+    "output": "search_query"
+  },
+  {
+    "input": "rent agreement format",
+    "output": "search_query"
+  },
+  {
+    "input": "co living spaces",
+    "output": "search_query"
+  },
+  {
+    "input": "Remote Design Jobs",
+    "output": "search_query"
+  },
+  {
+    "input": "Student Hackathons India",
+    "output": "search_query"
+  },
+  {
+    "input": "Web3 Developer Grants",
+    "output": "search_query"
+  },
+  {
+    "input": "Startup Funding Guide",
+    "output": "search_query"
+  },
+  {
+    "input": "Frontend Interview Questions",
+    "output": "search_query"
+  },
+  {
+    "input": "Python Data Science Roadmap",
+    "output": "search_query"
+  },
+  {
+    "input": "Cloud Computing Basics",
+    "output": "search_query"
+  },
+  {
+    "input": "Cybersecurity Career Path",
+    "output": "search_query"
+  },
+  {
+    "input": "Product Management Courses",
+    "output": "search_query"
+  },
+  {
+    "input": "UX Research Methods",
+    "output": "search_query"
+  },
+  {
+    "input": "Mobile App Development Trends",
+    "output": "search_query"
+  },
+  {
+    "input": "Artificial Intelligence Ethics",
+    "output": "search_query"
+  },
+  {
+    "input": "Renewable Energy Projects",
+    "output": "search_query"
+  },
+  {
+    "input": "Biotech Research Opportunities",
+    "output": "search_query"
+  },
+  {
+    "input": "Space Technology Startups",
+    "output": "search_query"
+  },
+  {
+    "input": "Electric Vehicle Charging Network",
+    "output": "search_query"
+  },
+  {
+    "input": "Digital Health Innovation",
+    "output": "search_query"
+  },
+  {
+    "input": "Mumbai Tech Events",
+    "output": "search_query"
+  },
+  {
+    "input": "Delhi Startup Grants",
+    "output": "search_query"
+  },
+  {
+    "input": "Bangalore Coworking Spaces",
+    "output": "search_query"
+  },
+  {
+    "input": "Hyderabad AI Meetups",
+    "output": "search_query"
+  },
+  {
+    "input": "Chennai Developer Community",
+    "output": "search_query"
+  },
+  {
+    "input": "Pune Product Jobs",
+    "output": "search_query"
+  },
+  {
+    "input": "Kolkata Open Source",
+    "output": "search_query"
+  },
+  {
+    "input": "design",
+    "output": "search_query"
+  },
+  {
+    "input": "jobs",
+    "output": "search_query"
+  },
+  {
+    "input": "grants",
+    "output": "search_query"
+  },
+  {
+    "input": "hackathon",
+    "output": "search_query"
+  },
+  {
+    "input": "events",
+    "output": "search_query"
+  },
+  {
+    "input": "Fellowship",
+    "output": "search_query"
+  },
+  {
+    "input": "Internship",
+    "output": "search_query"
+  },
+  {
+    "input": "Scholarship",
+    "output": "search_query"
+  },
+  {
+    "input": "Startup",
+    "output": "search_query"
   }
 ]
