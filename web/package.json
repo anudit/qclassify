@@ -1,0 +1,51 @@
+{
+  "name": "@omnid/qclassify",
+  "version": "0.1.0",
+  "description": "Zero runtime dependency WebGL 2 name/query neural inference",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./features": {
+      "types": "./dist/features.d.ts",
+      "import": "./dist/features.js"
+    },
+    "./weights": {
+      "types": "./dist/weights.d.ts",
+      "import": "./dist/weights.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepack": "npm run build",
+    "size": "npm run build && node scripts/size.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "classifier",
+    "webgl",
+    "webgl2",
+    "machine-learning",
+    "name-detection",
+    "typescript",
+    "zero-dependency"
+  ],
+  "license": "MIT"
+}

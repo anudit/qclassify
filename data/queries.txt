@@ -1,0 +1,2676 @@
+weather
+news
+recipes
+movies
+music
+restaurants
+hotels
+flights
+trains
+buses
+maps
+directions
+traffic
+stocks
+finance
+insurance
+mortgage
+banking
+shopping
+coupons
+discounts
+furniture
+sofas
+chairs
+tables
+mattresses
+pillows
+blankets
+curtains
+rugs
+lamps
+lighting
+wallpaper
+paint
+flooring
+tiles
+plumbing
+electrician
+carpenter
+locksmith
+cleaning
+laundry
+plumber
+dentist
+doctor
+hospital
+pharmacy
+clinic
+ambulance
+emergency
+pizza
+pasta
+sushi
+ramen
+noodles
+dumplings
+tacos
+burritos
+sandwiches
+burgers
+salads
+soups
+curry
+biryani
+dosa
+idli
+samosa
+chaat
+falafel
+hummus
+baklava
+croissants
+bagels
+muffins
+pancakes
+waffles
+omelette
+porridge
+granola
+yogurt
+coffee
+tea
+matcha
+smoothies
+juice
+lemonade
+cocktails
+mocktails
+wine
+beer
+whiskey
+vodka
+tequila
+champagne
+chocolate
+cookies
+brownies
+cupcakes
+cheesecake
+icecream
+laptop
+keyboard
+mouse
+monitor
+printer
+scanner
+webcam
+headphones
+earbuds
+speakers
+microphone
+camera
+tripod
+lens
+smartphone
+tablet
+smartwatch
+charger
+cables
+adapter
+router
+modem
+wifi
+bluetooth
+ethernet
+broadband
+internet
+software
+hardware
+firmware
+linux
+windows
+macos
+android
+ios
+ubuntu
+debian
+fedora
+archlinux
+python
+javascript
+typescript
+rust
+golang
+kotlin
+swift
+haskell
+clojure
+scala
+elixir
+erlang
+fortran
+cobol
+assembly
+sql
+postgresql
+mysql
+sqlite
+mongodb
+redis
+kafka
+rabbitmq
+kubernetes
+docker
+terraform
+ansible
+nginx
+apache
+caddy
+git
+github
+gitlab
+bitbucket
+stackoverflow
+wikipedia
+youtube
+netflix
+spotify
+hulu
+disneyplus
+twitch
+reddit
+pinterest
+instagram
+facebook
+snapchat
+linkedin
+telegram
+whatsapp
+signal
+discord
+slack
+zoom
+skype
+notion
+obsidian
+evernote
+trello
+asana
+airtable
+figma
+canva
+photoshop
+illustrator
+blender
+unity
+unreal
+procreate
+lightroom
+gimp
+inkscape
+krita
+audacity
+ableton
+logicpro
+garageband
+premiere
+davinci
+capcut
+handbrake
+ffmpeg
+vlc
+quicktime
+fitness
+yoga
+pilates
+running
+cycling
+swimming
+hiking
+camping
+climbing
+surfing
+skiing
+snowboarding
+skateboarding
+basketball
+football
+baseball
+cricket
+tennis
+badminton
+volleyball
+hockey
+rugby
+golf
+boxing
+wrestling
+karate
+judo
+taekwondo
+archery
+fencing
+rowing
+sailing
+kayaking
+canoeing
+fishing
+birdwatching
+gardening
+composting
+recycling
+sustainability
+solar
+wind
+hydropower
+geothermal
+batteries
+charging
+transport
+logistics
+shipping
+tracking
+delivery
+courier
+postage
+stamps
+passports
+visas
+citizenship
+immigration
+embassy
+consulate
+translation
+transcription
+subtitles
+captions
+accessibility
+typography
+calligraphy
+lettering
+illustration
+animation
+photography
+cinematography
+architecture
+interiors
+landscaping
+urbanism
+geography
+history
+biology
+chemistry
+physics
+mathematics
+statistics
+calculus
+algebra
+geometry
+trigonometry
+astronomy
+geology
+ecology
+botany
+zoology
+anatomy
+physiology
+psychology
+sociology
+anthropology
+philosophy
+linguistics
+literature
+poetry
+fiction
+nonfiction
+mystery
+thriller
+fantasy
+scifi
+horror
+comedy
+drama
+romance
+documentary
+biography
+autobiography
+memoir
+journaling
+scrapbooking
+origami
+knitting
+crochet
+sewing
+embroidery
+quilting
+weaving
+pottery
+ceramics
+sculpture
+woodworking
+metalworking
+leatherwork
+jewelry
+beading
+candlemaking
+soapmaking
+perfumery
+aromatherapy
+meditation
+mindfulness
+breathwork
+stretching
+mobility
+rehabilitation
+physiotherapy
+nutrition
+dietetics
+protein
+carbohydrates
+vitamins
+minerals
+hydration
+calories
+metabolism
+digestion
+sleep
+insomnia
+snoring
+apnea
+allergies
+asthma
+migraine
+headache
+backpain
+arthritis
+diabetes
+hypertension
+cholesterol
+anemia
+thyroid
+eczema
+psoriasis
+acne
+rosacea
+dandruff
+haircare
+skincare
+sunscreen
+moisturizer
+cleanser
+serum
+retinol
+niacinamide
+ceramides
+hyaluronic
+shampoo
+conditioner
+toothpaste
+mouthwash
+floss
+toothbrush
+razor
+trimmer
+deodorant
+perfume
+cologne
+lipstick
+mascara
+eyeliner
+foundation
+concealer
+blush
+bronzer
+highlighter
+primer
+powder
+nailpolish
+manicure
+pedicure
+hairstyles
+haircuts
+braids
+bangs
+balayage
+highlights
+extensions
+wigs
+beard
+moustache
+shaving
+waxing
+threading
+epilator
+laser
+botox
+fillers
+facials
+massage
+sauna
+spa
+jacuzzi
+hammam
+onsen
+hot springs
+weather today
+weather tomorrow
+weather tonight
+weekly forecast
+rain forecast
+snow forecast
+wind speed
+humidity levels
+air quality
+pollen count
+sunrise time
+sunset time
+moon phase
+lunar eclipse
+solar eclipse
+meteor shower
+northern lights
+uv index
+heat advisory
+storm warning
+local news
+world news
+business news
+technology news
+science news
+sports news
+travel news
+entertainment news
+breaking news
+election results
+stock market
+market hours
+interest rates
+exchange rates
+currency converter
+bitcoin price
+ethereum price
+gold price
+silver price
+oil price
+cheap flights
+last minute flights
+direct flights
+flight status
+flight tracker
+flight cancellation
+flight refund
+boarding pass
+baggage allowance
+cabin luggage
+travel insurance
+travel adapter
+packing list
+visa requirements
+passport renewal
+passport photo
+international roaming
+airport parking
+airport shuttle
+airport lounge
+train tickets
+train timetable
+train delays
+rail passes
+bus tickets
+bus routes
+metro map
+subway stations
+ferry schedule
+cruise deals
+car rental
+bike rental
+scooter rental
+campervan hire
+road trip
+scenic routes
+toll calculator
+fuel prices
+petrol stations
+electric charging stations
+hotels nearby
+budget hotels
+luxury resorts
+beach resorts
+mountain cabins
+holiday cottages
+vacation rentals
+family hotels
+pet friendly hotels
+hostels downtown
+boutique hotels
+hotel breakfast
+hotel cancellation
+late checkout
+early checkin
+room service
+pool access
+spa packages
+weekend getaways
+city breaks
+honeymoon destinations
+solo travel
+backpacking routes
+safari tours
+walking tours
+food tours
+museum tickets
+concert tickets
+festival tickets
+theatre tickets
+opera tickets
+ballet tickets
+comedy shows
+art exhibitions
+science museums
+history museums
+botanical gardens
+national parks
+wildlife sanctuaries
+amusement parks
+water parks
+zoo opening hours
+aquarium tickets
+beach access
+hiking trails
+cycling routes
+camping sites
+picnic spots
+sunset viewpoints
+best coffee nearby
+coffee shop hours
+bakery near me
+breakfast near me
+brunch places
+lunch specials
+dinner reservations
+late night food
+food delivery
+grocery delivery
+organic groceries
+farmers market
+bulk groceries
+meal kits
+meal prep
+healthy snacks
+vegan restaurants
+vegetarian options
+gluten free bakery
+halal restaurants
+kosher food
+allergen menu
+nut free snacks
+dairy free desserts
+low sodium meals
+low carb recipes
+high protein breakfast
+budget meal plan
+family dinner ideas
+quick lunch recipes
+one pot meals
+air fryer recipes
+slow cooker meals
+instant pot recipes
+sheet pan chicken
+roasted vegetables
+grilled salmon
+baked potatoes
+mashed potatoes
+sweet potato fries
+fried rice
+coconut rice
+lemon rice
+tomato rice
+chicken biryani
+vegetable pulao
+paneer tikka
+dal makhani
+butter chicken
+chana masala
+palak paneer
+aloo gobi
+rajma chawal
+masala dosa
+rava idli
+medu vada
+coconut chutney
+mint chutney
+sambar recipe
+rasam recipe
+poha recipe
+upma recipe
+pav bhaji
+vada pav
+pani puri
+bhel puri
+sev puri
+chole bhature
+stuffed paratha
+naan bread
+roti dough
+kulcha recipe
+kachori recipe
+dhokla recipe
+khandvi recipe
+patra recipe
+undhiyu recipe
+misal pav
+sabudana khichdi
+thalipeeth recipe
+modak recipe
+puran poli
+shrikhand recipe
+basundi recipe
+rasmalai recipe
+gulab jamun
+jalebi recipe
+kheer recipe
+payasam recipe
+halwa recipe
+laddu recipe
+barfi recipe
+mysore pak
+rasgulla recipe
+sandesh recipe
+fish curry
+prawn masala
+crab soup
+mutton stew
+beef stir fry
+pork dumplings
+tofu scramble
+tempeh marinade
+seitan recipe
+lentil soup
+black bean chili
+chickpea salad
+quinoa bowl
+couscous salad
+tabbouleh recipe
+fattoush salad
+baba ganoush
+stuffed peppers
+moussaka recipe
+spanakopita recipe
+shakshuka recipe
+ratatouille recipe
+risotto recipe
+gnocchi recipe
+lasagna recipe
+carbonara recipe
+pesto pasta
+marinara sauce
+bolognese sauce
+alfredo sauce
+macaroni cheese
+pizza dough
+sourdough starter
+focaccia bread
+baguette recipe
+brioche recipe
+cinnamon rolls
+banana bread
+zucchini bread
+carrot cake
+red velvet cake
+lemon drizzle cake
+apple crumble
+peach cobbler
+pumpkin pie
+pecan pie
+key lime pie
+cherry tart
+fruit pavlova
+chocolate mousse
+creme brulee
+panna cotta
+tiramisu recipe
+profiteroles recipe
+churros recipe
+flan recipe
+mochi recipe
+dorayaki recipe
+taiyaki recipe
+matcha cake
+ube cake
+mango sticky rice
+coconut pudding
+sesame balls
+pineapple tarts
+egg tarts
+moon cakes
+fortune cookies
+rice pudding
+bread pudding
+trifle recipe
+custard recipe
+butterscotch sauce
+caramel sauce
+chocolate ganache
+buttercream frosting
+cream cheese frosting
+royal icing
+fondant recipe
+sugar cookies
+oatmeal cookies
+peanut butter cookies
+gingerbread cookies
+shortbread recipe
+biscotti recipe
+macarons recipe
+madeleines recipe
+financiers recipe
+scones recipe
+clotted cream
+strawberry jam
+orange marmalade
+plum chutney
+pickled onions
+pickled cucumber
+kimchi recipe
+sauerkraut recipe
+kombucha recipe
+kefir grains
+ginger beer
+cold brew coffee
+iced latte
+cappuccino ratio
+flat white
+espresso grind
+coffee beans
+tea brewing temperature
+loose leaf tea
+chai masala
+hot chocolate
+golden milk
+protein shake
+green smoothie
+mango lassi
+salted lassi
+fruit punch
+virgin mojito
+iced tea
+sparkling water
+water filter
+coffee grinder
+espresso machine
+french press
+pour over kettle
+milk frother
+rice cooker
+pressure cooker
+induction stove
+gas hob
+microwave oven
+convection oven
+toaster oven
+bread maker
+stand mixer
+hand blender
+food processor
+juicer reviews
+kitchen scales
+measuring cups
+baking trays
+cake tins
+muffin pan
+cast iron skillet
+nonstick pan
+stainless steel pot
+chef knife
+bread knife
+paring knife
+knife sharpener
+cutting board
+kitchen scissors
+silicone spatula
+wooden spoon
+slotted spoon
+soup ladle
+pasta strainer
+mesh sieve
+colander reviews
+salad spinner
+vegetable peeler
+garlic press
+lemon squeezer
+can opener
+bottle opener
+corkscrew reviews
+pepper mill
+salt grinder
+spice rack
+pantry organization
+fridge organization
+freezer storage
+food containers
+lunch boxes
+thermos flask
+travel mug
+water bottle
+reusable straws
+beeswax wraps
+compost bin
+kitchen towels
+dish rack
+dishwasher tablets
+dish soap
+oven cleaner
+stain remover
+laundry detergent
+fabric softener
+washing machine
+tumble dryer
+clothes airer
+steam iron
+ironing board
+vacuum cleaner
+robot vacuum
+steam mop
+floor cleaner
+carpet shampoo
+window cleaner
+microfiber cloths
+scrub brush
+rubber gloves
+trash bags
+recycling bins
+storage baskets
+closet organizer
+shoe rack
+coat stand
+umbrella stand
+entryway bench
+bookshelf ideas
+floating shelves
+wall hooks
+picture frames
+photo albums
+wall clock
+alarm clock
+bedside lamp
+desk lamp
+floor lamp
+pendant light
+ceiling fan
+smart bulbs
+light dimmer
+extension cord
+surge protector
+power strip
+socket adapter
+smoke detector
+carbon monoxide alarm
+fire extinguisher
+first aid kit
+emergency radio
+flashlight batteries
+rechargeable torch
+portable generator
+solar panels
+home battery
+energy monitor
+smart meter
+thermostat settings
+heat pump
+air conditioner
+air purifier
+humidifier reviews
+dehumidifier reviews
+ceiling insulation
+double glazing
+draught proofing
+roof repair
+gutter cleaning
+chimney sweep
+pest control
+termite treatment
+mold removal
+waterproofing basement
+leaking faucet
+blocked drain
+toilet repair
+shower pressure
+water heater
+boiler service
+electrical wiring
+circuit breaker
+fuse replacement
+door handles
+window locks
+garage door
+garden fence
+deck staining
+patio paving
+driveway resurfacing
+lawn mowing
+hedge trimming
+tree removal
+leaf blower
+snow shovel
+pressure washer
+Artificial Intelligence
+Machine Learning
+Deep Learning
+Neural Networks
+Large Language Models
+Small Language Models
+language model training
+language model inference
+foundation models
+frontier models
+open weight models
+open source ai
+Local AI
+on device ai
+edge ai
+agentic ai
+autonomous agents
+coding agents
+browser agents
+research agents
+voice agents
+multimodal agents
+multi agent systems
+agent orchestration
+agent memory
+agent evaluation
+agent observability
+agent frameworks
+agent tools
+agent permissions
+agent sandboxing
+agent benchmarks
+agent tracing
+Tool Calling
+Function Calling
+Structured Outputs
+json schema
+constrained decoding
+grammar decoding
+speculative decoding
+parallel decoding
+beam search
+top k sampling
+top p sampling
+temperature sampling
+Prompt Engineering
+prompt optimization
+Prompt Injection
+Prompt Caching
+prompt templates
+system prompts
+few shot learning
+zero shot learning
+in context learning
+chain of thought
+tree of thoughts
+reasoning models
+reasoning traces
+test time compute
+inference scaling
+training scaling
+scaling laws
+compute optimal training
+data efficient learning
+sample efficient learning
+Transfer Learning
+curriculum learning
+continual learning
+online learning
+Active Learning
+self supervised learning
+semi supervised learning
+unsupervised learning
+supervised learning
+Reinforcement Learning
+preference learning
+reward models
+process rewards
+outcome rewards
+direct preference optimization
+proximal policy optimization
+group relative policy optimization
+reinforcement learning from feedback
+synthetic data
+instruction tuning
+supervised fine tuning
+parameter efficient tuning
+low rank adaptation
+quantized fine tuning
+full fine tuning
+distillation techniques
+Knowledge Distillation
+Model Compression
+model pruning
+structured sparsity
+unstructured sparsity
+weight sharing
+weight tying
+mixed precision training
+half precision inference
+integer quantization
+post training quantization
+quantization aware training
+binary neural networks
+ternary neural networks
+one bit models
+four bit models
+eight bit inference
+float8 training
+bfloat16 support
+activation quantization
+weight quantization
+kv cache compression
+kv cache quantization
+attention sinks
+sliding window attention
+sparse attention
+linear attention
+flash attention
+paged attention
+multi head attention
+multi query attention
+grouped query attention
+latent attention
+rotary embeddings
+positional encoding
+relative position embeddings
+context extension
+long context models
+context window
+Context Compression
+retrieval augmented generation
+hybrid retrieval
+dense retrieval
+sparse retrieval
+Semantic Search
+keyword search
+Full Text Search
+Vector Search
+vector databases
+embedding models
+text embeddings
+image embeddings
+code embeddings
+multilingual embeddings
+embedding quantization
+embedding dimensions
+cosine similarity
+dot product similarity
+approximate nearest neighbors
+hierarchical navigable small worlds
+product quantization
+reranking models
+cross encoders
+bi encoders
+late interaction retrieval
+colbert retrieval
+bm25 ranking
+reciprocal rank fusion
+search relevance
+Search Intent
+query understanding
+query expansion
+query rewriting
+Query Classification
+entity extraction
+named entity recognition
+person name detection
+Person Lookup
+People Search
+Profile Search
+identity resolution
+Entity Linking
+entity disambiguation
+Knowledge Graphs
+graph retrieval
+graph neural networks
+graph transformers
+recommendation systems
+collaborative filtering
+content based filtering
+ranking algorithms
+learning to rank
+feed ranking
+personalized search
+personalized recommendations
+news recommendation
+article discovery
+project discovery
+startup discovery
+research discovery
+open source discovery
+technical article search
+find interesting projects
+find new papers
+find people building tools
+find emerging technologies
+find research opportunities
+find developer opportunities
+find startup ideas
+find project collaborators
+find maintainers
+find contributors
+find founders
+find researchers
+find engineers
+find designers
+find writers
+find investors
+find indie hackers
+find makers
+find builders
+find open source teams
+who is building ai tools
+what is happening in robotics
+latest machine learning projects
+recent open source launches
+new developer tools
+new ai startups
+new research papers
+new language models
+new coding tools
+trending github repositories
+trending hacker news
+trending product launches
+trending research topics
+popular indie projects
+popular developer libraries
+interesting arxiv papers
+interesting engineering blogs
+interesting side projects
+recent funding announcements
+recent startup acquisitions
+recent product updates
+recent ai benchmarks
+recent robotics demos
+recent security research
+latest browser technology
+latest database systems
+latest infrastructure tools
+latest scientific discoveries
+latest chip designs
+latest quantum research
+latest climate technology
+latest biotech startups
+latest space missions
+latest energy research
+latest education tools
+latest healthcare technology
+latest productivity apps
+latest design tools
+latest devops tools
+latest observability platforms
+latest search engines
+latest vector stores
+latest speech models
+latest image models
+latest video models
+latest music models
+latest embedding models
+latest reranking models
+latest reasoning benchmarks
+latest agent benchmarks
+latest coding benchmarks
+latest multimodal benchmarks
+latest reinforcement learning papers
+latest alignment research
+latest interpretability research
+latest safety research
+latest adversarial attacks
+latest privacy tools
+latest cryptography papers
+latest distributed systems papers
+latest programming languages
+latest compiler research
+latest web frameworks
+latest mobile frameworks
+latest ui libraries
+latest visualization libraries
+latest animation libraries
+latest testing tools
+latest build tools
+latest package managers
+latest command line tools
+latest terminal emulators
+latest text editors
+latest code editors
+latest notebook environments
+latest data platforms
+latest analytics tools
+latest business intelligence
+latest data engineering
+latest workflow engines
+latest orchestration tools
+latest serverless platforms
+latest edge computing
+latest cloud infrastructure
+latest networking tools
+latest storage systems
+latest file systems
+latest caching systems
+latest message queues
+latest event streaming
+latest real time databases
+latest geospatial databases
+latest time series databases
+latest graph databases
+latest document databases
+latest relational databases
+latest embedded databases
+latest browser databases
+latest local first apps
+latest offline first software
+latest collaborative editors
+latest document tools
+latest note taking apps
+latest knowledge management
+latest personal search
+latest bookmark managers
+latest reading apps
+latest rss readers
+latest podcast tools
+latest video tools
+latest transcription tools
+latest translation tools
+latest language learning
+latest tutoring systems
+latest accessibility tools
+latest assistive technology
+latest wearable devices
+latest augmented reality
+latest virtual reality
+latest spatial computing
+latest human computer interaction
+latest brain computer interfaces
+latest medical imaging
+latest drug discovery
+latest protein folding
+latest genomics tools
+latest bioinformatics projects
+latest synthetic biology
+latest lab automation
+latest scientific computing
+latest numerical methods
+latest optimization algorithms
+latest simulation tools
+latest physics engines
+latest game engines
+latest procedural generation
+latest computer graphics
+latest rendering techniques
+latest ray tracing
+latest path tracing
+latest neural rendering
+latest gaussian splatting
+latest nerf models
+latest 3d reconstruction
+latest scene understanding
+latest object detection
+latest image segmentation
+latest image classification
+latest text classification
+latest sentiment analysis
+latest document parsing
+latest optical character recognition
+latest handwriting recognition
+latest speech recognition
+latest speech synthesis
+latest voice cloning
+latest audio generation
+latest sound separation
+latest music generation
+latest melody extraction
+latest source separation
+latest acoustic modeling
+latest audio codecs
+latest video codecs
+latest image compression
+latest lossless compression
+latest network protocols
+latest browser standards
+latest webassembly projects
+latest webgpu projects
+latest webgl projects
+latest onnx tools
+latest pytorch tools
+latest jax projects
+latest tensorflow projects
+latest numpy projects
+latest scipy projects
+latest pandas tools
+latest polars tools
+latest duckdb extensions
+latest sqlite extensions
+latest postgres extensions
+latest redis alternatives
+latest kafka alternatives
+latest elasticsearch alternatives
+latest mongodb alternatives
+latest cloudflare tools
+latest vercel projects
+latest supabase projects
+latest firebase alternatives
+latest convex projects
+latest turso projects
+latest neon projects
+latest railway projects
+latest fly io projects
+latest render projects
+latest deno projects
+latest bun projects
+latest node projects
+latest rust projects
+latest go projects
+latest zig projects
+latest ocaml projects
+latest gleam projects
+latest elixir projects
+latest haskell projects
+latest clojure projects
+latest kotlin projects
+latest swift projects
+latest c++ libraries
+latest c libraries
+latest java libraries
+latest dotnet projects
+latest lua projects
+latest ruby projects
+latest php projects
+latest perl projects
+latest julia projects
+latest r packages
+latest matlab tools
+latest fortran libraries
+latest cuda kernels
+latest metal kernels
+latest vulkan tools
+latest opengl tools
+latest directx tools
+latest opencl tools
+latest rocm tools
+latest inference runtimes
+latest model serving
+latest gpu scheduling
+latest gpu virtualization
+latest distributed training
+latest federated learning
+latest differential privacy
+latest secure computation
+latest homomorphic encryption
+latest zero knowledge proofs
+latest blockchain research
+latest decentralized storage
+latest peer to peer networking
+latest mesh networking
+latest satellite internet
+latest wireless protocols
+latest embedded systems
+latest microcontroller projects
+latest raspberry pi projects
+latest arduino projects
+latest home automation
+latest smart home tools
+latest industrial automation
+latest manufacturing technology
+latest agricultural technology
+latest food technology
+latest water technology
+latest waste reduction
+latest carbon capture
+latest battery technology
+latest solar technology
+latest wind technology
+latest nuclear technology
+latest fusion research
+latest hydrogen technology
+latest electric vehicles
+latest autonomous vehicles
+latest drone projects
+latest satellite projects
+latest rocket technology
+latest astronomy tools
+latest telescope projects
+latest earth observation
+latest ocean monitoring
+latest weather modeling
+latest disaster prediction
+latest conservation technology
+latest citizen science
+latest public datasets
+latest open data projects
+latest reproducible research
+AI
+ML
+LLM
+RAG
+NLP
+OCR
+ASR
+TTS
+GPU
+CPU
+NPU
+TPU
+FPGA
+ASIC
+RAM
+SSD
+HDD
+NAS
+SAN
+CDN
+DNS
+HTTP
+HTTPS
+TCP
+UDP
+QUIC
+TLS
+SSH
+FTP
+SFTP
+SMTP
+IMAP
+POP3
+REST
+GraphQL
+gRPC
+RPC
+WebSocket
+SSE
+WebRTC
+WebTransport
+WASM
+SIMD
+AVX
+NEON
+CUDA
+Metal
+Vulkan
+OpenGL
+WebGL
+WebGPU
+OpenCL
+ROCm
+DirectML
+CoreML
+ONNX
+PyTorch
+TensorFlow
+JAX
+NumPy
+SciPy
+Pandas
+Polars
+DuckDB
+Postgres
+MySQL database
+Mongo database
+Redis cache
+Valkey
+KeyDB
+Dragonfly
+Memcached
+ClickHouse
+Snowflake
+BigQuery
+Redshift
+Databricks
+DataFusion
+Apache Arrow
+Apache Parquet
+Apache Iceberg
+Delta Lake
+Apache Hudi
+Apache Spark
+Apache Flink
+Apache Beam
+Apache Airflow
+Dagster
+Prefect
+Temporal
+Inngest
+Trigger.dev
+Windmill
+Kestra
+n8n
+Activepieces
+Node-RED
+Retool
+Appsmith
+Budibase
+ToolJet
+Directus
+Strapi
+Payload CMS
+Sanity CMS
+Contentful
+Ghost CMS
+WordPress
+Drupal
+Joomla
+Hugo static site
+Jekyll
+Eleventy
+Astro framework
+Next.js
+Nuxt
+SvelteKit
+Remix
+React Router
+TanStack Start
+SolidStart
+Qwik City
+Fresh framework
+Hono
+Elysia
+Fastify
+Express
+Koa
+NestJS
+AdonisJS
+Laravel
+Symfony
+Django
+Flask
+FastAPI
+Litestar
+Starlette
+Sanic
+Tornado
+Bottle
+Falcon
+Rails
+Hanami
+Sinatra
+Phoenix framework
+LiveView
+Gleam language
+Axum
+Actix
+Rocket framework
+Warp framework
+Poem framework
+Salvo framework
+Gin framework
+Echo framework
+Fiber framework
+Chi router
+Gorilla toolkit
+Spring Boot
+Quarkus
+Micronaut
+Helidon
+Ktor
+http4s
+Play framework
+ASP.NET Core
+Blazor
+Avalonia
+Uno Platform
+MAUI
+Flutter
+React Native
+Expo
+Ionic
+Capacitor
+NativeScript
+Tauri
+Electron
+Wails
+Neutralino
+Qt framework
+GTK toolkit
+wxWidgets
+Slint
+Iced
+Dioxus
+Leptos
+Yew
+Sycamore
+Druid toolkit
+egui
+Dear ImGui
+Nuklear GUI
+raylib
+SDL library
+SFML
+Allegro library
+Godot
+Bevy engine
+Defold
+Love2D
+MonoGame
+Stride engine
+Cocos engine
+Babylon.js
+Three.js
+PixiJS
+Phaser
+PlayCanvas
+A-Frame
+React Three Fiber
+Svelte Cubed
+Threlte
+TresJS
+OGL library
+Regl
+Luma.gl
+Deck.gl
+MapLibre
+Mapbox GL
+Leaflet
+OpenLayers
+CesiumJS
+Turf.js
+D3.js
+Observable Plot
+Vega
+Vega Lite
+ECharts
+Chart.js
+Highcharts
+ApexCharts
+Recharts
+Visx
+Nivo
+Victory charts
+Plotly
+Bokeh
+Altair
+Matplotlib
+Seaborn
+GGplot
+Shiny apps
+Streamlit
+Gradio
+Panel dashboard
+Dash dashboard
+NiceGUI
+Reflex framework
+Mesop
+Solara
+Marimo
+Jupyter
+JupyterLab
+Observable notebooks
+Colab alternatives
+Kaggle notebooks
+Deepnote
+Hex notebooks
+Datalore
+Noteable
+SageMaker notebooks
+VS Code extensions
+Neovim plugins
+Vim plugins
+Emacs packages
+Zed editor
+Helix editor
+Lapce
+Lite XL
+Kate editor
+Geany
+Sublime Text
+Notepad++
+BBEdit
+TextMate
+Nova editor
+Fleet editor
+IntelliJ IDEA
+PyCharm
+WebStorm
+RustRover
+GoLand
+CLion
+Rider IDE
+Eclipse IDE
+NetBeans
+Android Studio
+Xcode
+Visual Studio
+Code OSS
+VSCodium
+Cursor editor
+Windsurf editor
+Continue.dev
+Aider
+OpenHands
+Goose agent
+Cline
+Roo Code
+Plandex
+SWE-agent
+SWE-bench
+SWE-rebench
+Terminal-Bench
+HumanEval
+MBPP benchmark
+LiveCodeBench
+BigCodeBench
+AIME benchmark
+GSM8K
+MATH benchmark
+GPQA
+MMLU
+MMLU Pro
+HellaSwag
+ARC benchmark
+WinoGrande
+TruthfulQA
+SimpleQA
+BrowseComp
+WebArena
+OSWorld
+AgentBench
+GAIA benchmark
+BFCL
+Tau bench
+ToolBench
+LongBench
+RULER
+Needle in a haystack
+MMMU
+MathVista
+ChartQA
+DocVQA
+TextVQA
+VideoMME
+VBench
+GenEval
+DPG Bench
+ImageNet
+CIFAR10
+CIFAR100
+MNIST
+Fashion MNIST
+COCO dataset
+Open Images
+LAION dataset
+Common Crawl
+FineWeb
+DCLM dataset
+The Pile
+RedPajama
+SlimPajama
+Dolma dataset
+RefinedWeb
+C4 dataset
+Wikipedia dataset
+Stack dataset
+StarCoder data
+CodeSearchNet
+The Stack v2
+ProofPile
+OpenWebMath
+MathPile
+FineMath
+OpenThoughts
+OpenR1
+Dolphin dataset
+Alpaca dataset
+Dolly dataset
+FLAN collection
+Natural Instructions
+UltraChat
+UltraFeedback
+WildChat
+LMSYS Chat
+ShareGPT
+OpenAssistant
+Anthropic HH
+PKU SafeRLHF
+BeaverTails
+ToxiGen
+RealToxicityPrompts
+SafetyBench
+HarmBench
+JailbreakBench
+StrongREJECT
+XSTest
+WildGuard
+Llama Guard
+ShieldGemma
+NeMo Guardrails
+Guardrails AI
+Rebuff
+Lakera Guard
+Promptfoo
+Garak scanner
+PyRIT
+Inspect AI
+OpenAI Evals
+DeepEval
+Ragas
+TruLens
+Arize Phoenix
+Langfuse
+LangSmith
+Helicone
+Braintrust
+Humanloop
+Patronus AI
+Galileo platform
+Giskard
+Evidently AI
+WhyLabs
+Fiddler AI
+Arthur AI
+Superwise
+Aporia
+NannyML
+Alibi Detect
+Cleanlab
+Lilac AI
+Argilla
+Label Studio
+Doccano
+Prodigy
+Labelbox
+V7 Darwin
+SuperAnnotate
+Encord
+Roboflow
+CVAT
+Supervisely
+FiftyOne
+Datumaro
+DVC
+LakeFS
+Pachyderm
+Quilt data
+Dolt database
+Oxen data
+Hugging Face datasets
+ModelScope
+Kaggle datasets
+Papers with Code
+Semantic Scholar
+Connected Papers
+Research Rabbit
+Litmaps
+Elicit
+Consensus search
+Scite
+OpenAlex
+Crossref
+DOAJ
+PubMed
+Europe PMC
+BioRxiv
+MedRxiv
+arXiv
+HAL research
+Zenodo
+Figshare
+Dryad data
+OSF research
+Protocols.io
+Benchling
+SciNote
+LabArchives
+eLabFTW
+Jupyter Book
+Quarto
+Typst
+LaTeX
+Overleaf
+Tectonic
+Pandoc
+Zotero
+Mendeley
+JabRef
+BibDesk
+Citeproc
+CSL styles
+Obsidian plugins
+Logseq plugins
+Trilium Notes
+Joplin
+Standard Notes
+Silverbullet
+Anytype
+AppFlowy
+AFFiNE
+SiYuan
+Tana app
+Capacities
+Heptabase
+Reflect notes
+Mem notes
+NotebookLM
+Reor
+Khoj
+Perplexica
+SearXNG
+Whoogle
+YaCy
+Marginalia search
+Brave Search
+Kagi search
+Mojeek
+Metaphor search
+Exa search
+Tavily
+Firecrawl
+Crawl4AI
+Scrapy
+Crawlee
+Playwright
+Puppeteer
+Selenium
+Browserless
+Browserbase
+Stagehand
+Browser Use
+Steel browser
+AgentQL
+Skyvern
+LaVague
+Hyperbrowser
+Scrapling
+ScrapeGraphAI
+Crawlbase
+Apify
+Bright Data
+Oxylabs
+Zyte
+ScrapingBee
+ScrapingAnt
+ScraperAPI
+SerpAPI
+Serper
+DataForSEO
+SearchApi
+Scale SERP
+Zenserp
+ValueSERP
+HasData
+Serpstack
+Scrapingdog
+Decodo
+NetNut
+IPRoyal
+SOAX
+Rayobyte
+Webshare
+ProxyScrape
+PacketStream
+Infatica
+Geonode
+Nimbleway
+what is happening around ai
+what are people building with agents
+show me new open source tools
+find projects about local inference
+who maintains this library
+open source speech recognition tools
+self hosted search engines
+privacy preserving analytics
+browser based machine learning
+zero dependency inference libraries
+tiny neural classifiers
+models smaller than 100kb
+how to train with mps
+run language models in browser
+quantize models for mobile
+onnx export for small models
+webgl neural network inference
+webgpu matrix multiplication
+metal performance shaders training
+compare onnx and coreml
+fast character classification
+name versus search query detection
+intent classification for search boxes
+small text classification datasets
+how to evaluate classifier accuracy
+character ngram feature hashing
+unicode normalization in javascript
+zero dependency typescript packages
+browser gpu inference benchmarks
+find relevant github projects
+show recent hacker news discussions
+articles about distributed databases
+papers about reasoning models
+ideas for developer productivity tools
+opportunities in climate technology
+projects looking for contributors
+good first issues in rust
+maintainers seeking funding
+research internships in robotics
+remote machine learning jobs
+startup accelerator applications
+open source grants
+student research fellowships
+hackathons this weekend
+upcoming ai conferences
+robotics competitions
+open benchmark challenges
+public data science competitions
+community science projects
+digital public goods
+civic technology projects
+nonprofit technology tools
+assistive communication software
+accessible developer tooling
+screen reader friendly editors
+voice controlled coding tools
+low vision reading apps
+captioning for live meetings
+sign language recognition projects
+braille display software
+open source prosthetics
+cheap environmental sensors
+citizen air quality monitoring
+flood warning systems
+earthquake detection networks
+wildfire monitoring satellites
+crop disease detection
+soil moisture sensors
+precision irrigation software
+farm management tools
+food waste tracking
+reusable packaging startups
+plastic recycling innovations
+carbon accounting tools
+emissions estimation software
+renewable energy forecasting
+power grid simulation
+battery management systems
+electric vehicle routing
+public transit optimization
+bicycle navigation apps
+pedestrian route planning
+traffic simulation tools
+urban heat mapping
+building energy analysis
+passive cooling research
+heat pump startups
+fusion energy progress
+solid state battery papers
+sodium ion battery companies
+perovskite solar cell research
+floating wind farms
+green hydrogen production
+long duration energy storage
+geothermal drilling technology
+small modular reactors
+advanced nuclear fuels
+industrial heat recovery
+water desalination startups
+atmospheric water generation
+water leak detection
+wastewater monitoring tools
+microplastic detection methods
+marine conservation technology
+coral reef monitoring
+biodiversity data platforms
+wildlife camera classification
+birdsong identification apps
+insect monitoring systems
+forest carbon measurement
+satellite land cover maps
+open geospatial datasets
+free satellite imagery
+geospatial foundation models
+remote sensing benchmarks
+weather foundation models
+climate simulation frameworks
+numerical weather prediction
+probabilistic forecasting tools
+time series foundation models
+anomaly detection libraries
+fraud detection models
+credit risk explainability
+financial document parsing
+invoice extraction software
+receipt scanning apps
+expense tracking tools
+personal finance dashboards
+budget planning apps
+subscription management tools
+bank transaction categorization
+open banking integrations
+payment infrastructure projects
+cross border payment startups
+stablecoin payment tools
+decentralized identity projects
+verifiable credentials libraries
+passkey authentication tools
+passwordless login examples
+hardware security keys
+post quantum cryptography
+lattice based encryption
+secure messaging protocols
+end to end encrypted notes
+privacy preserving search
+private information retrieval
+anonymous credential systems
+zero knowledge identity
+zero knowledge machine learning
+verifiable inference tools
+trusted execution environments
+confidential computing projects
+secure enclaves for ai
+sandboxed code execution
+isolate based runtimes
+container security scanners
+supply chain security tools
+software bill of materials
+dependency vulnerability scanners
+secret detection tools
+code signing workflows
+reproducible build systems
+hermetic builds
+content addressed storage
+artifact registries
+package registry mirrors
+build cache servers
+remote build execution
+incremental compilation
+compiler optimization passes
+static analysis frameworks
+symbolic execution tools
+fuzz testing projects
+property based testing tools
+mutation testing libraries
+snapshot testing tools
+visual regression tests
+accessibility testing tools
+browser automation frameworks
+end to end test runners
+performance profiling tools
+memory leak detectors
+heap visualization tools
+flame graph viewers
+distributed tracing platforms
+log aggregation tools
+metrics collection agents
+service mesh alternatives
+network observability tools
+packet capture analyzers
+ebpf observability projects
+continuous profiling tools
+incident management platforms
+on call scheduling tools
+status page software
+uptime monitoring projects
+synthetic monitoring tools
+real user monitoring
+error tracking platforms
+exception aggregation tools
+feature flag platforms
+experimentation frameworks
+ab testing tools
+product analytics platforms
+session replay tools
+funnel analysis software
+retention analysis tools
+cohort analysis notebooks
+customer data platforms
+reverse etl tools
+data quality monitoring
+data contracts tools
+data lineage visualization
+data catalog software
+metadata management systems
+schema registry tools
+schema migration frameworks
+database branching tools
+database backup automation
+point in time recovery
+change data capture tools
+stream processing engines
+batch processing frameworks
+real time materialized views
+incremental view maintenance
+vector indexing libraries
+search index compression
+inverted index implementations
+fuzzy matching libraries
+string similarity algorithms
+phonetic name matching
+multilingual name matching
+duplicate profile detection
+cross platform identity matching
+github profile enrichment
+public profile search tools
+people search ranking
+name transliteration libraries
+name pronunciation datasets
+cross script entity linking
+organization name detection
+company versus person classifier
+ambiguous entity recognition
+proper noun classification
+short text intent detection
+query suggestion algorithms
+autocomplete for search boxes
+prefix search data structures
+trie compression techniques
+finite state transducers
+succinct data structures
+bloom filter implementations
+cuckoo filter libraries
+count min sketch
+hyperloglog implementations
+minhash similarity search
+simhash deduplication
+locality sensitive hashing
+nearest neighbor indexes
+vector search on device
+sqlite vector extensions
+postgres vector search
+browser indexeddb search
+opfs database tools
+local first synchronization
+conflict free replicated data types
+operational transformation libraries
+collaborative text editing
+peer to peer documents
+offline capable knowledge bases
+sync engines for sqlite
+realtime multiplayer backends
+presence tracking libraries
+websocket scaling patterns
+server sent event libraries
+webtransport demos
+webrtc data channel projects
+mesh network chat apps
+federated social networks
+activitypub implementations
+at protocol tools
+nostr clients
+matrix chat clients
+xmpp libraries
+rss feed aggregators
+read it later apps
+bookmark search engines
+personal knowledge graphs
+automatic article summarization
+citation extraction tools
+research paper recommendation
+semantic paper search
+academic author disambiguation
+research collaboration networks
+open access publishing tools
+preprint discovery platforms
+literature review assistants
+systematic review tools
+research reproducibility tooling
+scientific workflow managers
+lab notebook software
+open hardware laboratory tools
+low cost microscopy
+computational microscopy
+cell segmentation models
+single cell analysis tools
+spatial transcriptomics tools
+protein structure prediction
+protein language models
+molecular docking software
+drug repurposing research
+clinical trial discovery
+medical document understanding
+radiology report generation
+pathology image analysis
+retinal disease screening
+wearable health monitoring
+sleep tracking algorithms
+heart rate estimation
+remote patient monitoring
+mental health support tools
+speech therapy apps
+language learning assistants
+spaced repetition software
+adaptive learning platforms
+math tutoring tools
+coding education projects
+interactive programming notebooks
+visual programming environments
+block based coding tools
+robot programming simulators
+reinforcement learning environments
+physics simulation frameworks
+fluid simulation tools
+finite element solvers
+computational geometry libraries
+mesh processing tools
+point cloud registration
+3d asset generation
+text to 3d models
+image to mesh tools
+texture synthesis projects
+procedural terrain generation
+world generation systems
+neural physics simulators
+video game ai agents
+non player character dialogue
+interactive storytelling tools
+screenwriting assistants
+storyboarding software
+animation rigging tools
+motion capture from video
+human pose estimation
+hand tracking models
+facial expression recognition
+eye tracking software
+gaze estimation models
+emotion recognition datasets
+virtual try on systems
+fashion recommendation tools
+interior design assistants
+floor plan generation
+architectural visualization
+building information modeling
+construction site monitoring
+digital twin platforms
+industrial predictive maintenance
+robotic manipulation research
+humanoid robot projects
+warehouse automation systems
+last mile delivery robots
+autonomous drone navigation
+visual slam libraries
+lidar slam frameworks
+robot operating system tools
+robot learning datasets
+imitation learning papers
+vision language action models
+embodied intelligence research
+sim to real transfer
+robot foundation models
+tactile sensing hardware
+dexterous robotic hands
+legged locomotion control
+quadruped robot software
+underwater robotics projects
+space robotics research
+satellite collision avoidance
+orbital mechanics libraries
+rocket flight simulation
+open source avionics
+amateur radio software
+software defined radio
+signal processing libraries
+radar signal classification
+lidar perception pipelines
+acoustic localization tools
+sonar image processing
+sensor fusion frameworks
+kalman filter libraries
+particle filter implementations
+bayesian optimization tools
+hyperparameter tuning platforms
+neural architecture search
+automated feature engineering
+automl for tabular data
+tabular foundation models
+causal inference libraries
+causal discovery algorithms
+probabilistic programming tools
+bayesian neural networks
+uncertainty estimation methods
+conformal prediction libraries
+calibration for classifiers
+out of distribution detection
+open set recognition
+adversarial robustness benchmarks
+model interpretability tools
+sparse autoencoder research
+mechanistic interpretability papers
+activation steering experiments
+representation engineering tools
+model merging techniques
+mixture of experts routing
+expert parallel training
+pipeline parallelism tools
+tensor parallel inference
+sequence parallel training
+distributed optimizer states
+gradient checkpointing tools
+activation offloading methods
+memory efficient fine tuning
+continual pretraining datasets
+multilingual instruction datasets
+low resource language models
+speech models for indian languages
+ocr for handwritten devanagari
+transliteration for names
+indic language embeddings
+african language datasets
+southeast asian language models
+sign language translation datasets
+indigenous language preservation
+endangered language technology
+cross lingual retrieval models
+multilingual reranking benchmarks
+code switched text classification
+mixed script search queries
+unicode aware tokenization
+byte level language models
+character level neural models
+token free language modeling
+small recurrent networks
+state space sequence models
+linear recurrent units
+selective state spaces
+liquid neural networks
+spiking neural networks
+neuromorphic computing hardware
+reservoir computing projects
+energy efficient machine learning
+low power edge inference
+microcontroller neural networks
+tinyml audio classification
+tinyml vision models
+keyword spotting networks
+wake word detection models
+Ada Lovelace biography
+Alan Turing papers
+Linus Torvalds latest projects
+Guido van Rossum interviews
+Andrej Karpathy tutorials
+Yann LeCun research
+Geoffrey Hinton publications
+Yoshua Bengio talks
+Fei Fei Li computer vision
+Demis Hassabis latest news
+Andrew Ng courses
+Jeremy Howard fastai
+Sebastian Raschka books
+Simon Willison blog
+Julia Evans zines
+Dan Abramov react
+Evan You vue projects
+Rich Harris svelte talks
+Ryan Dahl deno updates
+DHH rails announcements
+Bret Victor interface design
+Chris Lattner compiler work
+George Hotz tinygrad
+Pieter Abbeel robotics lab
+what is Sam Altman building
+Hugging Face
+Stable Diffusion
+Black Forest Labs
+Black Forest
+Computer Vision
+Natural Language Processing
+Deep Research
+Deep Search
+Deep Mind
+Google DeepMind
+Google Research
+Google Brain
+Microsoft Research
+Microsoft Copilot
+GitHub Copilot
+GitHub Actions
+GitHub Pages
+GitHub Projects
+GitHub Models
+GitLab Duo
+Amazon Bedrock
+Amazon SageMaker
+Amazon Q
+Apple Intelligence
+Apple Silicon
+Apple Metal
+Apple CoreML
+Meta AI
+Meta Llama
+Meta Research
+OpenAI Codex
+OpenAI Agents
+OpenAI API
+Claude Code
+Claude Desktop
+Claude Cowork
+Claude Skills
+Claude Opus
+Claude Sonnet
+Claude Haiku
+Gemini CLI
+Gemini Flash
+Gemini Pro
+Gemini Live
+Gemma Models
+Qwen Models
+Qwen Code
+Qwen Coder
+Qwen Agent
+DeepSeek Coder
+DeepSeek Math
+DeepSeek OCR
+Mistral Small
+Mistral Large
+Mistral Nemo
+Codestral Model
+Devstral Model
+Nous Research
+Together AI
+Fireworks AI
+Cerebras Inference
+Groq Cloud
+Modal Labs
+RunPod Serverless
+Lambda Labs
+Lightning AI
+Weights and Biases
+Weights & Biases
+Comet ML
+Clear ML
+Human Loop
+Open Router
+Open WebUI
+LM Studio
+Jan AI
+GPT4All Desktop
+Anything LLM
+Private GPT
+Local First
+Open Hands
+Open Interpreter
+Open Assistant
+Open Source
+Open Science
+Open Data
+Open Models
+Open Weights
+Open Benchmarks
+Open Robotics
+Open Hardware
+Tiny Grad
+Tiny Agents
+Small Models
+Sparse Autoencoders
+State Space Models
+Mixture of Experts
+Diffusion Models
+Flow Matching
+Rectified Flow
+Normalizing Flows
+Graph Networks
+Graph Search
+Graph RAG
+Hybrid Search
+Search Engines
+Entity Resolution
+Model Quantization
+Browser Inference
+WebGL Inference
+WebGPU Compute
+Metal Shaders
+CUDA Kernels
+ONNX Runtime
+Tensor RT
+Tensor Flow
+Torch Compile
+Torch Script
+Execu Torch
+Paddle OCR
+Easy OCR
+Tesseract OCR
+Rapid OCR
+Surya OCR
+Docling Parser
+Marker PDF
+MinerU Parser
+Unstructured IO
+Llama Parse
+Llama Index
+Lang Chain
+Lang Graph
+Haystack Search
+Semantic Kernel
+Auto Gen
+Crew AI
+Pydantic AI
+Smol Agents
+Mastra Agents
+Vercel AI SDK
+Cloudflare Agents
+Google ADK
+Agent Development Kit
+Model Context Protocol
+Agent Client Protocol
+Agent to Agent
+A2A Protocol
+Context Engineering
+Context Windows
+Long Context
+Short Queries
+Name Detection
+Intent Detection
+Ada Lovelace papers
+Alan Turing biography
+Grace Hopper talks
+Linus Torvalds interviews
+Guido van Rossum projects
+Andrej Karpathy blog
+Yann LeCun latest papers
+Geoffrey Hinton lecture
+Yoshua Bengio publications
+Fei Fei Li talks
+Demis Hassabis interviews
+Andrew Ng research
+Jeremy Howard courses
+Sebastian Raschka tutorials
+Simon Willison projects
+Julia Evans blog
+Dan Abramov articles
+Evan You github
+Rich Harris projects
+Ryan Dahl blog
+Bret Victor talks
+Chris Lattner interviews
+George Hotz projects
+Pieter Abbeel publications

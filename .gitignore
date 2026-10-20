@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+artifacts/*.npz
+node_modules/
+web/dist/
+web/*.tgz
+.DS_Store
+*.tgz
+*.log
+artifacts/npm/
+.env

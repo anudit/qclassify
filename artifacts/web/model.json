@@ -1,0 +1,24 @@
+{
+  "format": "qclassify-webgl-v2",
+  "featureVersion": "nfkc-lower-fnv1a-char2to4-shape20-v2",
+  "inputDim": 1044,
+  "hashBins": 1024,
+  "hiddenDim": 8,
+  "maxChars": 256,
+  "weightBytes": 4750,
+  "bits": 4,
+  "groupSize": 32,
+  "sha256": "5761fbf5f5f1d88165ef9035b457348786f95a3df7ea6bebff63efd80412c25d",
+  "layout": [
+    "scales-f16",
+    "codes-lsb",
+    "b1-f32",
+    "w2-f16",
+    "b2-f32"
+  ],
+  "labels": [
+    "search_query",
+    "person_name"
+  ],
+  "threshold": 0.5
+}

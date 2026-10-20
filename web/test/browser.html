@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>qclassify WebGL verification</title>
+<body><pre id="result">RUNNING</pre><script type="module">
+import { Classifier, featurize } from '../dist/index.js';
+const result = document.querySelector('#result');
+try {
+  const fixtures = await fetch('../../data/parity.json').then(r => r.json());
+  const classifier = await Classifier.create({
+    manifestUrl: '../../artifacts/web/model.json', weightsUrl: '../../artifacts/web/weights.bin',
+  });
+  const gl = document.createElement('canvas').getContext('webgl2');
+  const extension = gl?.getExtension('WEBGL_debug_renderer_info');
+  const renderer = extension ? gl.getParameter(extension.UNMASKED_RENDERER_WEBGL) : 'unavailable';
+  let maxError = 0;
+  let checked = 0;
+  const check = (rows, predictions) => {
+    if (rows.length !== predictions.length) throw new Error('Wrong prediction count');
+    rows.forEach((row, i) => {
+      const error = Math.abs(row.personProbability - predictions[i].personProbability);
+      maxError = Math.max(error, maxError);
+      if (error > 2e-5) throw new Error(`GPU mismatch for ${row.input}: ${error}`);
+      checked++;
+    });
+  };
+  check(fixtures, classifier.predictBatch(fixtures.map(r => r.input)));
+  // Force growth and batch chunking, then reuse the same resources at smaller sizes.
+  const large = [...fixtures, ...fixtures, ...fixtures];
+  check(large, classifier.predictBatch(large.map(r => r.input)));
+  check(fixtures.slice(0, 1), [classifier.predict(fixtures[0].input)]);
+  check(fixtures.slice(0, 3), classifier.predictBatch(fixtures.slice(0, 3).map(r => r.input)));
+  if (classifier.predictBatch([]).length) throw new Error('Empty batch mismatch');
+  let rejected = false;
+  try { classifier.predict(' '); } catch { rejected = true; }
+  if (!rejected) throw new Error('Empty input was not rejected');
+  classifier.dispose();
+  classifier.dispose();
+  rejected = false;
+  try { classifier.predict('name'); } catch { rejected = true; }
+  if (!rejected) throw new Error('Disposed classifier was usable');
+  const second = await Classifier.create();
+  check(fixtures.slice(0, 1), [second.predict(fixtures[0].input)]);
+  second.dispose();
+  result.textContent = 'PASS ' + JSON.stringify({ checked, maxError, renderer });
+  document.documentElement.dataset.status = 'pass';
+} catch (error) {
+  result.textContent = 'FAIL ' + (error.stack ?? String(error));
+  document.documentElement.dataset.status = 'fail';
+}
+</script></body></html>
