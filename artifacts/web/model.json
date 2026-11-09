@@ -8,7 +8,7 @@
   "weightBytes": 9496,
   "bits": 4,
   "groupSize": 32,
-  "sha256": "51a3b169b028e8cbeb1009ec410bb867d33121fd0333180815230fb18b02a0ef",
+  "sha256": "032d0644c0218dc8107079e33cdc4fe1e8cd40fd62e17a4f253275fceab1709b",
   "layout": [
     "scales-f16",
     "codes-lsb",

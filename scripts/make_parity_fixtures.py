@@ -22,7 +22,8 @@ probes = [
 ]
 rows = json.loads(Path("data/examples.json").read_text())
 # Include varied rows from every authored section; do not use for model selection.
-probes.extend(row["input"] for row in rows[::31])
+AUTHORED = 5909  # the corpus starts with the authored rows; mined profile names (appended after) are not published
+probes.extend(row["input"] for row in rows[:AUTHORED][::31])
 session = ort.InferenceSession("artifacts/web/classifier.onnx", providers=["CPUExecutionProvider"])
 fixtures = []
 for text in probes:

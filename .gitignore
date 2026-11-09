@@ -11,3 +11,4 @@ web/*.tgz
 *.log
 artifacts/npm/
 .env
+data/mined/

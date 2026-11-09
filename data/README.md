@@ -63,3 +63,23 @@ are needed before relying on the model for routing.
 `parity.json` stores 223 preprocessing/output probes for Python/TypeScript/WebGL
 compatibility. They have no accuracy labels and are not used to train or select
 a model. Their probability reference is the **packed-model ONNX**.
+
+## Mined from Hackathon_People (added in 0.2.0)
+
+`scripts/mine_people.py` + `scripts/merge_mined.py` add **14,029 examples** (8,271 `person_name`, 5,758
+`search_query`) taken from the ~950k hackathon profiles and project titles behind Dumpyard
+(local only: the 19,938-example corpus and `data/mined/` hold real people's names from scraped profiles, so they are **not committed** to this public repo; `examples.json`, `names.txt`, `queries.txt` and the split files here are still the 5,909 authored seed examples. Rebuild with the two scripts below).
+
+- **Names:** real profile names (2-4 tokens, recurring first name, no org/topic words), and **one-word
+  names**: first names that recur on >= 6 profiles ("Vitalik", "Subh"), excluding surnames, ordinary
+  dictionary words and anything that is also a skill/city/company.
+- **Queries:** skills, interests, job titles, companies, cities (one word and short phrases) and
+  multi-word project titles. One-word queries come only from vocabulary, never from invented project names.
+- **Held out:** `data/mined/probes_mined.json` (local; never trained on) plus `scripts/compare.py`, which scores
+  any `classifier.onnx` on it and on `probes.json`.
+
+These are real-world but weakly labelled (a profile "name" can be a handle or a team; a project title can
+look like a name), so the mined slice has label noise and the overall test accuracy (~0.89) is lower than the
+old synthetic corpus's, which was easier.
+
+`artifacts/metrics.json` lists misclassified authored examples only; mined names are scrubbed from it.
