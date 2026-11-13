@@ -94,3 +94,14 @@ into `examples.json` and `queries.txt` (idempotent, skips held-out probes) and w
 added in 0.3.0 as `person_name`; `data/probes_famous.json` holds 28 held-out famous names (plus 6 name+request
 queries). Adding hand-picked "famous name + request" queries made bare famous names worse (the model treated them as
 nearly the same input) and was reverted. Training weighs hand-authored rows 3x over mined ones; see the main README.
+
+## Database names (added in 0.3.0)
+
+`scripts/merge_db_names.py` adds **3,000 `person_name` rows** sampled (seeded) from the Hackathon_People
+database, covering one-word and multi-word names that the earlier mining missed. Like the other mined data
+they are real people's names and stay **local only** (`data/mined/names_db.json`, gitignored); the committed
+corpus files are unchanged. The local training corpus is 24,271 rows (14,508 names, 9,763 queries), split
+19,416 / 2,427 / 2,428. `tests/test_pipeline.py` counts refer to that local corpus.
+
+The name lexicon (`src/qclassify/lexicon.bin`) is built from public sources only (Census, SSA, Wikidata,
+wordfreq), not from the database; see the main README for attribution.

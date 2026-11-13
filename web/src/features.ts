@@ -1,7 +1,13 @@
-/** Mirrors src/qclassify/features.py, including code-point indexing and UTF-8 hashing. */
-export const FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v4";
-export const HASH_BINS = 2028;
-export const INPUT_DIM = 2048;
+/** Mirrors src/qclassify/features.py, including code-point indexing, UTF-8 hashing and float32 rounding. */
+export const FEATURE_VERSION = "nfkc-lower-words2to4-lex4096-global1024-v5";
+export const WORD_BINS = 2028;
+export const WORD_EXTRA = 12;
+export const WORD_DIM = 2048;
+export const GLOBAL_BINS = 1024;
+export const SHAPE_FEATURES = 20;
+export const GLOBAL_DIM = GLOBAL_BINS + SHAPE_FEATURES;
+export const LEX_BINS = 4096;
+export const MAX_WORDS = 16;
 export const MAX_CHARS = 256;
 const encoder = new TextEncoder();
 // Python's Unicode whitespace set; JS \s differs for BOM, NEL, and U+001C..1F.
@@ -26,41 +32,87 @@ export function fnv1a(text: string): number {
   return hash;
 }
 
-export function featurize(text: string): Float32Array {
-  if (typeof text !== "string" || !trim(text)) throw new TypeError("Input must be a nonempty string.");
-  // Lowercase first: every feature, shape ones included, sees lowercase text only.
-  const raw = Array.from(trim(text.normalize("NFKC"))).slice(0, MAX_CHARS).join("").toLowerCase();
-  const chars = Array.from(raw);
-  const normalized = Array.from("^" + canonicalize(raw) + "$");
-  const vector = new Float32Array(INPUT_DIM);
+/** 4096 values in sevenths, -1 (ordinary word) .. +1 (usually a name); from the model's weight blob. */
+export type Lexicon = Float32Array;
+
+export function decodeLexicon(bytes: Uint8Array): Lexicon {
+  if (bytes.length !== LEX_BINS / 2) throw new Error("Invalid lexicon length.");
+  const table = new Float32Array(LEX_BINS);
+  for (let i = 0; i < bytes.length; i++) {
+    const lo = bytes[i]! & 15, hi = bytes[i]! >>> 4;
+    if (lo > 14 || hi > 14) throw new Error("Invalid lexicon code.");
+    table[2 * i] = (lo - 7) / 7;
+    table[2 * i + 1] = (hi - 7) / 7;
+  }
+  return table;
+}
+
+export interface Features {
+  /** count * WORD_DIM values, one row per word (1..MAX_WORDS). */
+  words: Float32Array;
+  count: number;
+  /** GLOBAL_DIM values. */
+  global: Float32Array;
+}
+
+function grams(padded: string[], out: Float32Array, offset: number, bins: number): void {
   for (const size of [2, 3, 4]) {
-    for (let start = 0; start <= normalized.length - size; start++) {
-      const hash = fnv1a(normalized.slice(start, start + size).join(""));
-      const index = hash % HASH_BINS;
-      vector[index] = vector[index]! + ((hash & 0x80000000) ? 1 : -1);
+    for (let start = 0; start <= padded.length - size; start++) {
+      const hash = fnv1a(padded.slice(start, start + size).join(""));
+      const index = offset + (hash % bins);
+      out[index] = out[index]! + ((hash & 0x80000000) ? 1 : -1);
     }
   }
   let squared = 0;
-  for (let i = 0; i < HASH_BINS; i++) squared += vector[i]! * vector[i]!;
+  for (let i = offset; i < offset + bins; i++) squared += out[i]! * out[i]!;
   // NumPy's float32 norm and float32 division.
   const norm = Math.fround(Math.sqrt(Math.fround(squared)));
-  if (norm) for (let i = 0; i < HASH_BINS; i++) vector[i] = vector[i]! / norm;
-  const words = raw.split(SPACES).filter(Boolean);
-  const tokens = canonicalize(raw).split(" ");
+  if (norm) for (let i = offset; i < offset + bins; i++) out[i] = out[i]! / norm;
+}
+
+const isAlpha = (w: string) => Array.from(w).every(c => LETTER.test(c));
+
+export function featurize(text: string, lexicon: Lexicon): Features {
+  if (typeof text !== "string" || !trim(text)) throw new TypeError("Input must be a nonempty string.");
+  if (!(lexicon instanceof Float32Array) || lexicon.length !== LEX_BINS) throw new TypeError("Invalid lexicon.");
+  // Lowercase first: every feature sees lowercase text only.
+  const raw = Array.from(trim(text.normalize("NFKC"))).slice(0, MAX_CHARS).join("").toLowerCase();
+  const normalized = canonicalize(raw);
+  const tokens = normalized.split(" ").slice(0, MAX_WORDS);
+  const n = tokens.length;
+  const words = new Float32Array(n * WORD_DIM);
+  tokens.forEach((tok, i) => {
+    const o = i * WORD_DIM;
+    grams(Array.from("^" + tok + "$"), words, o, WORD_BINS);
+    const chars = Array.from(tok);
+    const v = lexicon[fnv1a("#" + tok) % LEX_BINS]!;
+    words.set([
+      Math.min(chars.length / 16, 1), Number(chars.some(c => DECIMAL.test(c))),
+      Number(chars.some(c => LETTER.test(c) && c.codePointAt(0)! > 127)),
+      Number(REQUEST_WORDS.has(tok)), Number(ARTIFACT_WORDS.has(tok)), Number(TECH_WORDS.has(tok)),
+      Number(n === 1), Number(i === 0 && n > 1), Number(i === n - 1 && n > 1), Number(!isAlpha(tok)),
+      v, Number(v !== 0),
+    ], o + WORD_BINS);
+  });
+  const global = new Float32Array(GLOBAL_DIM);
+  grams(Array.from("^" + normalized + "$"), global, 0, GLOBAL_BINS);
+  const chars = Array.from(raw);
+  const rawWords = raw.split(SPACES).filter(Boolean);
+  const all = normalized.split(" ");
   const count = (predicate: (c: string) => boolean) => chars.filter(predicate).length / chars.length;
-  vector.set([
-    Math.min(chars.length / 80, 1), Math.min(words.length / 10, 1),
+  global.set([
+    Math.min(chars.length / 80, 1), Math.min(rawWords.length / 10, 1),
     count(c => DECIMAL.test(c)), count(c => UPPER.test(c)), count(c => LETTER.test(c)),
     count(c => SPACE.test(c)), count(c => !(LETTER.test(c) || NUMBER.test(c) || SPACE.test(c))),
-    words.filter(w => UPPER.test(Array.from(w)[0]!)).length / words.length,
+    rawWords.filter(w => UPPER.test(Array.from(w)[0]!)).length / rawWords.length,
     Number(raw.includes("?")), Number(raw.includes("@")), Number(raw.includes("/")),
     Number(raw.includes(".")), Number(raw.includes("-")), Number(raw.includes("'") || raw.includes("’")),
     Number(chars.some(c => LETTER.test(c) && c.codePointAt(0)! > 127)),
-    Math.min(Math.max(...words.map(w => Array.from(w).length)) / 24, 1),
-    Number(REQUEST_WORDS.has(tokens[0]!)),
-    tokens.filter(t => ARTIFACT_WORDS.has(t)).length / tokens.length,
-    tokens.filter(t => TECH_WORDS.has(t)).length / tokens.length,
-    Number(raw.toLowerCase().includes("http://") || raw.toLowerCase().includes("https://") || raw.toLowerCase().includes("www.")),
-  ], HASH_BINS);
-  return vector;
+    Math.min(Math.max(...rawWords.map(w => Array.from(w).length)) / 24, 1),
+    Number(REQUEST_WORDS.has(all[0]!)),
+    all.filter(t => ARTIFACT_WORDS.has(t)).length / all.length,
+    all.filter(t => TECH_WORDS.has(t)).length / all.length,
+    Number(normalized.includes("http://") || normalized.includes("https://") || normalized.includes("www.")),
+  ], GLOBAL_BINS);
+  return { words, count: n, global };
 }

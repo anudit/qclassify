@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import onnxruntime as ort
 
-from qclassify.features import canonicalize, featurize, fnv1a
+from qclassify.features import canonicalize, featurize, fnv1a, transform
 
 # Contract probes, not training examples. No accuracy labels are inferred here.
 probes = [
@@ -25,12 +25,14 @@ rows = json.loads(Path("data/examples.json").read_text())
 AUTHORED = 5909  # the corpus starts with the authored rows; mined profile names (appended after) are not published
 probes.extend(row["input"] for row in rows[:AUTHORED][::31])
 session = ort.InferenceSession("artifacts/web/classifier.onnx", providers=["CPUExecutionProvider"])
+sparse = lambda v: [[int(i), float(v[i])] for i in np.flatnonzero(v)]
 fixtures = []
 for text in probes:
-    vector = featurize(text)
-    score = float(session.run(None, {"features": vector[None]})[0][0, 0])
+    words, glob = featurize(text)
+    w, m, g = transform([text])
+    score = float(session.run(None, {"words": w, "word_mask": m, "global": g})[0][0, 0])
     fixtures.append({"input": text, "canonical": canonicalize(text), "hash": fnv1a(text),
-                     "features": [[int(i), float(vector[i])] for i in np.flatnonzero(vector)],
+                     "words": [sparse(row) for row in words], "global": sparse(glob),
                      "personProbability": score})
 Path("data/parity.json").write_text(json.dumps(fixtures, ensure_ascii=False, indent=2) + "\n")
 print(f"Wrote {len(fixtures)} cross-runtime contract probes")

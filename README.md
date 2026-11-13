@@ -27,31 +27,45 @@ training-only casing variants are all under `data/`. See [data/README.md](data/R
 for authorship, label policy, HHQ context, and limitations. No scraped dataset or
 template expansion is needed to train the seed corpus.
 
-The network is `2048 → 16 ReLU → 1 sigmoid`: 2,028 signed character n-gram hash
-features, 16 shape features, and four small fixed English intent hints. The
-hints indicate request starts, artifact/search words such as `biography`,
-technology terms, and URLs; they are learned inputs, not a routing override.
-There is no learned vocabulary, tokenizer download, embedding table, or external
-weight file for the ONNX graph. The versioned feature extractor is shared
-between Python and TypeScript and truncates to 256 normalized code points.
+The 0.3.0 network scores **each word separately** and pools the word scores, so one
+query-looking word ("biography", "papers") can flip an input to search while a
+name-looking word cannot be outvoted by its own n-gram fragments:
+
+- **Word branch:** each of up to 16 words becomes a 2048-wide vector (2,028 signed
+  2-4-gram hash bins of `^word$`, 10 shape/intent flags, and a name-vs-word
+  **lexicon** value). A shared `2048 → 13 ReLU → 1` layer scores every word.
+- **Pooling:** soft-min (`-log Σ exp(-s)`) plus mean of the word scores, with learned weights.
+- **Global branch:** a 1024-bin hash of the whole text plus 20 shape features,
+  `1044 → 4 ReLU → 1`, plus a linear term on the shape features. Then sigmoid.
+
+The lexicon is 4,096 hashed 4-bit slots holding `clip(name_zipf - word_zipf, ±3.5)`:
+how much more common a token is as a given/family name than as an ordinary word.
+It is built by `scripts/build_lexicon.py` from US Census 2010 surnames, SSA baby
+names (via the hadley/data-baby-names mirror), Wikidata given/family-name labels,
+and [wordfreq](https://github.com/rspeer/wordfreq) word frequencies. wordfreq data
+is **CC-BY-SA 4.0** (Robyn Speer et al.); the derived `src/qclassify/lexicon.bin` is
+shipped under that attribution. There is no tokenizer download or vocabulary file;
+the lexicon travels inside the packed weight blob. The versioned feature extractor
+(`nfkc-lower-words2to4-lex4096-global1024-v5`) is shared between Python and
+TypeScript and truncates to 256 normalized code points.
 
 | Artifact | Size / held-out result |
 | --- | --- |
-| Full FP32 ONNX, graph and weights included | **131,592 bytes** (0.2.x: 67,336) |
-| All FP32 learned weights | **131,204 bytes**, 32,801 parameters |
-| Packed browser weights | **22,628 bytes**, 5-bit groupwise (0.2.x: 11,584) |
-| Original model test accuracy | **89.61%**, 2,128 test examples (authored + mined) |
-| Packed model test accuracy | **89.43%**, same test split |
-| Complete reachable minified browser ESM | **58,586 bytes raw** |
-| ESM including embedded weights, compressed per module | **22,309 bytes Brotli / 26,211 gzip** (0.2.x: 12,212 / 14,326) |
+| Full FP32 ONNX, graph and weights included | **124,767 bytes** (limit 134,000) |
+| All FP32 learned weights | **123,432 bytes**, 30,858 parameters |
+| Packed browser weights, lexicon included | **23,456 bytes**, 5-bit groupwise (budget 25,000) |
+| Original model test accuracy | **90.94%**, 2,428 test examples (authored + mined) |
+| Packed model test accuracy | **90.98%**, same test split |
+| Complete reachable minified browser ESM | **64,908 bytes raw** |
+| ESM including embedded weights, compressed per module | **24,031 bytes Brotli / 28,867 gzip** |
 
 Exact results live in `artifacts/metrics.json`, `artifacts/web/packing.json`, and
 `artifacts/bundle-size.json`. The bundle measure includes preprocessing, decoding,
 shaders, GPU lifecycle, and dynamically imported model code. It excludes HTTP
 headers and consuming-framework overhead. Rebundling may change compressed size.
 
-The exporter enforces **the complete ONNX file < 100,000 bytes**, stricter than
-100 KiB. Packing selects the smallest tested 2/3/4/5/6/8-bit representation meeting
+The exporter enforces **the complete ONNX file < 134,000 bytes**. Packing picks the
+widest tested 3/4/5/6/8-bit width that fits `--max-packed-bytes` (25,000) and meets
 validation accuracy/loss tolerances, then evaluates the selected model on test.
 It writes both a packed binary and an equivalent dequantized ONNX. The latter
 is useful for parity checks and has the same packed-model predictions; the
@@ -90,7 +104,7 @@ workers, context loss, and package preparation. No HHQ files were modified.
 
 The runtime was informed by lexer's packed-weight/resource lifecycle approach
 in `/Users/anudit/Documents/GitHub/lexer/lex/src/runtime.js` and `weights-codec.js`.
-It is implemented here for WebGL 2 using two fragment-shader passes and one
+It is implemented here for WebGL 2 using three fragment-shader passes and one
 readback per batch, with no WebGPU dependency.
 
 ## Verification
@@ -127,3 +141,16 @@ L2 3e-4, no casing augmentation. Packing now spends a byte budget (`--max-packed
 smallest width within 0.2 points: 5-bit, 0.7 points of validation accuracy under FP32, practically lossless on the
 probes. Held-out probes (`scripts/compare.py`): topic phrases 0.776 -> 0.939, unseen famous names 0.964, one-word
 and tech 1.0. Still wrong: "Ada Lovelace" (0.27). Seed-to-seed spread is a few points, so treat single results loosely.
+
+### 0.3.0 final: per-word pooling + name lexicon
+
+The 2x bag-of-n-grams model above still scored "Ada Lovelace" 0.27: the corpus had more "Ada Lovelace
+biography"-style queries than the bare name, and fragments of "lovelace" (love, lace) are query-heavy. Offline
+comparisons under a 25 KB packed budget: per-word scoring with soft-min pooling was the clear win, the hashed
+name/word lexicon helped topics, position-tagged n-grams hurt. The shipped model adds 3,000 real one- and
+multi-word names (local only, see data/README.md). Init seed is chosen on clean validation loss.
+
+Held-out probes (`scripts/compare.py`): topic phrases 0.949, unseen famous names 0.893 (was 0.964 for the
+pre-release 2x model), hand one-word/tech 0.917, authored multi-word names 1.0 / queries 0.931.
+"ada lovelace" 0.97, "solar energy" 0.02, "dark matter" 0.15. Known misses: "steve jobs" 0.01 ("jobs" is a
+search-intent word) and "virginia woolf" 0.16.

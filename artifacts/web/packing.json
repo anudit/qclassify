@@ -1,81 +1,72 @@
 {
-  "selection": "Widest bit width meeting validation tolerances within 23168 packed bytes; test unused for selection",
-  "max_packed_bytes": 23168,
+  "selection": "Widest bit width meeting validation tolerances within 25000 packed bytes; test unused for selection",
+  "max_packed_bytes": 25000,
   "accuracy_tolerance": 0.01,
   "loss_tolerance": 0.01,
   "baseline_validation": {
-    "accuracy": 0.9017395392571698,
-    "loss": 0.2685526081727028
+    "accuracy": 0.9101771734651833,
+    "loss": 0.2526037590501776
   },
   "candidates": [
     {
-      "bits": 2,
-      "bytes": 10340,
-      "validation": {
-        "accuracy": 0.8514339445228021,
-        "loss": 0.3854111616582828
-      },
-      "accepted": false
-    },
-    {
       "bits": 3,
-      "bytes": 14436,
+      "bytes": 15756,
       "validation": {
-        "accuracy": 0.8791725434884814,
-        "loss": 0.36473656075310984
+        "accuracy": 0.915121549237742,
+        "loss": 0.26461084684037944
       },
       "accepted": false
     },
     {
       "bits": 4,
-      "bytes": 18532,
+      "bytes": 19606,
       "validation": {
-        "accuracy": 0.8965679360601787,
-        "loss": 0.27114315622303603
+        "accuracy": 0.9093531108364236,
+        "loss": 0.25970374357346093
       },
       "accepted": true
     },
     {
       "bits": 5,
-      "bytes": 22628,
+      "bytes": 23456,
       "validation": {
-        "accuracy": 0.8946873530794547,
-        "loss": 0.2712362049078223
+        "accuracy": 0.9122373300370828,
+        "loss": 0.2520641423807608
       },
       "accepted": true
     },
     {
       "bits": 6,
-      "bytes": 26724,
+      "bytes": 27306,
       "validation": {
-        "accuracy": 0.8979783732957217,
-        "loss": 0.26921188211624314
+        "accuracy": 0.9122373300370828,
+        "loss": 0.25286164281928336
       },
       "accepted": false
     },
     {
       "bits": 8,
-      "bytes": 34916,
+      "bytes": 35006,
       "validation": {
-        "accuracy": 0.8998589562764457,
-        "loss": 0.26819873516162673
+        "accuracy": 0.9110012360939431,
+        "loss": 0.252757335955622
       },
       "accepted": false
     }
   ],
   "selected_bits": 5,
-  "packed_bytes": 22628,
+  "packed_bytes": 23456,
   "validation": {
-    "accuracy": 0.8946873530794547,
-    "loss": 0.2712362049078223
+    "accuracy": 0.9122373300370828,
+    "loss": 0.2520641423807608
   },
   "test": {
-    "accuracy": 0.894266917293233,
-    "loss": 0.2506918914186798
+    "accuracy": 0.9098023064250412,
+    "loss": 0.2470620434955364
   },
   "baseline_test": {
-    "accuracy": 0.8961466165413534,
-    "loss": 0.25097087469391194
+    "accuracy": 0.9093904448105437,
+    "loss": 0.24761353410109754
   },
-  "source_onnx_sha256": "443c43002660181c5ff05a311070b7ff4d2ce0d71a4a14f4fea8ec6fd11efe1e"
+  "source_onnx_sha256": "340676df0fd6ca2e73444126cbfe756256d91e054266032537025c344122b862"
 }

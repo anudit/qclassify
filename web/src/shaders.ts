@@ -22,6 +22,7 @@ float decodeFloat(vec4 value) {
 }
 `;
 
+/** One fragment per (hidden unit x, row y): relu(bias + features[y] . weights[x]). Used for words and globals. */
 export function hiddenShader(inputDim: number): string {
   return header + `
 uniform sampler2D features;
@@ -38,18 +39,46 @@ void main() {
 }`;
 }
 
-export function outputShader(hiddenDim: number): string {
+/**
+ * One fragment per input row: score each of its words, pool them (soft-min + mean), add the global branch and
+ * the shape term, then sigmoid. `rows` holds (first word index, word count) per input row.
+ */
+export function outputShader(hidden: number, globalHidden: number, maxWords: number, globalBins: number,
+                             shapeFeatures: number): string {
   return header + `
-uniform sampler2D hidden;
-uniform sampler2D weights;
-uniform float bias;
+uniform sampler2D wordHidden;
+uniform sampler2D globalHidden;
+uniform sampler2D globalFeatures;
+uniform sampler2D rows;
+uniform float w2[${hidden}];
+uniform float b2;
+uniform vec2 pool;  // (soft-min, mean) weights
+uniform float w4[${globalHidden}];
+uniform float vs[${shapeFeatures}];
+uniform float c;
 void main() {
   int row = int(gl_FragCoord.y);
-  float value = bias;
-  for (int i = 0; i < ${hiddenDim}; i++) {
-    value += decodeFloat(texelFetch(hidden, ivec2(i, row), 0)) *
-             texelFetch(weights, ivec2(i, 0), 0).r;
+  int first = int(texelFetch(rows, ivec2(0, row), 0).r);
+  int count = int(texelFetch(rows, ivec2(1, row), 0).r);
+  float expSum = 0.0;
+  float sum = 0.0;
+  for (int k = 0; k < ${maxWords}; k++) {
+    if (k >= count) break;
+    float s = b2;
+    for (int j = 0; j < ${hidden}; j++) {
+      s += decodeFloat(texelFetch(wordHidden, ivec2(j, first + k), 0)) * w2[j];
+    }
+    s = clamp(s, -30.0, 30.0);
+    expSum += exp(-s);
+    sum += s;
   }
-  result = encodeFloat(1.0 / (1.0 + exp(-value)));
+  float logit = pool.x * -log(expSum) + pool.y * (sum / float(count)) + c;
+  for (int j = 0; j < ${globalHidden}; j++) {
+    logit += decodeFloat(texelFetch(globalHidden, ivec2(j, row), 0)) * w4[j];
+  }
+  for (int i = 0; i < ${shapeFeatures}; i++) {
+    logit += texelFetch(globalFeatures, ivec2(${globalBins} + i, row), 0).r * vs[i];
+  }
+  result = encodeFloat(1.0 / (1.0 + exp(-logit)));
 }`;
 }

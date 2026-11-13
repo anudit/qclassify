@@ -1,7 +1,7 @@
 # @omnid/qclassify
 
 A tiny person-name versus search-query neural classifier. Zero runtime
-dependencies; WebGL 2 shaders run both neural layers. Packed weights ship in the
+dependencies; WebGL 2 shaders run the whole network. Packed weights ship in the
 package. No model service, ONNX runtime, WASM binary, or WebGPU API is needed.
 
 ```ts
@@ -19,7 +19,7 @@ const results = classifier.predictBatch([
 classifier.dispose();
 ```
 
-Input size is 2048 features (0.3.0); `create()` imports the bundled model module and decodes its packed weights once.
+Each word is a 2048-feature row (up to 16 words) plus a 1044-feature global row; `create()` imports the bundled model module and decodes its packed weights once.
 It does not fetch external model assets. Keep one classifier for the lifetime of
 the search box. `predict` and `predictBatch` are synchronous and return model
 scores, not calibrated guarantees. The boundary is 0.5. Input is lowercased internally, so casing never changes a score. Empty input throws; an
@@ -55,7 +55,9 @@ This fetch-based path requires WebCrypto (HTTPS or localhost). To use already
 loaded trusted assets, call `Classifier.fromWeights(manifest, arrayBuffer)`;
 this validates structure and values but leaves checksum verification to you.
 
-`@omnid/qclassify/features` exports the identical TypeScript feature extractor.
+`@omnid/qclassify/features` exports the identical TypeScript feature extractor. Since 0.3.0 it is
+`featurize(text, lexicon)`, returning `{ words, count, global }`; get the lexicon from
+`decodePackedWeights(manifest, buffer).lexicon` (or `decodeLexicon(bytes)` on the first 2,048 blob bytes).
 `@omnid/qclassify/weights` exports the packed-weight decoder and manifest validator.
 Neither subpath initializes a GPU or loads the bundled model.
 
@@ -67,18 +69,18 @@ No floating-point render-target extension is needed. The library owns its canvas
 and context; an optional `canvas` argument must not be shared with another
 renderer. Both `HTMLCanvasElement` and `OffscreenCanvas` are supported.
 
-Batches of up to 256 inputs use two draw calls and one `readPixels` call. Larger
+Batches of up to 256 inputs (and up to 4,096 words) use three draw calls (per-word hidden layer, global
+hidden layer, then word scoring + soft-min/mean pooling + output) and one `readPixels` call. Larger
 batches are chunked. Capacity grows and GPU buffers/textures are reused. Context
 loss and calls after disposal throw; create another classifier after context
 loss. For large jobs, run this API inside a worker with `OffscreenCanvas`.
 
-The weights use symmetric groupwise low-bit quantization: float16 scales per 32
-weights, packed codes, float32 hidden/output biases, and float16 output weights.
-The exporter compares 2/3/4/5/6/8-bit formats and selects the smallest that keeps
-validation accuracy within 0.2 percentage points and loss within 0.01 of FP32.
-The test split is evaluated after selection. The embedded hex representation is
-chosen by measured Brotli delivery size; larger uncompressed source can compress
-better than base64. See the root `artifacts/web/packing.json` and bundle reports for exact
+The weight blob (`qclassify-webgl-v3`) is: the 4,096-slot 4-bit name lexicon (2,048 bytes), the word layer and
+global layer in symmetric groupwise low-bit quantization (float16 scale per 32 weights, packed codes), then a
+float32 tail of biases, output weights, pooling weights and shape weights. The exporter picks the widest
+3/4/5/6/8-bit width that fits the 25,000-byte budget and keeps validation accuracy/loss within tolerance
+(5-bit, 23,456 bytes). The test split is evaluated after selection. The embedded hex representation is
+chosen by measured Brotli delivery size. See the root `artifacts/web/packing.json` and bundle reports for exact
 results rather than counting only weight bytes.
 
 ## Build and package

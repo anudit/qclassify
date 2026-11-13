@@ -19,7 +19,8 @@ class Classifier:
     def predict(self, texts: list[str]) -> list[dict]:
         if not texts:
             return []
-        probabilities = self.session.run(None, {"features": transform(texts)})[0].reshape(-1)
+        words, mask, glob = transform(texts)
+        probabilities = self.session.run(None, {"words": words, "word_mask": mask, "global": glob})[0].reshape(-1)
         return [{"input": text, "label": "person_name" if p >= 0.5 else "search_query",
                  "person_probability": float(p), "search_probability": float(1 - p)}
                 for text, p in zip(texts, probabilities)]

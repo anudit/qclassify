@@ -1,1042 +1,270 @@
 {
-  "dataset_sha256": "386c2def692b8922c9c6fe9ca52dc5dbc7af0ce35ae9830ee4df3352bf6d39a5",
+  "dataset_sha256": "238a085dc13188e935cd1842550f14838cd818066342713b95d8268dfb572de0",
   "seed": 42,
-  "feature_version": "nfkc-lower-fnv1a-char2to4-shape20-v4",
-  "hidden_units": 16,
+  "feature_version": "nfkc-lower-words2to4-lex4096-global1024-v5",
+  "hidden_units": 13,
+  "global_hidden_units": 4,
   "class_counts": {
-    "person_name": 11508,
+    "person_name": 14508,
     "search_query": 9763
   },
-  "onnx_bytes": 131592,
-  "weight_bytes": 131204,
-  "parameters": 32801,
+  "onnx_bytes": 124767,
+  "weight_bytes": 123432,
+  "parameters": 30858,
   "limit_bytes": 134000,
   "max_onnx_error": 4.76837158203125e-07,
   "training": {
-    "device": "mps",
+    "device": "cpu",
     "torch_version": "2.14.1",
-    "best_epoch": 215,
-    "epochs_run": 250,
+    "best_epoch": 20,
+    "epochs_run": 55,
+    "best_validation_loss": 0.20050735771656036,
     "history": [
       {
         "epoch": 1,
-        "validation_loss": 0.3492482006549835
+        "validation_loss": 0.3004554212093353
       },
       {
         "epoch": 2,
-        "validation_loss": 0.30071088671684265
+        "validation_loss": 0.25087425112724304
       },
       {
         "epoch": 3,
-        "validation_loss": 0.280915230512619
+        "validation_loss": 0.2277524769306183
       },
       {
         "epoch": 4,
-        "validation_loss": 0.272199809551239
+        "validation_loss": 0.20787598192691803
       },
       {
         "epoch": 5,
-        "validation_loss": 0.2685913145542145
+        "validation_loss": 0.20555734634399414
       },
       {
         "epoch": 6,
-        "validation_loss": 0.26498594880104065
+        "validation_loss": 0.21378742158412933
       },
       {
         "epoch": 7,
-        "validation_loss": 0.2667105495929718
+        "validation_loss": 0.22313763201236725
       },
       {
         "epoch": 8,
-        "validation_loss": 0.2587665617465973
+        "validation_loss": 0.23018038272857666
       },
       {
         "epoch": 9,
-        "validation_loss": 0.265269011259079
+        "validation_loss": 0.21368490159511566
       },
       {
         "epoch": 10,
-        "validation_loss": 0.2668009102344513
+        "validation_loss": 0.21922260522842407
       },
       {
         "epoch": 11,
-        "validation_loss": 0.2692607045173645
+        "validation_loss": 0.21705444157123566
       },
       {
         "epoch": 12,
-        "validation_loss": 0.2575555145740509
+        "validation_loss": 0.23493626713752747
       },
       {
         "epoch": 13,
-        "validation_loss": 0.2609546482563019
+        "validation_loss": 0.2245180755853653
       },
       {
         "epoch": 14,
-        "validation_loss": 0.2595576345920563
+        "validation_loss": 0.21311123669147491
       },
       {
         "epoch": 15,
-        "validation_loss": 0.2626124620437622
+        "validation_loss": 0.2098553627729416
       },
       {
         "epoch": 16,
-        "validation_loss": 0.2694236934185028
+        "validation_loss": 0.2260916531085968
       },
       {
         "epoch": 17,
-        "validation_loss": 0.2608400583267212
+        "validation_loss": 0.2104247510433197
       },
       {
         "epoch": 18,
-        "validation_loss": 0.25868654251098633
+        "validation_loss": 0.2217651605606079
       },
       {
         "epoch": 19,
-        "validation_loss": 0.2664394974708557
+        "validation_loss": 0.21458104252815247
       },
       {
         "epoch": 20,
-        "validation_loss": 0.27143874764442444
+        "validation_loss": 0.20050735771656036
       },
       {
         "epoch": 21,
-        "validation_loss": 0.26886045932769775
+        "validation_loss": 0.20821422338485718
       },
       {
         "epoch": 22,
-        "validation_loss": 0.26283150911331177
+        "validation_loss": 0.2160998433828354
       },
       {
         "epoch": 23,
-        "validation_loss": 0.27083489298820496
+        "validation_loss": 0.2178950160741806
       },
       {
         "epoch": 24,
-        "validation_loss": 0.2684977650642395
+        "validation_loss": 0.22050566971302032
       },
       {
         "epoch": 25,
-        "validation_loss": 0.2623736560344696
+        "validation_loss": 0.2334686666727066
       },
       {
         "epoch": 26,
-        "validation_loss": 0.2670643925666809
+        "validation_loss": 0.24289588630199432
       },
       {
         "epoch": 27,
-        "validation_loss": 0.2661600112915039
+        "validation_loss": 0.2290729284286499
       },
       {
         "epoch": 28,
-        "validation_loss": 0.2813612222671509
+        "validation_loss": 0.26979154348373413
       },
       {
         "epoch": 29,
-        "validation_loss": 0.2646922469139099
+        "validation_loss": 0.2230294942855835
       },
       {
         "epoch": 30,
-        "validation_loss": 0.26409074664115906
+        "validation_loss": 0.25723132491111755
       },
       {
         "epoch": 31,
-        "validation_loss": 0.2630617320537567
+        "validation_loss": 0.23632514476776123
       },
       {
         "epoch": 32,
-        "validation_loss": 0.2776661217212677
+        "validation_loss": 0.24027715623378754
       },
       {
         "epoch": 33,
-        "validation_loss": 0.26326751708984375
+        "validation_loss": 0.279481440782547
       },
       {
         "epoch": 34,
-        "validation_loss": 0.2570474445819855
+        "validation_loss": 0.2692503333091736
       },
       {
         "epoch": 35,
-        "validation_loss": 0.26239466667175293
+        "validation_loss": 0.28268298506736755
       },
       {
         "epoch": 36,
-        "validation_loss": 0.26647189259529114
+        "validation_loss": 0.26000237464904785
       },
       {
         "epoch": 37,
-        "validation_loss": 0.25294730067253113
+        "validation_loss": 0.26770836114883423
       },
       {
         "epoch": 38,
-        "validation_loss": 0.2633764147758484
+        "validation_loss": 0.29867810010910034
       },
       {
         "epoch": 39,
-        "validation_loss": 0.2650591731071472
+        "validation_loss": 0.28093162178993225
       },
       {
         "epoch": 40,
-        "validation_loss": 0.2557891011238098
+        "validation_loss": 0.2635221779346466
       },
       {
         "epoch": 41,
-        "validation_loss": 0.25866836309432983
+        "validation_loss": 0.24918979406356812
       },
       {
         "epoch": 42,
-        "validation_loss": 0.268636554479599
+        "validation_loss": 0.25769558548927307
       },
       {
         "epoch": 43,
-        "validation_loss": 0.26446443796157837
+        "validation_loss": 0.26207637786865234
       },
       {
         "epoch": 44,
-        "validation_loss": 0.2596682608127594
+        "validation_loss": 0.277858704328537
       },
       {
         "epoch": 45,
-        "validation_loss": 0.26859864592552185
+        "validation_loss": 0.31294888257980347
       },
       {
         "epoch": 46,
-        "validation_loss": 0.26144328713417053
+        "validation_loss": 0.3325808346271515
       },
       {
         "epoch": 47,
-        "validation_loss": 0.26528581976890564
+        "validation_loss": 0.3121333718299866
       },
       {
         "epoch": 48,
-        "validation_loss": 0.2588233947753906
+        "validation_loss": 0.2860945761203766
       },
       {
         "epoch": 49,
-        "validation_loss": 0.2705725431442261
+        "validation_loss": 0.27101069688796997
       },
       {
         "epoch": 50,
-        "validation_loss": 0.27662330865859985
+        "validation_loss": 0.2726665139198303
       },
       {
         "epoch": 51,
-        "validation_loss": 0.2864990234375
+        "validation_loss": 0.2875814139842987
       },
       {
         "epoch": 52,
-        "validation_loss": 0.2675824761390686
+        "validation_loss": 0.27885010838508606
       },
       {
         "epoch": 53,
-        "validation_loss": 0.2594626247882843
+        "validation_loss": 0.28310713171958923
       },
       {
         "epoch": 54,
-        "validation_loss": 0.26414570212364197
+        "validation_loss": 0.2877350449562073
       },
       {
         "epoch": 55,
-        "validation_loss": 0.2670382261276245
-      },
-      {
-        "epoch": 56,
-        "validation_loss": 0.27237293124198914
-      },
-      {
-        "epoch": 57,
-        "validation_loss": 0.25926730036735535
-      },
-      {
-        "epoch": 58,
-        "validation_loss": 0.2594338655471802
-      },
-      {
-        "epoch": 59,
-        "validation_loss": 0.26658350229263306
-      },
-      {
-        "epoch": 60,
-        "validation_loss": 0.25833508372306824
-      },
-      {
-        "epoch": 61,
-        "validation_loss": 0.2561586797237396
-      },
-      {
-        "epoch": 62,
-        "validation_loss": 0.2689792215824127
-      },
-      {
-        "epoch": 63,
-        "validation_loss": 0.25996795296669006
-      },
-      {
-        "epoch": 64,
-        "validation_loss": 0.26315298676490784
-      },
-      {
-        "epoch": 65,
-        "validation_loss": 0.2732408046722412
-      },
-      {
-        "epoch": 66,
-        "validation_loss": 0.2584511339664459
-      },
-      {
-        "epoch": 67,
-        "validation_loss": 0.267036110162735
-      },
-      {
-        "epoch": 68,
-        "validation_loss": 0.26414209604263306
-      },
-      {
-        "epoch": 69,
-        "validation_loss": 0.2808260917663574
-      },
-      {
-        "epoch": 70,
-        "validation_loss": 0.2613274157047272
-      },
-      {
-        "epoch": 71,
-        "validation_loss": 0.2730950117111206
-      },
-      {
-        "epoch": 72,
-        "validation_loss": 0.252101331949234
-      },
-      {
-        "epoch": 73,
-        "validation_loss": 0.2680685520172119
-      },
-      {
-        "epoch": 74,
-        "validation_loss": 0.25298789143562317
-      },
-      {
-        "epoch": 75,
-        "validation_loss": 0.2674253284931183
-      },
-      {
-        "epoch": 76,
-        "validation_loss": 0.25919660925865173
-      },
-      {
-        "epoch": 77,
-        "validation_loss": 0.2692948579788208
-      },
-      {
-        "epoch": 78,
-        "validation_loss": 0.2535363435745239
-      },
-      {
-        "epoch": 79,
-        "validation_loss": 0.28645142912864685
-      },
-      {
-        "epoch": 80,
-        "validation_loss": 0.2588607668876648
-      },
-      {
-        "epoch": 81,
-        "validation_loss": 0.2511959373950958
-      },
-      {
-        "epoch": 82,
-        "validation_loss": 0.2508126199245453
-      },
-      {
-        "epoch": 83,
-        "validation_loss": 0.2527012825012207
-      },
-      {
-        "epoch": 84,
-        "validation_loss": 0.26795849204063416
-      },
-      {
-        "epoch": 85,
-        "validation_loss": 0.25236350297927856
-      },
-      {
-        "epoch": 86,
-        "validation_loss": 0.2511218786239624
-      },
-      {
-        "epoch": 87,
-        "validation_loss": 0.2607530653476715
-      },
-      {
-        "epoch": 88,
-        "validation_loss": 0.24431930482387543
-      },
-      {
-        "epoch": 89,
-        "validation_loss": 0.24956215918064117
-      },
-      {
-        "epoch": 90,
-        "validation_loss": 0.24970610439777374
-      },
-      {
-        "epoch": 91,
-        "validation_loss": 0.2548292577266693
-      },
-      {
-        "epoch": 92,
-        "validation_loss": 0.2450411319732666
-      },
-      {
-        "epoch": 93,
-        "validation_loss": 0.2468242049217224
-      },
-      {
-        "epoch": 94,
-        "validation_loss": 0.24196144938468933
-      },
-      {
-        "epoch": 95,
-        "validation_loss": 0.26315000653266907
-      },
-      {
-        "epoch": 96,
-        "validation_loss": 0.2379692941904068
-      },
-      {
-        "epoch": 97,
-        "validation_loss": 0.25531426072120667
-      },
-      {
-        "epoch": 98,
-        "validation_loss": 0.24515274167060852
-      },
-      {
-        "epoch": 99,
-        "validation_loss": 0.24084320664405823
-      },
-      {
-        "epoch": 100,
-        "validation_loss": 0.24628189206123352
-      },
-      {
-        "epoch": 101,
-        "validation_loss": 0.24356281757354736
-      },
-      {
-        "epoch": 102,
-        "validation_loss": 0.2439095824956894
-      },
-      {
-        "epoch": 103,
-        "validation_loss": 0.23787660896778107
-      },
-      {
-        "epoch": 104,
-        "validation_loss": 0.2513562738895416
-      },
-      {
-        "epoch": 105,
-        "validation_loss": 0.24170012772083282
-      },
-      {
-        "epoch": 106,
-        "validation_loss": 0.2368021458387375
-      },
-      {
-        "epoch": 107,
-        "validation_loss": 0.23956722021102905
-      },
-      {
-        "epoch": 108,
-        "validation_loss": 0.240526020526886
-      },
-      {
-        "epoch": 109,
-        "validation_loss": 0.24669624865055084
-      },
-      {
-        "epoch": 110,
-        "validation_loss": 0.24047315120697021
-      },
-      {
-        "epoch": 111,
-        "validation_loss": 0.24423529207706451
-      },
-      {
-        "epoch": 112,
-        "validation_loss": 0.2406536191701889
-      },
-      {
-        "epoch": 113,
-        "validation_loss": 0.2467205673456192
-      },
-      {
-        "epoch": 114,
-        "validation_loss": 0.24177205562591553
-      },
-      {
-        "epoch": 115,
-        "validation_loss": 0.24511651694774628
-      },
-      {
-        "epoch": 116,
-        "validation_loss": 0.2451186180114746
-      },
-      {
-        "epoch": 117,
-        "validation_loss": 0.23359254002571106
-      },
-      {
-        "epoch": 118,
-        "validation_loss": 0.2385299652814865
-      },
-      {
-        "epoch": 119,
-        "validation_loss": 0.2410518229007721
-      },
-      {
-        "epoch": 120,
-        "validation_loss": 0.24836067855358124
-      },
-      {
-        "epoch": 121,
-        "validation_loss": 0.24252179265022278
-      },
-      {
-        "epoch": 122,
-        "validation_loss": 0.23455089330673218
-      },
-      {
-        "epoch": 123,
-        "validation_loss": 0.24050189554691315
-      },
-      {
-        "epoch": 124,
-        "validation_loss": 0.2289188951253891
-      },
-      {
-        "epoch": 125,
-        "validation_loss": 0.22839485108852386
-      },
-      {
-        "epoch": 126,
-        "validation_loss": 0.23877710103988647
-      },
-      {
-        "epoch": 127,
-        "validation_loss": 0.24046675860881805
-      },
-      {
-        "epoch": 128,
-        "validation_loss": 0.23483553528785706
-      },
-      {
-        "epoch": 129,
-        "validation_loss": 0.23430177569389343
-      },
-      {
-        "epoch": 130,
-        "validation_loss": 0.23210114240646362
-      },
-      {
-        "epoch": 131,
-        "validation_loss": 0.24248597025871277
-      },
-      {
-        "epoch": 132,
-        "validation_loss": 0.22703441977500916
-      },
-      {
-        "epoch": 133,
-        "validation_loss": 0.23076845705509186
-      },
-      {
-        "epoch": 134,
-        "validation_loss": 0.23233529925346375
-      },
-      {
-        "epoch": 135,
-        "validation_loss": 0.23032385110855103
-      },
-      {
-        "epoch": 136,
-        "validation_loss": 0.22181835770606995
-      },
-      {
-        "epoch": 137,
-        "validation_loss": 0.2274717539548874
-      },
-      {
-        "epoch": 138,
-        "validation_loss": 0.23895753920078278
-      },
-      {
-        "epoch": 139,
-        "validation_loss": 0.2596036195755005
-      },
-      {
-        "epoch": 140,
-        "validation_loss": 0.23016400635242462
-      },
-      {
-        "epoch": 141,
-        "validation_loss": 0.23199985921382904
-      },
-      {
-        "epoch": 142,
-        "validation_loss": 0.22265015542507172
-      },
-      {
-        "epoch": 143,
-        "validation_loss": 0.2385035902261734
-      },
-      {
-        "epoch": 144,
-        "validation_loss": 0.23254141211509705
-      },
-      {
-        "epoch": 145,
-        "validation_loss": 0.22890092432498932
-      },
-      {
-        "epoch": 146,
-        "validation_loss": 0.2210812270641327
-      },
-      {
-        "epoch": 147,
-        "validation_loss": 0.22733953595161438
-      },
-      {
-        "epoch": 148,
-        "validation_loss": 0.2260090410709381
-      },
-      {
-        "epoch": 149,
-        "validation_loss": 0.2233153134584427
-      },
-      {
-        "epoch": 150,
-        "validation_loss": 0.245392844080925
-      },
-      {
-        "epoch": 151,
-        "validation_loss": 0.22822561860084534
-      },
-      {
-        "epoch": 152,
-        "validation_loss": 0.2340543121099472
-      },
-      {
-        "epoch": 153,
-        "validation_loss": 0.22858454287052155
-      },
-      {
-        "epoch": 154,
-        "validation_loss": 0.2248917669057846
-      },
-      {
-        "epoch": 155,
-        "validation_loss": 0.21289488673210144
-      },
-      {
-        "epoch": 156,
-        "validation_loss": 0.23147092759609222
-      },
-      {
-        "epoch": 157,
-        "validation_loss": 0.2329433709383011
-      },
-      {
-        "epoch": 158,
-        "validation_loss": 0.2161226123571396
-      },
-      {
-        "epoch": 159,
-        "validation_loss": 0.22283728420734406
-      },
-      {
-        "epoch": 160,
-        "validation_loss": 0.2225896120071411
-      },
-      {
-        "epoch": 161,
-        "validation_loss": 0.22837379574775696
-      },
-      {
-        "epoch": 162,
-        "validation_loss": 0.2191980630159378
-      },
-      {
-        "epoch": 163,
-        "validation_loss": 0.22258307039737701
-      },
-      {
-        "epoch": 164,
-        "validation_loss": 0.2193996012210846
-      },
-      {
-        "epoch": 165,
-        "validation_loss": 0.2244119793176651
-      },
-      {
-        "epoch": 166,
-        "validation_loss": 0.22347445785999298
-      },
-      {
-        "epoch": 167,
-        "validation_loss": 0.22028139233589172
-      },
-      {
-        "epoch": 168,
-        "validation_loss": 0.2114945501089096
-      },
-      {
-        "epoch": 169,
-        "validation_loss": 0.21878483891487122
-      },
-      {
-        "epoch": 170,
-        "validation_loss": 0.22637304663658142
-      },
-      {
-        "epoch": 171,
-        "validation_loss": 0.22688259184360504
-      },
-      {
-        "epoch": 172,
-        "validation_loss": 0.2097906470298767
-      },
-      {
-        "epoch": 173,
-        "validation_loss": 0.22112111747264862
-      },
-      {
-        "epoch": 174,
-        "validation_loss": 0.21553407609462738
-      },
-      {
-        "epoch": 175,
-        "validation_loss": 0.21862764656543732
-      },
-      {
-        "epoch": 176,
-        "validation_loss": 0.2132134586572647
-      },
-      {
-        "epoch": 177,
-        "validation_loss": 0.2172800600528717
-      },
-      {
-        "epoch": 178,
-        "validation_loss": 0.2114918977022171
-      },
-      {
-        "epoch": 179,
-        "validation_loss": 0.2159704864025116
-      },
-      {
-        "epoch": 180,
-        "validation_loss": 0.20936259627342224
-      },
-      {
-        "epoch": 181,
-        "validation_loss": 0.21897700428962708
-      },
-      {
-        "epoch": 182,
-        "validation_loss": 0.2229340672492981
-      },
-      {
-        "epoch": 183,
-        "validation_loss": 0.2204880267381668
-      },
-      {
-        "epoch": 184,
-        "validation_loss": 0.20736263692378998
-      },
-      {
-        "epoch": 185,
-        "validation_loss": 0.21815583109855652
-      },
-      {
-        "epoch": 186,
-        "validation_loss": 0.21158148348331451
-      },
-      {
-        "epoch": 187,
-        "validation_loss": 0.21363212168216705
-      },
-      {
-        "epoch": 188,
-        "validation_loss": 0.2211063653230667
-      },
-      {
-        "epoch": 189,
-        "validation_loss": 0.2119751125574112
-      },
-      {
-        "epoch": 190,
-        "validation_loss": 0.21031485497951508
-      },
-      {
-        "epoch": 191,
-        "validation_loss": 0.21450667083263397
-      },
-      {
-        "epoch": 192,
-        "validation_loss": 0.20899808406829834
-      },
-      {
-        "epoch": 193,
-        "validation_loss": 0.20337018370628357
-      },
-      {
-        "epoch": 194,
-        "validation_loss": 0.2109093964099884
-      },
-      {
-        "epoch": 195,
-        "validation_loss": 0.2148049771785736
-      },
-      {
-        "epoch": 196,
-        "validation_loss": 0.21460425853729248
-      },
-      {
-        "epoch": 197,
-        "validation_loss": 0.1975102424621582
-      },
-      {
-        "epoch": 198,
-        "validation_loss": 0.19724388420581818
-      },
-      {
-        "epoch": 199,
-        "validation_loss": 0.20058348774909973
-      },
-      {
-        "epoch": 200,
-        "validation_loss": 0.21292147040367126
-      },
-      {
-        "epoch": 201,
-        "validation_loss": 0.20976626873016357
-      },
-      {
-        "epoch": 202,
-        "validation_loss": 0.22481775283813477
-      },
-      {
-        "epoch": 203,
-        "validation_loss": 0.20532453060150146
-      },
-      {
-        "epoch": 204,
-        "validation_loss": 0.20716224610805511
-      },
-      {
-        "epoch": 205,
-        "validation_loss": 0.21140845119953156
-      },
-      {
-        "epoch": 206,
-        "validation_loss": 0.217690572142601
-      },
-      {
-        "epoch": 207,
-        "validation_loss": 0.2033209651708603
-      },
-      {
-        "epoch": 208,
-        "validation_loss": 0.19746337831020355
-      },
-      {
-        "epoch": 209,
-        "validation_loss": 0.1997576504945755
-      },
-      {
-        "epoch": 210,
-        "validation_loss": 0.21694381535053253
-      },
-      {
-        "epoch": 211,
-        "validation_loss": 0.20591120421886444
-      },
-      {
-        "epoch": 212,
-        "validation_loss": 0.2063947468996048
-      },
-      {
-        "epoch": 213,
-        "validation_loss": 0.20042577385902405
-      },
-      {
-        "epoch": 214,
-        "validation_loss": 0.20561516284942627
-      },
-      {
-        "epoch": 215,
-        "validation_loss": 0.19579622149467468
-      },
-      {
-        "epoch": 216,
-        "validation_loss": 0.20987878739833832
-      },
-      {
-        "epoch": 217,
-        "validation_loss": 0.20237135887145996
-      },
-      {
-        "epoch": 218,
-        "validation_loss": 0.21214883029460907
-      },
-      {
-        "epoch": 219,
-        "validation_loss": 0.20786327123641968
-      },
-      {
-        "epoch": 220,
-        "validation_loss": 0.2169879972934723
-      },
-      {
-        "epoch": 221,
-        "validation_loss": 0.20328114926815033
-      },
-      {
-        "epoch": 222,
-        "validation_loss": 0.20145681500434875
-      },
-      {
-        "epoch": 223,
-        "validation_loss": 0.20934535562992096
-      },
-      {
-        "epoch": 224,
-        "validation_loss": 0.21151618659496307
-      },
-      {
-        "epoch": 225,
-        "validation_loss": 0.20322470366954803
-      },
-      {
-        "epoch": 226,
-        "validation_loss": 0.20546630024909973
-      },
-      {
-        "epoch": 227,
-        "validation_loss": 0.2040541023015976
-      },
-      {
-        "epoch": 228,
-        "validation_loss": 0.218022421002388
-      },
-      {
-        "epoch": 229,
-        "validation_loss": 0.2108127921819687
-      },
-      {
-        "epoch": 230,
-        "validation_loss": 0.20550291240215302
-      },
-      {
-        "epoch": 231,
-        "validation_loss": 0.19855894148349762
-      },
-      {
-        "epoch": 232,
-        "validation_loss": 0.2071039378643036
-      },
-      {
-        "epoch": 233,
-        "validation_loss": 0.20850324630737305
-      },
-      {
-        "epoch": 234,
-        "validation_loss": 0.20610292255878448
-      },
-      {
-        "epoch": 235,
-        "validation_loss": 0.20887558162212372
-      },
-      {
-        "epoch": 236,
-        "validation_loss": 0.21312972903251648
-      },
-      {
-        "epoch": 237,
-        "validation_loss": 0.22354768216609955
-      },
-      {
-        "epoch": 238,
-        "validation_loss": 0.20839273929595947
-      },
-      {
-        "epoch": 239,
-        "validation_loss": 0.20808985829353333
-      },
-      {
-        "epoch": 240,
-        "validation_loss": 0.20940227806568146
-      },
-      {
-        "epoch": 241,
-        "validation_loss": 0.20559917390346527
-      },
-      {
-        "epoch": 242,
-        "validation_loss": 0.22085022926330566
-      },
-      {
-        "epoch": 243,
-        "validation_loss": 0.20158325135707855
-      },
-      {
-        "epoch": 244,
-        "validation_loss": 0.20661576092243195
-      },
-      {
-        "epoch": 245,
-        "validation_loss": 0.20990926027297974
-      },
-      {
-        "epoch": 246,
-        "validation_loss": 0.2161174714565277
-      },
-      {
-        "epoch": 247,
-        "validation_loss": 0.19763028621673584
-      },
-      {
-        "epoch": 248,
-        "validation_loss": 0.21065440773963928
-      },
-      {
-        "epoch": 249,
-        "validation_loss": 0.2072116732597351
-      },
-      {
-        "epoch": 250,
-        "validation_loss": 0.20818722248077393
+        "validation_loss": 0.27451103925704956
       }
     ],
-    "augmentation": "none: the feature extractor lowercases all input",
+    "init_seed": 7,
     "clean_weight": 3.0,
     "l2": 0.0003,
-    "init_seed": 42,
-    "mined_val_weight": 0.0
+    "seed_selection": {
+      "42": 0.21019,
+      "7": 0.200507,
+      "123": 0.208262,
+      "2024": 0.209906,
+      "99": 0.207145
+    },
+    "augmentation": "none: the feature extractor lowercases all input"
   },
   "metrics": {
     "train": {
-      "count": 17016,
-      "accuracy": 0.9880112834978844,
+      "count": 19416,
+      "accuracy": 0.9734754841367944,
       "confusion_matrix": [
         [
-          7676,
-          134
+          7575,
+          235
         ],
         [
-          70,
-          9136
+          280,
+          11326
         ]
       ],
       "confusion_order": [
@@ -1045,85 +273,190 @@
       ],
       "classes": {
         "search_query": {
-          "precision": 0.9909630777175317,
-          "recall": 0.982842509603073,
-          "f1": 0.9868860889688865
+          "precision": 0.9643539147040102,
+          "recall": 0.9699103713188221,
+          "f1": 0.967124162144909
         },
         "person_name": {
-          "precision": 0.9855447680690399,
-          "recall": 0.9923962633065392,
-          "f1": 0.9889586490582378
+          "precision": 0.9796730386644754,
+          "recall": 0.9758745476477684,
+          "f1": 0.9777701040272802
         }
       },
       "errors": [
         {
-          "input": "sushi",
-          "output": "search_query",
-          "person_probability": 0.5558972358703613
+          "input": "Tran Thi Bich",
+          "output": "person_name",
+          "person_probability": 0.49459969997406006
+        },
+        {
+          "input": "Hector Rosales",
+          "output": "person_name",
+          "person_probability": 0.2737845480442047
+        },
+        {
+          "input": "Rembrandt",
+          "output": "person_name",
+          "person_probability": 0.48700979351997375
+        },
+        {
+          "input": "Charity Majors",
+          "output": "person_name",
+          "person_probability": 0.4181893467903137
         },
         {
           "input": "debian",
           "output": "search_query",
-          "person_probability": 0.599353551864624
+          "person_probability": 0.9073137044906616
+        },
+        {
+          "input": "kotlin",
+          "output": "search_query",
+          "person_probability": 0.5737417340278625
         },
         {
           "input": "reddit",
           "output": "search_query",
-          "person_probability": 0.5622984766960144
+          "person_probability": 0.5504967570304871
         },
         {
           "input": "asana",
           "output": "search_query",
-          "person_probability": 0.8670073747634888
+          "person_probability": 0.6200572848320007
         },
         {
           "input": "krita",
           "output": "search_query",
-          "person_probability": 0.7866592407226562
-        },
-        {
-          "input": "chemistry",
-          "output": "search_query",
-          "person_probability": 0.5270174741744995
+          "person_probability": 0.8372341394424438
         },
         {
           "input": "dal makhani",
           "output": "search_query",
-          "person_probability": 0.6926013231277466
+          "person_probability": 0.6276404857635498
         },
         {
-          "input": "Django",
+          "input": "chana masala",
           "output": "search_query",
-          "person_probability": 0.5805867910385132
+          "person_probability": 0.5018301606178284
+        },
+        {
+          "input": "aloo gobi",
+          "output": "search_query",
+          "person_probability": 0.8278382420539856
+        },
+        {
+          "input": "pav bhaji",
+          "output": "search_query",
+          "person_probability": 0.6080836653709412
+        },
+        {
+          "input": "bhel puri",
+          "output": "search_query",
+          "person_probability": 0.5653630495071411
+        },
+        {
+          "input": "sabudana khichdi",
+          "output": "search_query",
+          "person_probability": 0.6206338405609131
+        },
+        {
+          "input": "virgin mojito",
+          "output": "search_query",
+          "person_probability": 0.8364510536193848
+        },
+        {
+          "input": "bookshelf ideas",
+          "output": "search_query",
+          "person_probability": 0.5269296169281006
         },
         {
           "input": "Sinatra",
           "output": "search_query",
-          "person_probability": 0.6716656684875488
+          "person_probability": 0.5360769033432007
         },
         {
-          "input": "nikon vs canon",
+          "input": "ASP.NET Core",
           "output": "search_query",
-          "person_probability": 0.6369113922119141
+          "person_probability": 0.5240343809127808
         },
         {
-          "input": "Ruby On Rails",
+          "input": "Godot",
           "output": "search_query",
-          "person_probability": 0.5391032695770264
+          "person_probability": 0.6304770112037659
+        },
+        {
+          "input": "LangSmith",
+          "output": "search_query",
+          "person_probability": 0.5308277606964111
+        },
+        {
+          "input": "George Hotz tinygrad",
+          "output": "search_query",
+          "person_probability": 0.6604872941970825
+        },
+        {
+          "input": "Claude Sonnet",
+          "output": "search_query",
+          "person_probability": 0.7673667669296265
+        },
+        {
+          "input": "Claude Haiku",
+          "output": "search_query",
+          "person_probability": 0.9156615734100342
+        },
+        {
+          "input": "singh dhaba highway",
+          "output": "search_query",
+          "person_probability": 0.6932345628738403
+        },
+        {
+          "input": "social media",
+          "output": "search_query",
+          "person_probability": 0.8988012671470642
+        },
+        {
+          "input": "yoga nidra",
+          "output": "search_query",
+          "person_probability": 0.8113527297973633
+        },
+        {
+          "input": "palm oil",
+          "output": "search_query",
+          "person_probability": 0.5136826634407043
+        },
+        {
+          "input": "almond milk",
+          "output": "search_query",
+          "person_probability": 0.6208800077438354
+        },
+        {
+          "input": "grace period",
+          "output": "search_query",
+          "person_probability": 0.8491663932800293
+        },
+        {
+          "input": "prince william sound",
+          "output": "search_query",
+          "person_probability": 0.5261126160621643
+        },
+        {
+          "input": "mobile phones",
+          "output": "search_query",
+          "person_probability": 0.5240320563316345
         }
       ]
     },
     "validation": {
-      "count": 2127,
-      "accuracy": 0.9017395392571698,
+      "count": 2427,
+      "accuracy": 0.9101771734651833,
       "confusion_matrix": [
         [
-          872,
-          104
+          873,
+          103
         ],
         [
-          105,
-          1046
+          115,
+          1336
         ]
       ],
       "confusion_order": [
@@ -1132,280 +465,320 @@
       ],
       "classes": {
         "search_query": {
-          "precision": 0.8925281473899693,
-          "recall": 0.8934426229508197,
-          "f1": 0.8929851510496672
+          "precision": 0.8836032388663968,
+          "recall": 0.8944672131147541,
+          "f1": 0.8890020366598779
         },
         "person_name": {
-          "precision": 0.9095652173913044,
-          "recall": 0.9087749782797567,
-          "f1": 0.9091699261190787
+          "precision": 0.9284225156358582,
+          "recall": 0.9207443142660234,
+          "f1": 0.9245674740484429
         }
       },
       "errors": [
         {
-          "input": "Betty Adams",
+          "input": "Tyler Reynolds",
           "output": "person_name",
-          "person_probability": 0.2484043836593628
+          "person_probability": 0.20195633172988892
         },
         {
-          "input": "Leah Banks",
+          "input": "Rose Carpenter",
           "output": "person_name",
-          "person_probability": 0.05831676721572876
+          "person_probability": 0.08908084034919739
         },
         {
-          "input": "Vincent Bowers",
+          "input": "Curtis Meyer",
           "output": "person_name",
-          "person_probability": 0.21378496289253235
+          "person_probability": 0.3686106204986572
         },
         {
-          "input": "Duncan Phelps",
+          "input": "Genevieve Malone",
           "output": "person_name",
-          "person_probability": 0.3053334057331085
+          "person_probability": 0.4897976815700531
         },
         {
-          "input": "Prashant Anand",
+          "input": "Su Su Hlaing",
           "output": "person_name",
-          "person_probability": 0.42109090089797974
+          "person_probability": 0.24334716796875
         },
         {
-          "input": "Qing Pan",
+          "input": "Wai Wai Phyo",
           "output": "person_name",
-          "person_probability": 0.49596932530403137
+          "person_probability": 0.20151004195213318
         },
         {
-          "input": "Krit Sombat",
+          "input": "Victor Cortes",
           "output": "person_name",
-          "person_probability": 0.25996196269989014
+          "person_probability": 0.058101505041122437
         },
         {
-          "input": "Piseth Chea",
+          "input": "Renato Duarte",
           "output": "person_name",
-          "person_probability": 0.377593994140625
+          "person_probability": 0.130998432636261
         },
         {
-          "input": "Caio Neves",
+          "input": "Benoit Renard",
           "output": "person_name",
-          "person_probability": 0.28875550627708435
+          "person_probability": 0.04108801484107971
         },
         {
-          "input": "Mpho Ncube",
+          "input": "Tigist Mekonnen",
           "output": "person_name",
-          "person_probability": 0.008116930723190308
+          "person_probability": 0.45077669620513916
+        },
+        {
+          "input": "Rumbidzai Zhou",
+          "output": "person_name",
+          "person_probability": 0.3738793134689331
+        },
+        {
+          "input": "Despina Economou",
+          "output": "person_name",
+          "person_probability": 0.1571236550807953
         },
         {
           "input": "Finn De Groot",
           "output": "person_name",
-          "person_probability": 0.47689610719680786
+          "person_probability": 0.3743607997894287
+        },
+        {
+          "input": "Adam",
+          "output": "person_name",
+          "person_probability": 0.3577720522880554
+        },
+        {
+          "input": "Eve",
+          "output": "person_name",
+          "person_probability": 0.07637017965316772
         },
         {
           "input": "Beyonce",
           "output": "person_name",
-          "person_probability": 0.1218930184841156
+          "person_probability": 0.3256244659423828
         },
         {
-          "input": "\u5434\u71d5",
+          "input": "Plato",
           "output": "person_name",
-          "person_probability": 0.3633822202682495
+          "person_probability": 0.012081056833267212
+        },
+        {
+          "input": "Dante",
+          "output": "person_name",
+          "person_probability": 0.11695802211761475
+        },
+        {
+          "input": "Caravaggio",
+          "output": "person_name",
+          "person_probability": 0.07388508319854736
+        },
+        {
+          "input": "Kalidasa",
+          "output": "person_name",
+          "person_probability": 0.23063519597053528
+        },
+        {
+          "input": "Valmiki",
+          "output": "person_name",
+          "person_probability": 0.4415229260921478
         },
         {
           "input": "vodka",
           "output": "search_query",
-          "person_probability": 0.6142508387565613
+          "person_probability": 0.7785277962684631
         },
         {
           "input": "wikipedia",
           "output": "search_query",
-          "person_probability": 0.7623743414878845
+          "person_probability": 0.5300573706626892
+        },
+        {
+          "input": "obsidian",
+          "output": "search_query",
+          "person_probability": 0.9728832840919495
         },
         {
           "input": "tennis",
           "output": "search_query",
-          "person_probability": 0.8975459337234497
-        },
-        {
-          "input": "archery",
-          "output": "search_query",
-          "person_probability": 0.9166451692581177
+          "person_probability": 0.9413158893585205
         },
         {
           "input": "arthritis",
           "output": "search_query",
-          "person_probability": 0.8076620101928711
+          "person_probability": 0.9950013756752014
+        },
+        {
+          "input": "thyroid",
+          "output": "search_query",
+          "person_probability": 0.9930139183998108
         },
         {
           "input": "onsen",
           "output": "search_query",
-          "person_probability": 0.8646793961524963
-        },
-        {
-          "input": "lunar eclipse",
-          "output": "search_query",
-          "person_probability": 0.6018743515014648
-        },
-        {
-          "input": "chicken biryani",
-          "output": "search_query",
-          "person_probability": 0.5566927194595337
+          "person_probability": 0.6222444772720337
         },
         {
           "input": "rajma chawal",
           "output": "search_query",
-          "person_probability": 0.9952462315559387
+          "person_probability": 0.9996020793914795
         },
         {
           "input": "medu vada",
           "output": "search_query",
-          "person_probability": 0.9710856676101685
+          "person_probability": 0.9754970073699951
         },
         {
-          "input": "marinara sauce",
+          "input": "sesame balls",
           "output": "search_query",
-          "person_probability": 0.7444608807563782
+          "person_probability": 0.8465597629547119
         },
         {
-          "input": "plum chutney",
+          "input": "espresso grind",
           "output": "search_query",
-          "person_probability": 0.6886380910873413
+          "person_probability": 0.6481139063835144
         },
         {
           "input": "gas hob",
           "output": "search_query",
-          "person_probability": 0.9464734792709351
+          "person_probability": 0.9936424493789673
+        },
+        {
+          "input": "nonstick pan",
+          "output": "search_query",
+          "person_probability": 0.9248112440109253
+        },
+        {
+          "input": "silicone spatula",
+          "output": "search_query",
+          "person_probability": 0.7052133679389954
         },
         {
           "input": "colander reviews",
           "output": "search_query",
-          "person_probability": 0.5840140581130981
+          "person_probability": 0.9019200801849365
         },
         {
-          "input": "DuckDB",
+          "input": "garage door",
           "output": "search_query",
-          "person_probability": 0.9190378189086914
+          "person_probability": 0.5581406950950623
+        },
+        {
+          "input": "Dioxus",
+          "output": "search_query",
+          "person_probability": 0.755496084690094
         },
         {
           "input": "Yew",
           "output": "search_query",
-          "person_probability": 0.9386608600616455
+          "person_probability": 0.5788910984992981
         },
         {
-          "input": "JailbreakBench",
+          "input": "Visx",
           "output": "search_query",
-          "person_probability": 0.8392788767814636
+          "person_probability": 0.602622926235199
         },
         {
-          "input": "Ragas",
+          "input": "Nova editor",
           "output": "search_query",
-          "person_probability": 0.6430158615112305
+          "person_probability": 0.5659263134002686
+        },
+        {
+          "input": "NannyML",
+          "output": "search_query",
+          "person_probability": 0.8984998464584351
         },
         {
           "input": "Argilla",
           "output": "search_query",
-          "person_probability": 0.649071216583252
+          "person_probability": 0.8169666528701782
         },
         {
-          "input": "Zenodo",
+          "input": "DOAJ",
           "output": "search_query",
-          "person_probability": 0.9353235960006714
+          "person_probability": 0.8936393857002258
         },
         {
           "input": "JabRef",
           "output": "search_query",
-          "person_probability": 0.8376247882843018
+          "person_probability": 0.6408675909042358
         },
         {
-          "input": "Ileana Dcruz",
-          "output": "person_name",
-          "person_probability": 0.24200797080993652
+          "input": "Zyte",
+          "output": "search_query",
+          "person_probability": 0.662986695766449
+        },
+        {
+          "input": "Dan Abramov react",
+          "output": "search_query",
+          "person_probability": 0.8742002248764038
         },
         {
           "input": "natural gas",
           "output": "search_query",
-          "person_probability": 0.8732267022132874
+          "person_probability": 0.9662526845932007
         },
         {
           "input": "acid rain",
           "output": "search_query",
-          "person_probability": 0.6686316132545471
-        },
-        {
-          "input": "sales funnel",
-          "output": "search_query",
-          "person_probability": 0.6626095175743103
+          "person_probability": 0.7376019954681396
         },
         {
           "input": "bird feeders",
           "output": "search_query",
-          "person_probability": 0.6717559695243835
+          "person_probability": 0.8247435092926025
         },
         {
           "input": "bio gas",
           "output": "search_query",
-          "person_probability": 0.7811756134033203
+          "person_probability": 0.5504923462867737
         },
         {
-          "input": "iron ore",
+          "input": "marine law",
           "output": "search_query",
-          "person_probability": 0.9269667267799377
+          "person_probability": 0.5112869143486023
+        },
+        {
+          "input": "silver jewelry",
+          "output": "search_query",
+          "person_probability": 0.6214407086372375
         },
         {
           "input": "mason jars",
           "output": "search_query",
-          "person_probability": 0.5169730186462402
+          "person_probability": 0.7991738319396973
         },
         {
           "input": "jasmine tea",
           "output": "search_query",
-          "person_probability": 0.8205966949462891
-        },
-        {
-          "input": "dale carnegie style",
-          "output": "search_query",
-          "person_probability": 0.9721564054489136
-        },
-        {
-          "input": "rain gutters",
-          "output": "search_query",
-          "person_probability": 0.5340324640274048
-        },
-        {
-          "input": "Rose Garden Care",
-          "output": "search_query",
-          "person_probability": 0.5939950942993164
-        },
-        {
-          "input": "Edsger Dijkstra",
-          "output": "person_name",
-          "person_probability": 0.2409842312335968
+          "person_probability": 0.960869312286377
         },
         {
           "input": "Sally Ride",
           "output": "person_name",
-          "person_probability": 0.15217173099517822
+          "person_probability": 0.369515061378479
         },
         {
-          "input": "Wright Brothers",
+          "input": "Barbara McClintock",
           "output": "person_name",
-          "person_probability": 0.2873973846435547
+          "person_probability": 0.07549288868904114
         },
         {
-          "input": "Al-Khwarizmi",
+          "input": "David Attenborough",
           "output": "person_name",
-          "person_probability": 0.07315698266029358
+          "person_probability": 0.4784165024757385
         }
       ]
     },
     "test": {
-      "count": 2128,
-      "accuracy": 0.8961466165413534,
+      "count": 2428,
+      "accuracy": 0.9093904448105437,
       "confusion_matrix": [
         [
-          875,
-          102
+          883,
+          94
         ],
         [
-          119,
-          1032
+          126,
+          1325
         ]
       ],
       "confusion_order": [
@@ -1414,354 +787,255 @@
       ],
       "classes": {
         "search_query": {
-          "precision": 0.8802816901408451,
-          "recall": 0.8955987717502559,
-          "f1": 0.8878741755454085
+          "precision": 0.8751238850346879,
+          "recall": 0.9037871033776868,
+          "f1": 0.8892245720040282
         },
         "person_name": {
-          "precision": 0.91005291005291,
-          "recall": 0.896611642050391,
-          "f1": 0.9032822757111597
+          "precision": 0.9337561663143058,
+          "recall": 0.9131633356305996,
+          "f1": 0.9233449477351917
         }
       },
       "errors": [
         {
-          "input": "Mark Hill",
+          "input": "Millicent Fletcher",
           "output": "person_name",
-          "person_probability": 0.24771752953529358
+          "person_probability": 0.05965381860733032
         },
         {
-          "input": "Scott Hughes",
+          "input": "Eimear Hayes",
           "output": "person_name",
-          "person_probability": 0.10169804096221924
+          "person_probability": 0.4593552052974701
         },
         {
-          "input": "Terry Mills",
+          "input": "Daljit Bains",
           "output": "person_name",
-          "person_probability": 0.43673574924468994
+          "person_probability": 0.1691504418849945
         },
         {
-          "input": "Grace Hawkins",
+          "input": "Hiroto Ishii",
           "output": "person_name",
-          "person_probability": 0.1365344524383545
+          "person_probability": 0.27044251561164856
         },
         {
-          "input": "Lawrence Dunn",
+          "input": "Minseok Moon",
           "output": "person_name",
-          "person_probability": 0.2719807028770447
+          "person_probability": 0.41848570108413696
         },
         {
-          "input": "Hudson Cross",
+          "input": "Ramon Espino",
           "output": "person_name",
-          "person_probability": 0.1871936321258545
+          "person_probability": 0.39380890130996704
         },
         {
-          "input": "Lincoln Ingram",
+          "input": "Matheus Martins",
           "output": "person_name",
-          "person_probability": 0.006470739841461182
+          "person_probability": 0.3023728132247925
         },
         {
-          "input": "Ada Holloway",
+          "input": "Tobias Lange",
           "output": "person_name",
-          "person_probability": 0.3595619201660156
+          "person_probability": 0.2889895737171173
         },
         {
-          "input": "Percy Langford",
+          "input": "Lotte Maier",
           "output": "person_name",
-          "person_probability": 0.2555379867553711
+          "person_probability": 0.44488486647605896
         },
         {
-          "input": "Lloyd Furtado",
+          "input": "Martin Nemec",
           "output": "person_name",
-          "person_probability": 0.0659075379371643
+          "person_probability": 0.4616917073726654
         },
         {
-          "input": "Xue Cao",
+          "input": "Oumou Toure",
           "output": "person_name",
-          "person_probability": 0.15485456585884094
+          "person_probability": 0.19079244136810303
         },
         {
-          "input": "Chaiwat Boonmee",
+          "input": "\u9234\u6728\u82b1\u5b50",
           "output": "person_name",
-          "person_probability": 0.4438190460205078
+          "person_probability": 0.1806519329547882
         },
         {
-          "input": "Ye Htet",
+          "input": "\ubc15\uc9c0\ud638",
           "output": "person_name",
-          "person_probability": 0.49910420179367065
+          "person_probability": 0.036426842212677
         },
         {
-          "input": "Myint Tun",
+          "input": "Alan Turing",
           "output": "person_name",
-          "person_probability": 0.43497541546821594
-        },
-        {
-          "input": "Juliette Legrand",
-          "output": "person_name",
-          "person_probability": 0.20149990916252136
-        },
-        {
-          "input": "Baptiste Muller",
-          "output": "person_name",
-          "person_probability": 0.2847878336906433
-        },
-        {
-          "input": "Oceane Meunier",
-          "output": "person_name",
-          "person_probability": 0.09930470585823059
-        },
-        {
-          "input": "Claire Blanchard",
-          "output": "person_name",
-          "person_probability": 0.20337539911270142
-        },
-        {
-          "input": "Lindiwe Hlongwane",
-          "output": "person_name",
-          "person_probability": 0.4833788573741913
-        },
-        {
-          "input": "Emre Acar",
-          "output": "person_name",
-          "person_probability": 0.07195103168487549
-        },
-        {
-          "input": "Confucius",
-          "output": "person_name",
-          "person_probability": 0.03697964549064636
-        },
-        {
-          "input": "Dante",
-          "output": "person_name",
-          "person_probability": 0.3391658067703247
-        },
-        {
-          "input": "Patrick O'Neill",
-          "output": "person_name",
-          "person_probability": 0.34644389152526855
-        },
-        {
-          "input": "Niamh O'Sullivan",
-          "output": "person_name",
-          "person_probability": 0.3397004306316376
-        },
-        {
-          "input": "Pieter Abbeel",
-          "output": "person_name",
-          "person_probability": 0.06150141358375549
-        },
-        {
-          "input": "Ada Lovelace",
-          "output": "person_name",
-          "person_probability": 0.27314692735671997
-        },
-        {
-          "input": "android",
-          "output": "search_query",
-          "person_probability": 0.8260151147842407
+          "person_probability": 0.24059155583381653
         },
         {
           "input": "anatomy",
           "output": "search_query",
-          "person_probability": 0.9079046249389648
+          "person_probability": 0.5140247344970703
         },
         {
-          "input": "backpain",
+          "input": "blush",
           "output": "search_query",
-          "person_probability": 0.7312220335006714
+          "person_probability": 0.5425110459327698
         },
         {
           "input": "primer",
           "output": "search_query",
-          "person_probability": 0.952316164970398
-        },
-        {
-          "input": "sheet pan chicken",
-          "output": "search_query",
-          "person_probability": 0.9082956314086914
+          "person_probability": 0.9949167966842651
         },
         {
           "input": "mutton stew",
           "output": "search_query",
-          "person_probability": 0.8070464134216309
+          "person_probability": 0.9896037578582764
         },
         {
           "input": "fattoush salad",
           "output": "search_query",
-          "person_probability": 0.9259302020072937
-        },
-        {
-          "input": "toaster oven",
-          "output": "search_query",
-          "person_probability": 0.736852765083313
+          "person_probability": 0.9999655485153198
         },
         {
           "input": "knife sharpener",
           "output": "search_query",
-          "person_probability": 0.6954212188720703
+          "person_probability": 0.8223437070846558
+        },
+        {
+          "input": "dish soap",
+          "output": "search_query",
+          "person_probability": 0.607903778553009
+        },
+        {
+          "input": "wall hooks",
+          "output": "search_query",
+          "person_probability": 0.9161165952682495
         },
         {
           "input": "double glazing",
           "output": "search_query",
-          "person_probability": 0.8299103379249573
+          "person_probability": 0.7636265754699707
+        },
+        {
+          "input": "mold removal",
+          "output": "search_query",
+          "person_probability": 0.8447791337966919
         },
         {
           "input": "json schema",
           "output": "search_query",
-          "person_probability": 0.9855803847312927
+          "person_probability": 0.9990111589431763
         },
         {
-          "input": "Qwik City",
+          "input": "DNS",
           "output": "search_query",
-          "person_probability": 0.5486537218093872
+          "person_probability": 0.5267208814620972
         },
         {
-          "input": "Terminal-Bench",
+          "input": "Sanic",
           "output": "search_query",
-          "person_probability": 0.5772054195404053
+          "person_probability": 0.5095404386520386
+        },
+        {
+          "input": "Expo",
+          "output": "search_query",
+          "person_probability": 0.7476664781570435
+        },
+        {
+          "input": "ARC benchmark",
+          "output": "search_query",
+          "person_probability": 0.7159808874130249
+        },
+        {
+          "input": "DVC",
+          "output": "search_query",
+          "person_probability": 0.9791608452796936
+        },
+        {
+          "input": "PubMed",
+          "output": "search_query",
+          "person_probability": 0.7498131990432739
         },
         {
           "input": "Dryad data",
           "output": "search_query",
-          "person_probability": 0.8779023289680481
+          "person_probability": 0.63608717918396
         },
         {
           "input": "SiYuan",
           "output": "search_query",
-          "person_probability": 0.9496923685073853
-        },
-        {
-          "input": "models smaller than 100kb",
-          "output": "search_query",
-          "person_probability": 0.5050144195556641
+          "person_probability": 0.945391058921814
         },
         {
           "input": "Jeremy Howard fastai",
           "output": "search_query",
-          "person_probability": 0.9894428253173828
+          "person_probability": 0.9207186698913574
         },
         {
-          "input": "Simon Willison blog",
+          "input": "Llama Parse",
           "output": "search_query",
-          "person_probability": 0.809507429599762
+          "person_probability": 0.7304929494857788
         },
         {
-          "input": "Sushant Rajput",
+          "input": "Huma Qureshi",
           "output": "person_name",
-          "person_probability": 0.07558241486549377
-        },
-        {
-          "input": "Kajal Aggarwal",
-          "output": "person_name",
-          "person_probability": 0.38715726137161255
-        },
-        {
-          "input": "Le Hoang Anh",
-          "output": "person_name",
-          "person_probability": 0.40567252039909363
-        },
-        {
-          "input": "henry stewart",
-          "output": "person_name",
-          "person_probability": 0.2072264552116394
+          "person_probability": 0.3310343027114868
         },
         {
           "input": "desai patel marriage hall",
           "output": "search_query",
-          "person_probability": 0.6917271018028259
+          "person_probability": 0.6780335903167725
         },
         {
-          "input": "minimum wage",
+          "input": "android jetpack compose",
           "output": "search_query",
-          "person_probability": 0.6313474774360657
+          "person_probability": 0.6971434354782104
+        },
+        {
+          "input": "physical therapy",
+          "output": "search_query",
+          "person_probability": 0.7533612847328186
         },
         {
           "input": "tennis elbow",
           "output": "search_query",
-          "person_probability": 0.6074094176292419
-        },
-        {
-          "input": "soul music",
-          "output": "search_query",
-          "person_probability": 0.9301365613937378
-        },
-        {
-          "input": "baker street",
-          "output": "search_query",
-          "person_probability": 0.5490069389343262
+          "person_probability": 0.977654755115509
         },
         {
           "input": "rose garden",
           "output": "search_query",
-          "person_probability": 0.9304240942001343
-        },
-        {
-          "input": "faith healing",
-          "output": "search_query",
-          "person_probability": 0.702093243598938
-        },
-        {
-          "input": "pearl harbor",
-          "output": "search_query",
-          "person_probability": 0.6361227631568909
-        },
-        {
-          "input": "river delta",
-          "output": "search_query",
-          "person_probability": 0.7006770372390747
+          "person_probability": 0.5109068751335144
         },
         {
           "input": "page layout",
           "output": "search_query",
-          "person_probability": 0.5731552839279175
-        },
-        {
-          "input": "frost heave",
-          "output": "search_query",
-          "person_probability": 0.5090564489364624
+          "person_probability": 0.8441094160079956
         },
         {
           "input": "ice bath",
           "output": "search_query",
-          "person_probability": 0.6566749215126038
+          "person_probability": 0.5586845278739929
         },
         {
-          "input": "gap year",
+          "input": "fire drill",
           "output": "search_query",
-          "person_probability": 0.7082110643386841
+          "person_probability": 0.7096725702285767
         },
         {
-          "input": "Emily Dickinson",
-          "output": "person_name",
-          "person_probability": 0.4283600449562073
+          "input": "eye care",
+          "output": "search_query",
+          "person_probability": 0.5888475775718689
         },
         {
-          "input": "Taylor Swift",
+          "input": "Ellen DeGeneres",
           "output": "person_name",
-          "person_probability": 0.3889884650707245
+          "person_probability": 0.4901602864265442
         },
         {
-          "input": "Winston Churchill",
+          "input": "Terence Tao",
           "output": "person_name",
-          "person_probability": 0.19186070561408997
-        },
-        {
-          "input": "Stephen Curry",
-          "output": "person_name",
-          "person_probability": 0.23511043190956116
-        },
-        {
-          "input": "David Attenborough",
-          "output": "person_name",
-          "person_probability": 0.16803693771362305
-        },
-        {
-          "input": "Meryl Streep",
-          "output": "person_name",
-          "person_probability": 0.31647586822509766
+          "person_probability": 0.44872552156448364
         }
       ]
     }
   },
-  "limitations": "Authored synthetic data; random holdout measures this corpus only. Validate on real traffic."
+  "limitations": "Authored synthetic data plus mined profile data; random holdout measures this corpus only. Validate on real traffic.",
+  "errors_note": "errors list misclassified authored (committed) examples only; mined profile names are scrubbed"
 }
