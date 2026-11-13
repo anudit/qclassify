@@ -3,10 +3,10 @@ import unicodedata
 
 import numpy as np
 
-HASH_BINS = 1024
+HASH_BINS = 2028  # + 20 shape features = 2048 inputs, the texture width WebGL 2 guarantees
 SHAPE_FEATURES = 20
 INPUT_DIM = HASH_BINS + SHAPE_FEATURES
-FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v3"
+FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v4"
 MAX_CHARS = 256
 REQUEST_WORDS = frozenset("how what where when why who find show latest recent best compare search".split())
 ARTIFACT_WORDS = frozenset("biography biographies papers publications tutorials courses interviews interview blog projects announcements github books news talks lecture lectures research tools libraries library frameworks software datasets opportunities jobs".split())

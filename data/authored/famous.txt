@@ -1,0 +1,348 @@
+Alan Turing
+Charles Babbage
+John von Neumann
+Claude Shannon
+Edsger Dijkstra
+Tony Hoare
+Niklaus Wirth
+Ken Thompson
+Bjarne Stroustrup
+James Gosling
+Larry Wall
+Yukihiro Matsumoto
+Anders Hejlsberg
+Rich Hickey
+Rob Pike
+Brian Kernighan
+John McCarthy
+Marvin Minsky
+Geoffrey Hinton
+Yoshua Bengio
+Yann LeCun
+Andrew Ng
+Fei-Fei Li
+Demis Hassabis
+Ilya Sutskever
+Andrej Karpathy
+Judea Pearl
+Leslie Lamport
+Vint Cerf
+Bob Kahn
+Whitfield Diffie
+Martin Hellman
+Ralph Merkle
+Shafi Goldwasser
+Silvio Micali
+Leonard Adleman
+Adi Shamir
+Ron Rivest
+Frances Allen
+Jean Sammet
+Sophie Wilson
+Hedy Lamarr
+Mary Allen Wilkes
+Evelyn Boyd Granville
+Dorothy Vaughan
+Mae Jemison
+Sally Ride
+Valentina Tereshkova
+Neil Armstrong
+Buzz Aldrin
+Yuri Gagarin
+Wernher von Braun
+Stephen Hawking
+Albert Einstein
+Isaac Newton
+Galileo Galilei
+Johannes Kepler
+Nicolaus Copernicus
+Max Planck
+Erwin Schrodinger
+Werner Heisenberg
+Paul Dirac
+Enrico Fermi
+Robert Oppenheimer
+Lise Meitner
+Chien-Shiung Wu
+Subrahmanyan Chandrasekhar
+C. V. Raman
+Satyendra Nath Bose
+Homi Bhabha
+Vikram Sarabhai
+A. P. J. Abdul Kalam
+Jagadish Chandra Bose
+Meghnad Saha
+Charles Darwin
+Gregor Mendel
+Louis Pasteur
+Alexander Fleming
+Jonas Salk
+Edward Jenner
+Florence Nightingale
+Barbara McClintock
+James Watson
+Francis Crick
+Jennifer Doudna
+Emmanuelle Charpentier
+Katalin Kariko
+Tu Youyou
+Nikola Tesla
+Thomas Edison
+Michael Faraday
+James Clerk Maxwell
+Alessandro Volta
+Alexander Graham Bell
+Guglielmo Marconi
+Wright Brothers
+Henry Ford
+Gottfried Leibniz
+Leonhard Euler
+Carl Friedrich Gauss
+Bernhard Riemann
+Evariste Galois
+Georg Cantor
+David Hilbert
+Kurt Godel
+Alan Kay
+Douglas Engelbart
+Ivan Sutherland
+Gordon Moore
+Robert Noyce
+Steve Wozniak
+Bill Gates
+Paul Allen
+Larry Page
+Sergey Brin
+Mark Zuckerberg
+Jeff Bezos
+Tim Cook
+Jack Dorsey
+Reed Hastings
+Brian Chesky
+Patrick Collison
+Vitalik Buterin
+Satoshi Nakamoto
+Naval Ravikant
+Paul Graham
+Marc Andreessen
+Peter Thiel
+Reid Hoffman
+Nandan Nilekani
+Narayana Murthy
+Ratan Tata
+Azim Premji
+Kiran Mazumdar-Shaw
+Falguni Nayar
+Bhavish Aggarwal
+Nithin Kamath
+Aristotle
+Socrates
+Plato
+Confucius
+Immanuel Kant
+Friedrich Nietzsche
+Rene Descartes
+John Locke
+Simone de Beauvoir
+Hannah Arendt
+Karl Marx
+Adam Smith
+John Maynard Keynes
+Amartya Sen
+Raghuram Rajan
+William Shakespeare
+Jane Austen
+Charles Dickens
+Leo Tolstoy
+Fyodor Dostoevsky
+Franz Kafka
+George Orwell
+Maya Angelou
+Chinua Achebe
+Haruki Murakami
+Salman Rushdie
+Rabindranath Tagore
+Premchand
+Arundhati Roy
+Jhumpa Lahiri
+Ernest Hemingway
+Mark Twain
+Emily Dickinson
+Pablo Neruda
+Octavio Paz
+Michelangelo
+Vincent van Gogh
+Claude Monet
+Salvador Dali
+Rembrandt
+Andy Warhol
+Georgia OKeeffe
+Banksy
+Raja Ravi Varma
+Amrita Sher-Gil
+M. F. Husain
+Ludwig van Beethoven
+Wolfgang Mozart
+Johann Sebastian Bach
+Frederic Chopin
+Pyotr Tchaikovsky
+Miles Davis
+Louis Armstrong
+Bob Dylan
+John Lennon
+Freddie Mercury
+Beyonce
+Taylor Swift
+A. R. Rahman
+Ravi Shankar
+Lata Mangeshkar
+Kishore Kumar
+Mahatma Gandhi
+Jawaharlal Nehru
+Sardar Patel
+B. R. Ambedkar
+Subhas Chandra Bose
+Bhagat Singh
+Rani Lakshmibai
+Sarojini Naidu
+Narendra Modi
+Martin Luther King
+Rosa Parks
+Barack Obama
+Winston Churchill
+Joan of Arc
+Julius Caesar
+Alexander the Great
+Genghis Khan
+Queen Victoria
+Ashoka
+Akbar
+Shivaji
+Mother Teresa
+Dalai Lama
+Desmond Tutu
+Angela Merkel
+Jacinda Ardern
+Muhammad Ali
+Pele
+Diego Maradona
+Cristiano Ronaldo
+Roger Federer
+Rafael Nadal
+Novak Djokovic
+Virat Kohli
+MS Dhoni
+Kapil Dev
+PV Sindhu
+Neeraj Chopra
+Abhinav Bindra
+Milkha Singh
+Dhyan Chand
+Viswanathan Anand
+Magnus Carlsen
+Garry Kasparov
+Bobby Fischer
+Simone Biles
+Michael Phelps
+Tiger Woods
+Lewis Hamilton
+Ayrton Senna
+Stephen Curry
+LeBron James
+Kobe Bryant
+Jacques Cousteau
+David Attenborough
+Jane Goodall
+Rachel Carson
+Wangari Maathai
+Greta Thunberg
+Marie Kondo
+Julia Child
+Anthony Bourdain
+Gordon Ramsay
+Oprah Winfrey
+Walt Disney
+Steven Spielberg
+Alfred Hitchcock
+Stanley Kubrick
+Akira Kurosawa
+Satyajit Ray
+Christopher Nolan
+Greta Gerwig
+Hayao Miyazaki
+Meryl Streep
+Audrey Hepburn
+Charlie Chaplin
+Amitabh Bachchan
+Shah Rukh Khan
+Deepika Padukone
+Priyanka Chopra
+Mindy Kaling
+Hasan Minhaj
+Trevor Noah
+Ellen DeGeneres
+Marie Antoinette
+Anne Frank
+Frederick Douglass
+Harriet Tubman
+Sojourner Truth
+Susan B Anthony
+Emmeline Pankhurst
+Eleanor Roosevelt
+Amelia Earhart
+Charles Lindbergh
+Ada Yonath
+Elizabeth Blackburn
+Carol Greider
+Venkatraman Ramakrishnan
+Har Gobind Khorana
+Kailash Satyarthi
+Muhammad Yunus
+Abdus Salam
+Ahmed Zewail
+Yoshinori Ohsumi
+Shinya Yamanaka
+Ernest Rutherford
+Dmitri Mendeleev
+Antoine Lavoisier
+Robert Boyle
+Marie Tharp
+Alfred Wegener
+Edwin Hubble
+Vera Rubin
+Jocelyn Bell Burnell
+Cecilia Payne
+Henrietta Leavitt
+Annie Jump Cannon
+Caroline Herschel
+Hypatia
+Archimedes
+Pythagoras
+Euclid
+Fibonacci
+Al-Khwarizmi
+Ibn Sina
+Omar Khayyam
+Aryabhata
+Brahmagupta
+Bhaskara
+Maryam Mirzakhani
+Terence Tao
+Grigori Perelman
+Andrew Wiles
+John Nash
+Paul Erdos
+Alan Perlis
+Margaret Mead
+Noam Chomsky
+Daniel Kahneman
+Sigmund Freud
+Carl Jung
+Jean Piaget
+Maria Montessori
+Malcolm Gladwell
+Yuval Noah Harari
+Brene Brown
+Simon Sinek
+Seth Godin
+Tim Ferriss

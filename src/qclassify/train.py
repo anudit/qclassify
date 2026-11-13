@@ -80,6 +80,12 @@ def main():
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--hidden", type=int, default=16)
     parser.add_argument("--epochs", type=int, default=400)
+    parser.add_argument("--clean-weight", type=float, default=1.0,
+                        help="loss weight of hand-authored rows vs mined rows (needs data/mined; ignored without it)")
+    parser.add_argument("--mined-val-weight", type=float, default=1.0,
+                        help="weight of mined rows in the validation loss used for early stopping (0 = clean rows only)")
+    parser.add_argument("--init-seed", type=int, default=None, help="weight-init/shuffle seed (default: --seed, which also fixes the split)")
+    parser.add_argument("--l2", type=float, default=0.001)
     parser.add_argument("--device", choices=("mps", "cpu"), default="mps")
     args = parser.parse_args()
     if args.hidden < 1 or args.epochs < 1:
@@ -89,11 +95,24 @@ def main():
     x = transform([r["input"] for r in rows])
     y = np.array([LABELS[r["output"]] for r in rows], dtype=np.float32)[:, None]
     train, validation, test = indices
+    weights = np.ones(len(rows), dtype=np.float32)
+    mined_dir = args.data.parent / "mined"
+    if args.clean_weight != 1.0 and mined_dir.exists():
+        mined = set()
+        for name in ("names_multi", "names_single", "queries"):
+            mined |= {canonicalize(t) for t in json.loads((mined_dir / f"{name}.json").read_text())}
+        weights = np.array([1.0 if canonicalize(r["input"]) in mined else args.clean_weight for r in rows], dtype=np.float32)
+        print(f"clean-weight {args.clean_weight}: {int((weights > 1).sum())} authored rows, {int((weights == 1).sum())} mined rows")
     # Features lowercase every input, so casing variants would be duplicates: no augmentation.
     with threadpool_limits(limits=1):
         params, training = fit(x[train], y[train], x[validation], y[validation],
-                               seed=args.seed, hidden=args.hidden, epochs=args.epochs, device=args.device)
+                               seed=args.seed if args.init_seed is None else args.init_seed, hidden=args.hidden, epochs=args.epochs, device=args.device, l2=args.l2,
+                               weights=weights[train], validation_weights=np.where(weights[validation] > 1, 1.0, args.mined_val_weight).astype(np.float32))
     training["augmentation"] = "none: the feature extractor lowercases all input"
+    training["clean_weight"] = args.clean_weight
+    training["l2"] = args.l2
+    training["init_seed"] = args.init_seed if args.init_seed is not None else args.seed
+    training["mined_val_weight"] = args.mined_val_weight
     args.out.mkdir(parents=True, exist_ok=True)
     path = args.out / "classifier.onnx"
     size = export_onnx(params, path)

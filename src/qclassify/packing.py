@@ -71,7 +71,8 @@ def measure(truth: np.ndarray, scores: np.ndarray) -> dict:
 
 
 def export_packed(model_path: Path, out: Path, *, data: Path, splits: Path,
-                  embed: Path | None = None, accuracy_tolerance=0.002, loss_tolerance=0.01) -> dict:
+                  embed: Path | None = None, accuracy_tolerance=0.002, loss_tolerance=0.01,
+                  max_packed_bytes: int | None = None) -> dict:
     import onnx
     from onnx import numpy_helper
     from qclassify.features import FEATURE_VERSION, HASH_BINS, INPUT_DIM, MAX_CHARS
@@ -99,16 +100,21 @@ def export_packed(model_path: Path, out: Path, *, data: Path, splits: Path,
         metric = measure(val_y, probabilities(decoded, val_x))
         accepted = (metric["accuracy"] >= baseline["accuracy"] - accuracy_tolerance - 1e-10
                     and metric["loss"] <= baseline["loss"] + loss_tolerance)
-        candidates.append({"bits": bits, "bytes": len(blob), "validation": metric, "accepted": accepted})
-        if accepted and selected is None:
-            selected = (bits, blob, decoded, metric)
+        within_budget = max_packed_bytes is None or len(blob) <= max_packed_bytes
+        candidates.append({"bits": bits, "bytes": len(blob), "validation": metric, "accepted": accepted and within_budget})
+        if accepted and within_budget:
+            # No budget: the smallest acceptable width. With a budget: spend it, the widest width that fits.
+            if selected is None or max_packed_bytes is not None:
+                selected = (bits, blob, decoded, metric)
     if selected is None:
         raise ValueError("No packed model meets validation tolerances")
     bits, blob, decoded, validation = selected
     test_texts = partitions["test"]
     test_x = transform(test_texts)
     test_y = np.array([lookup[t] for t in test_texts], dtype=int)
-    report = {"selection": "Smallest bit width meeting validation tolerances; test unused for selection",
+    report = {"selection": ("Smallest bit width meeting validation tolerances" if max_packed_bytes is None else
+                            f"Widest bit width meeting validation tolerances within {max_packed_bytes} packed bytes")
+                           + "; test unused for selection", "max_packed_bytes": max_packed_bytes,
               "accuracy_tolerance": accuracy_tolerance, "loss_tolerance": loss_tolerance,
               "baseline_validation": baseline, "candidates": candidates,
               "selected_bits": bits, "packed_bytes": len(blob), "validation": validation,

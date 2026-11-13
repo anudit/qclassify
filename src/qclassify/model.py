@@ -19,7 +19,7 @@ def forward(params: dict, x: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 
 def fit(x, y, validation_x, validation_y, *, seed=42, hidden=8,
         epochs=400, batch_size=128, learning_rate=0.003, l2=0.001,
-        patience=35, device="mps", augmentation_blocks=1):
+        patience=35, device="mps", augmentation_blocks=1, weights=None, validation_weights=None):
     if device == "mps" and not torch.backends.mps.is_available():
         raise RuntimeError("MPS is unavailable. Use an MPS-capable Mac and PyTorch build, "
                            "or explicitly select --device cpu. No silent CPU fallback.")
@@ -29,7 +29,10 @@ def fit(x, y, validation_x, validation_y, *, seed=42, hidden=8,
     rng = np.random.default_rng(seed)
     network = nn.Sequential(nn.Linear(x.shape[1], hidden), nn.ReLU(), nn.Linear(hidden, 1)).to(device)
     optimizer = torch.optim.Adam(network.parameters(), lr=learning_rate, weight_decay=l2)
-    criterion = nn.BCEWithLogitsLoss()
+    criterion = nn.BCEWithLogitsLoss(reduction="none")
+    # per-example weights (optional): clean authored rows can count more than noisy mined ones
+    wt = torch.from_numpy(weights if weights is not None else np.ones(len(x), np.float32)).to(device)
+    wv = torch.from_numpy(validation_weights if validation_weights is not None else np.ones(len(validation_x), np.float32)).to(device)
     tx, ty, vx, vy = [torch.from_numpy(v).to(device) for v in (x, y, validation_x, validation_y)]
     best, best_loss, best_epoch = None, float("inf"), 0
     history = []
@@ -43,12 +46,12 @@ def fit(x, y, validation_x, validation_y, *, seed=42, hidden=8,
                     order += rng.choice(4, size=epoch_rows, p=CASE_MIX) * epoch_rows
             indices = torch.tensor(order[start:start + batch_size], device=device)
             optimizer.zero_grad(set_to_none=True)
-            loss = criterion(network(tx[indices]), ty[indices])
+            loss = (criterion(network(tx[indices]), ty[indices]).reshape(-1) * wt[indices]).sum() / wt[indices].sum()
             loss.backward()
             optimizer.step()
         network.eval()
         with torch.no_grad():
-            val_loss = float(criterion(network(vx), vy).item())
+            val_loss = float(((criterion(network(vx), vy).reshape(-1) * wv).sum() / wv.sum()).item())
         history.append({"epoch": epoch, "validation_loss": val_loss})
         if val_loss < best_loss - 1e-5:
             best_loss, best_epoch = val_loss, epoch

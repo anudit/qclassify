@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Fold data/authored/topics.txt (committed, hand-written topic queries) into examples.json + queries.txt.
+"""Fold the committed hand-written lists in data/authored/ into examples.json, names.txt and queries.txt:
+topics.txt (search_query) and famous.txt (person_name).
 
-Skips anything already in the corpus, any held-out probe, and any string already labelled a name.
-Idempotent. Works on the sanitized committed corpus and on the local one that also holds data/mined.
+Skips anything already in the corpus and any held-out probe. Idempotent. Works on the sanitized committed
+corpus and on the local one that also holds data/mined.
 Remember to update tests/test_pipeline.py counts afterwards.
 """
 import json
@@ -12,21 +13,25 @@ ROOT = Path(__file__).resolve().parents[1]
 D = ROOT / "data"
 canon = lambda s: " ".join(s.lower().split())
 
+LISTS = (("authored/topics.txt", "search_query"), ("authored/famous.txt", "person_name"))
+PROBES = ("probes.json", "probes_topics.json", "probes_famous.json", "mined/probes_mined.json")
+
 rows = json.loads((D / "examples.json").read_text())
 have = {canon(r["input"]) for r in rows}
-held = {canon(x) for f in ("probes.json", "probes_topics.json", "mined/probes_mined.json") if (D / f).exists()
+held = {canon(x) for f in PROBES if (D / f).exists()
         for v in json.loads((D / f).read_text()).values() for x in v}
-topics = [l.strip() for l in (D / "authored/topics.txt").read_text().splitlines() if l.strip()]
 
-added = []
-for s in topics:
-    k = canon(s)
-    if k in have or k in held:
-        continue
-    have.add(k)
-    rows.append({"input": s, "output": "search_query"})
-    added.append(s)
+added = {"search_query": [], "person_name": []}
+for path, label in LISTS:
+    for text in (l.strip() for l in (D / path).read_text().splitlines() if l.strip()):
+        key = canon(text)
+        if key in have or key in held:
+            continue
+        have.add(key)
+        rows.append({"input": text, "output": label})
+        added[label].append(text)
 
 (D / "examples.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n")
-(D / "queries.txt").write_text("\n".join(r["input"] for r in rows if r["output"] == "search_query") + "\n")
-print({"search_query": len(added)}, "total", len(rows))
+for label, f in (("person_name", "names.txt"), ("search_query", "queries.txt")):
+    (D / f).write_text("\n".join(r["input"] for r in rows if r["output"] == label) + "\n")
+print({k: len(v) for k, v in added.items()}, "total", len(rows))

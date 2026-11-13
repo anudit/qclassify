@@ -2,48 +2,48 @@
   "package": "@omnid/qclassify",
   "scope": "Reachable minified ESM including dynamically imported model; each file compressed separately; excludes HTTP headers",
   "runtimeDependencies": 0,
-  "weightBytes": 9496,
+  "weightBytes": 22628,
   "files": [
     {
       "file": "index.js",
       "raw": 8525,
-      "gzip": 3302,
-      "brotli": 2956
+      "gzip": 3307,
+      "brotli": 2957
     },
     {
-      "file": "chunk-AGHASE4M.js",
-      "raw": 1912,
-      "gzip": 979,
-      "brotli": 887
+      "file": "chunk-RHWF4GPM.js",
+      "raw": 1916,
+      "gzip": 984,
+      "brotli": 888
     },
     {
-      "file": "chunk-IN6TN2FG.js",
-      "raw": 2322,
-      "gzip": 1178,
-      "brotli": 1014
+      "file": "chunk-67QECP4F.js",
+      "raw": 2348,
+      "gzip": 1180,
+      "brotli": 1018
     },
     {
-      "file": "model-LQWNWF4G.js",
-      "raw": 19532,
-      "gzip": 5127,
-      "brotli": 3710
+      "file": "model-2IZQDJGY.js",
+      "raw": 45797,
+      "gzip": 20740,
+      "brotli": 17446
     }
   ],
   "totals": {
-    "raw": 32291,
-    "gzip": 10586,
-    "brotli": 8567
+    "raw": 58586,
+    "gzip": 26211,
+    "brotli": 22309
   },
   "embeddingComparison": {
     "base64": {
-      "raw": 12765,
-      "gzip": 4358,
-      "brotli": 3661
+      "raw": 30273,
+      "gzip": 18725,
+      "brotli": 18461
     },
     "hex": {
-      "raw": 19150,
-      "gzip": 4802,
-      "brotli": 3437
+      "raw": 45414,
+      "gzip": 20372,
+      "brotli": 17180
     },
     "chosen": "hex (smaller Brotli delivery)"
   }

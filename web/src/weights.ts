@@ -25,8 +25,8 @@ export function validateManifest(value: unknown): asserts value is ModelManifest
       m.inputDim !== INPUT_DIM || m.hashBins !== HASH_BINS || m.maxChars !== MAX_CHARS ||
       !Number.isSafeInteger(m.hiddenDim) || m.hiddenDim < 1 ||
       !Number.isSafeInteger(m.bits) || m.bits < 2 || m.bits > 8 ||
-      m.groupSize !== 32 || m.weightBytes !== expectedBytes || expectedBytes >= 100_000 ||
-      (INPUT_DIM * m.hiddenDim + 2 * m.hiddenDim + 1) * 4 >= 100_000 || m.threshold !== 0.5 ||
+      m.groupSize !== 32 || m.weightBytes !== expectedBytes || expectedBytes >= 134_000 ||
+      (INPUT_DIM * m.hiddenDim + 2 * m.hiddenDim + 1) * 4 >= 134_000 || m.threshold !== 0.5 ||
       JSON.stringify(m.labels) !== '["search_query","person_name"]' ||
       JSON.stringify(m.layout) !== '["scales-f16","codes-lsb","b1-f32","w2-f16","b2-f32"]' ||
       typeof m.sha256 !== "string" || !/^[0-9a-f]{64}$/.test(m.sha256)) {

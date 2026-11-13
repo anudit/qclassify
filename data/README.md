@@ -89,3 +89,8 @@ for person because short lowercase noun phrases looked like names. `scripts/merg
 into `examples.json` and `queries.txt` (idempotent, skips held-out probes) and works on the committed corpus too.
 `data/probes_topics.json` is a held-out set of 98 topic phrases never trained on; `scripts/compare.py` reports it
 (0.776 for 0.2.0, 0.847 for 0.2.1).
+
+`data/authored/famous.txt` (~320 notable people across science, computing, arts, politics, sport and business) was
+added in 0.3.0 as `person_name`; `data/probes_famous.json` holds 28 held-out famous names (plus 6 name+request
+queries). Adding hand-picked "famous name + request" queries made bare famous names worse (the model treated them as
+nearly the same input) and was reverted. Training weighs hand-authored rows 3x over mined ones; see the main README.

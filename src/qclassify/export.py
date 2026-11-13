@@ -7,7 +7,7 @@ from onnx import TensorProto, helper, numpy_helper
 
 from qclassify.features import FEATURE_VERSION, INPUT_DIM
 
-SIZE_LIMIT = 100_000  # Decimal KB, stricter than 100 KiB.
+SIZE_LIMIT = 134_000  # Decimal bytes: 2x the 67,336-byte 0.2.x model, which had a 100,000 limit.
 
 
 def export_onnx(params: dict, path: Path) -> dict:

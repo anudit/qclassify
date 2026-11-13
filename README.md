@@ -27,7 +27,7 @@ training-only casing variants are all under `data/`. See [data/README.md](data/R
 for authorship, label policy, HHQ context, and limitations. No scraped dataset or
 template expansion is needed to train the seed corpus.
 
-The network is `1044 → 16 ReLU → 1 sigmoid`: 1,024 signed character n-gram hash
+The network is `2048 → 16 ReLU → 1 sigmoid`: 2,028 signed character n-gram hash
 features, 16 shape features, and four small fixed English intent hints. The
 hints indicate request starts, artifact/search words such as `biography`,
 technology terms, and URLs; they are learned inputs, not a routing override.
@@ -37,13 +37,13 @@ between Python and TypeScript and truncates to 256 normalized code points.
 
 | Artifact | Size / held-out result |
 | --- | --- |
-| Full FP32 ONNX, graph and weights included | **67,336 bytes** |
-| All FP32 learned weights | **66,948 bytes**, 16,737 parameters |
-| Packed browser weights | **9,496 bytes**, 4-bit groupwise |
-| Original model test accuracy | **91.55%**, 592 authored test examples |
-| Packed model test accuracy | **90.20%**, same test split |
-| Complete reachable minified browser ESM | **32,291 bytes raw** |
-| ESM including embedded weights, compressed per module | **8,567 bytes Brotli / 10,586 bytes gzip** |
+| Full FP32 ONNX, graph and weights included | **131,592 bytes** (0.2.x: 67,336) |
+| All FP32 learned weights | **131,204 bytes**, 32,801 parameters |
+| Packed browser weights | **22,628 bytes**, 5-bit groupwise (0.2.x: 11,584) |
+| Original model test accuracy | **89.61%**, 2,128 test examples (authored + mined) |
+| Packed model test accuracy | **89.43%**, same test split |
+| Complete reachable minified browser ESM | **58,586 bytes raw** |
+| ESM including embedded weights, compressed per module | **22,309 bytes Brotli / 26,211 gzip** (0.2.x: 12,212 / 14,326) |
 
 Exact results live in `artifacts/metrics.json`, `artifacts/web/packing.json`, and
 `artifacts/bundle-size.json`. The bundle measure includes preprocessing, decoding,
@@ -114,3 +114,16 @@ outside its sandbox. For CI without a GPU, `--software` explicitly uses SwiftSha
 Useful references: [uv Python versions](https://docs.astral.sh/uv/concepts/python-versions/),
 [PyTorch MPS](https://docs.pytorch.org/docs/stable/notes/mps.html), and
 [WebGL 2 specification](https://registry.khronos.org/webgl/specs/latest/2.0/).
+
+## 0.3.0: 2x architecture
+
+0.2.x scored "Dark Matter" 0.75 and "Ada Lovelace" 0.29 for person. 0.3.0 spends up to 2x the 0.2.1 size
+(FP32 ONNX 1.95x, packed weights 1.95x, Brotli bundle 1.83x, npm tarball 1.64x) as follows. Offline comparisons
+on the same data, all at about 33k parameters: char hash bins 1024 -> 2028 (inputs 2048, the texture width WebGL 2
+guarantees) was the clear win; hidden 16 -> 32 on 1024 bins, whole-word hash blocks (overfit in ~20 epochs),
+2-layer nets and 2-5-grams were not. Training changes: hand-authored rows weigh 3x mined rows
+(`--clean-weight 3`), early stopping follows the clean validation rows only (`--mined-val-weight 0`),
+L2 3e-4, no casing augmentation. Packing now spends a byte budget (`--max-packed-bytes 23168`) instead of the
+smallest width within 0.2 points: 5-bit, 0.7 points of validation accuracy under FP32, practically lossless on the
+probes. Held-out probes (`scripts/compare.py`): topic phrases 0.776 -> 0.939, unseen famous names 0.964, one-word
+and tech 1.0. Still wrong: "Ada Lovelace" (0.27). Seed-to-seed spread is a few points, so treat single results loosely.

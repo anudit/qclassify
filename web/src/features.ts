@@ -1,7 +1,7 @@
 /** Mirrors src/qclassify/features.py, including code-point indexing and UTF-8 hashing. */
-export const FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v3";
-export const HASH_BINS = 1024;
-export const INPUT_DIM = 1044;
+export const FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v4";
+export const HASH_BINS = 2028;
+export const INPUT_DIM = 2048;
 export const MAX_CHARS = 256;
 const encoder = new TextEncoder();
 // Python's Unicode whitespace set; JS \s differs for BOM, NEL, and U+001C..1F.
