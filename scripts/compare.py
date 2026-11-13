@@ -10,7 +10,8 @@ old = json.loads((D / "probes.json").read_text())
 mined = json.loads((D / "mined/probes_mined.json").read_text())
 HAND = {"person_name": ["Vitalik", "Anatoly", "Aniket", "Devang", "Sarah", "Ilya", "Satoshi", "Gavin", "Hayden", "Subh", "tanmay", "Ryan Dahl"],
         "search_query": ["hackathon", "ethereum", "Hugging Face", "react native", "zero knowledge", "solidity", "web3", "devfolio", "bangalore", "machine learning", "who won ethglobal", "rust"]}
-sets = {"authored probes (multi-word)": old, "mined probes": mined, "hand: one-word + tech": HAND}
+topics = json.loads((D / "probes_topics.json").read_text())
+sets = {"authored probes (multi-word)": old, "mined probes": mined, "hand: one-word + tech": HAND, "topic phrases (queries)": topics}
 for path in sys.argv[1:]:
     c = Classifier(path)
     print(path)

@@ -1,14 +1,14 @@
 {
   "format": "qclassify-webgl-v2",
-  "featureVersion": "nfkc-lower-fnv1a-char2to4-shape20-v2",
+  "featureVersion": "nfkc-lower-fnv1a-char2to4-shape20-v3",
   "inputDim": 1044,
   "hashBins": 1024,
   "hiddenDim": 16,
   "maxChars": 256,
-  "weightBytes": 9496,
-  "bits": 4,
+  "weightBytes": 11584,
+  "bits": 5,
   "groupSize": 32,
-  "sha256": "032d0644c0218dc8107079e33cdc4fe1e8cd40fd62e17a4f253275fceab1709b",
+  "sha256": "cf1a7436814461895dff8a5df3a798b4fcafb8bc9d39e79c2d716000e5d8f573",
   "layout": [
     "scales-f16",
     "codes-lsb",

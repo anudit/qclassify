@@ -3,16 +3,16 @@
   "accuracy_tolerance": 0.002,
   "loss_tolerance": 0.01,
   "baseline_validation": {
-    "accuracy": 0.8996990972918756,
-    "loss": 0.2284066543764427
+    "accuracy": 0.8797136038186157,
+    "loss": 0.27728972397220647
   },
   "candidates": [
     {
       "bits": 2,
       "bytes": 5320,
       "validation": {
-        "accuracy": 0.8676028084252758,
-        "loss": 0.2972579781201758
+        "accuracy": 0.8362768496420048,
+        "loss": 0.35615519563432574
       },
       "accepted": false
     },
@@ -20,8 +20,8 @@
       "bits": 3,
       "bytes": 7408,
       "validation": {
-        "accuracy": 0.8861584754262788,
-        "loss": 0.27210681011748405
+        "accuracy": 0.8739856801909308,
+        "loss": 0.28763977006643265
       },
       "accepted": false
     },
@@ -29,26 +29,26 @@
       "bits": 4,
       "bytes": 9496,
       "validation": {
-        "accuracy": 0.90320962888666,
-        "loss": 0.2342795555611843
+        "accuracy": 0.8773269689737471,
+        "loss": 0.27586480708436306
       },
-      "accepted": true
+      "accepted": false
     },
     {
       "bits": 5,
       "bytes": 11584,
       "validation": {
-        "accuracy": 0.8971915747241725,
-        "loss": 0.23355295923066424
+        "accuracy": 0.8782816229116945,
+        "loss": 0.27771921545139333
       },
-      "accepted": false
+      "accepted": true
     },
     {
       "bits": 6,
       "bytes": 13672,
       "validation": {
-        "accuracy": 0.8996990972918756,
-        "loss": 0.22704969311299122
+        "accuracy": 0.879236276849642,
+        "loss": 0.27752608476425555
       },
       "accepted": true
     },
@@ -56,25 +56,25 @@
       "bits": 8,
       "bytes": 17848,
       "validation": {
-        "accuracy": 0.9002006018054163,
-        "loss": 0.22801108949415044
+        "accuracy": 0.8797136038186157,
+        "loss": 0.2771162250766976
       },
       "accepted": true
     }
   ],
-  "selected_bits": 4,
-  "packed_bytes": 9496,
+  "selected_bits": 5,
+  "packed_bytes": 11584,
   "validation": {
-    "accuracy": 0.90320962888666,
-    "loss": 0.2342795555611843
+    "accuracy": 0.8782816229116945,
+    "loss": 0.27771921545139333
   },
   "test": {
-    "accuracy": 0.8827067669172932,
-    "loss": 0.27377573468105126
+    "accuracy": 0.8883587786259542,
+    "loss": 0.2665334437300727
   },
   "baseline_test": {
-    "accuracy": 0.8887218045112782,
-    "loss": 0.2686973262488371
+    "accuracy": 0.8897900763358778,
+    "loss": 0.2660530887299296
   },
-  "source_onnx_sha256": "ebfd9384a3c4f836c377dc495637c56b08b7ffe9eda7015d63c9d0e6162f99b5"
+  "source_onnx_sha256": "0d61041b977ac8660c3115f8be647f76d828817cec82fcc833bc227c18850531"
 }

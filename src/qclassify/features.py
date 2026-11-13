@@ -6,7 +6,7 @@ import numpy as np
 HASH_BINS = 1024
 SHAPE_FEATURES = 20
 INPUT_DIM = HASH_BINS + SHAPE_FEATURES
-FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v2"
+FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v3"
 MAX_CHARS = 256
 REQUEST_WORDS = frozenset("how what where when why who find show latest recent best compare search".split())
 ARTIFACT_WORDS = frozenset("biography biographies papers publications tutorials courses interviews interview blog projects announcements github books news talks lecture lectures research tools libraries library frameworks software datasets opportunities jobs".split())
@@ -27,7 +27,9 @@ def fnv1a(text: str) -> int:
 def featurize(text: str) -> np.ndarray:
     if not isinstance(text, str) or not text.strip():
         raise ValueError("Input must be a nonempty string.")
-    raw = unicodedata.normalize("NFKC", text).strip()[:MAX_CHARS]
+    # Everything below sees lowercase text only: "Solar Energy" and "solar energy" are one input,
+    # so the uppercase shape features are constant zero (slots kept to preserve the layout).
+    raw = unicodedata.normalize("NFKC", text).strip()[:MAX_CHARS].lower()
     normalized = canonicalize(raw)
     vector = np.zeros(INPUT_DIM, dtype=np.float32)
     padded = "^" + normalized + "$"

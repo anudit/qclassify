@@ -1,5 +1,5 @@
 /** Mirrors src/qclassify/features.py, including code-point indexing and UTF-8 hashing. */
-export const FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v2";
+export const FEATURE_VERSION = "nfkc-lower-fnv1a-char2to4-shape20-v3";
 export const HASH_BINS = 1024;
 export const INPUT_DIM = 1044;
 export const MAX_CHARS = 256;
@@ -28,8 +28,9 @@ export function fnv1a(text: string): number {
 
 export function featurize(text: string): Float32Array {
   if (typeof text !== "string" || !trim(text)) throw new TypeError("Input must be a nonempty string.");
-  const chars = Array.from(trim(text.normalize("NFKC"))).slice(0, MAX_CHARS);
-  const raw = chars.join("");
+  // Lowercase first: every feature, shape ones included, sees lowercase text only.
+  const raw = Array.from(trim(text.normalize("NFKC"))).slice(0, MAX_CHARS).join("").toLowerCase();
+  const chars = Array.from(raw);
   const normalized = Array.from("^" + canonicalize(raw) + "$");
   const vector = new Float32Array(INPUT_DIM);
   for (const size of [2, 3, 4]) {

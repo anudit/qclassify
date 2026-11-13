@@ -89,22 +89,11 @@ def main():
     x = transform([r["input"] for r in rows])
     y = np.array([LABELS[r["output"]] for r in rows], dtype=np.float32)[:, None]
     train, validation, test = indices
-    # Only training inputs receive casing augmentation. Preserve validation/test
-    # exactly as authored; recompute features for Unicode case expansions too.
-    train_texts = [rows[i]["input"] for i in train]
-    augmented_x = transform(train_texts + [t.lower() for t in train_texts] +
-                            [t.upper() for t in train_texts] + [t.title() for t in train_texts])
-    augmented_y = np.tile(y[train], (4, 1))
-    augmented_texts = train_texts + [t.lower() for t in train_texts] + [t.upper() for t in train_texts] + [t.title() for t in train_texts]
-    augmented_rows = [{"input": text, "output": "person_name" if label else "search_query"}
-                      for text, label in zip(augmented_texts, augmented_y.reshape(-1))]
-    (args.data.parent / "augmented_train.json").write_text(json.dumps(augmented_rows, ensure_ascii=False, indent=2) + "\n")
+    # Features lowercase every input, so casing variants would be duplicates: no augmentation.
     with threadpool_limits(limits=1):
-        params, training = fit(augmented_x, augmented_y, x[validation], y[validation],
-                               seed=args.seed, hidden=args.hidden, epochs=args.epochs, device=args.device,
-                               augmentation_blocks=4)
-    training["augmentation"] = "per-epoch sampling: 55% original, 35% lower, 5% upper, 5% title; training only"
-    training["augmented_training_rows"] = len(augmented_x)
+        params, training = fit(x[train], y[train], x[validation], y[validation],
+                               seed=args.seed, hidden=args.hidden, epochs=args.epochs, device=args.device)
+    training["augmentation"] = "none: the feature extractor lowercases all input"
     args.out.mkdir(parents=True, exist_ok=True)
     path = args.out / "classifier.onnx"
     size = export_onnx(params, path)

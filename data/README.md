@@ -47,13 +47,9 @@ training / 590 validation / 592 test** inputs. Normalized duplicate inputs are
 rejected across the entire authored corpus. Sorting before shuffling means
 reordering the JSON does not change partition membership.
 
-`data/augmented_train.json` stores the training-only candidate pool: original,
-lowercase, uppercase, and title-case versions (**18,908 rows**). These generated
-variants are separate from the explicitly authored seed examples. Each epoch
-samples 55% original / 35% lower / 5% upper / 5% title variants; validation and
-test inputs retain their authored casing. Seeds and augmentation settings are
-recorded in the model report. The augmentation pool deliberately contains
-repeated inputs; it is not a second independently authored dataset.
+There is no casing augmentation (0.2.1): the feature extractor lowercases every input before hashing
+and computing shape features, so casing variants would be duplicates. Validation and test inputs keep their
+authored casing, and are lowercased only inside the extractor like all other input.
 
 Random splitting does not isolate shared surnames, related technologies or
 similar phrasing. The metrics measure this synthetic distribution and can be
@@ -83,3 +79,13 @@ look like a name), so the mined slice has label noise and the overall test accur
 old synthetic corpus's, which was easier.
 
 `artifacts/metrics.json` lists misclassified authored examples only; mined names are scrubbed from it.
+
+## Authored topic phrases (added in 0.2.1)
+
+`data/authored/topics.txt` holds ~575 hand-written short topic queries ("solar power", "ancient greece",
+"grant proposals", "Wind Energy Basics") covering energy, science, health, food, home, work, culture, sport and
+tech, including phrases built from words that are also first names or surnames. 0.2.0 scored "solar energy" 0.80
+for person because short lowercase noun phrases looked like names. `scripts/merge_authored.py` folds the file
+into `examples.json` and `queries.txt` (idempotent, skips held-out probes) and works on the committed corpus too.
+`data/probes_topics.json` is a held-out set of 98 topic phrases never trained on; `scripts/compare.py` reports it
+(0.776 for 0.2.0, 0.847 for 0.2.1).

@@ -22,7 +22,7 @@ classifier.dispose();
 `create()` imports the bundled model module and decodes its packed weights once.
 It does not fetch external model assets. Keep one classifier for the lifetime of
 the search box. `predict` and `predictBatch` are synchronous and return model
-scores, not calibrated guarantees. The boundary is 0.5. Empty input throws; an
+scores, not calibrated guarantees. The boundary is 0.5. Input is lowercased internally, so casing never changes a score. Empty input throws; an
 empty batch returns `[]`. Inputs are clipped to 256 normalized Unicode code points.
 
 ## HHQ / Next.js

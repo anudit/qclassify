@@ -61,8 +61,8 @@ These are synthetic-corpus metrics. Names and search topics overlap, and a bare
 name does not reveal actual intent. Random splits can share related names,
 products, and phrasing. Check independent real HHQ queries before relying on
 routing, especially mononyms, handles, prefixes, and languages underrepresented
-in the seed data. Scores are uncalibrated. Case augmentation does not make the
-classifier case-invariant.
+in the seed data. Scores are uncalibrated. The feature extractor lowercases all input
+before hashing and shape features, so "Solar Energy" and "solar energy" score identically.
 
 ## Browser package
 
